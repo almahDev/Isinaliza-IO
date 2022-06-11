@@ -1,0 +1,38 @@
+{
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "Vamos manter contato!",
+      "font": "t-heading-3",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "newsletterTitle"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "E-mail",
+      "inputLabel": " ",
+      "blockClass": "newsletterInput"
+    }
+  },
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Nome",
+      "inputLabel": " ",
+      "blockClass": "newsletterInput"
+    }
+  },
+  "newsletter-submit":{
+      "props":{
+        "submitButtonLabel": "ENVIAR"
+      }
+      
+  }
+}

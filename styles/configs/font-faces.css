@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'DINPro';
+    src: url('assets/fonts/DINPro-Medium.ttf'); 
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'DINPro';
+    src: url('assets/fonts/DINPro-Bold.ttf'); 
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'DINPro';
+    src: url('assets/fonts/DINPro-Light.ttf'); 
+    font-weight: 200;
+  }
+
+
+  @font-face {
+    font-family: 'Intelo';
+    src: url('assets/fonts/Intelo-Regular.ttf'); 
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Intelo';
+    src: url('assets/fonts/Intelo-Bold.ttf'); 
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'Intelo';
+    src: url('assets/fonts/Intelo-Light.ttf'); 
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'StretchPro';
+    src: url('assets/fonts/StretchPro.ttf'); 
+    font-weight: 'normal';
+  }
+
+  @font-face {
+    font-family: 'StretchPro';
+    src: url('assets/fonts/StretchPro.ttf'); 
+    font-weight: 'bold';
+  }
