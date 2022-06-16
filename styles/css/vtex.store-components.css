@@ -1,0 +1,57 @@
+.infoCardTextContainer--sellerConditionCard {
+    padding: 0;
+    padding-left: 10px;
+    width: 68%;
+    align-items: center;
+}
+
+.infoCardContainer--sellerConditionCard {
+    justify-content: center;
+}
+
+.paragraph--sellerConditionCard {
+    font-size: 11px;
+}
+
+.infoCardImageContainer--sellerConditionCard {
+    padding: 0;
+    width: auto;
+}
+
+.listPriceValue {
+    text-decoration: none;
+}
+
+.infoCardContainer--circle-menu-option {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 74px;
+}
+
+.infoCardTextContainer--circle-menu-option {
+    padding: 0 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCardCallActionContainer--circle-menu-option {
+    text-decoration: none !important;
+}
+
+.infoCardHeadline--circle-menu-option, .infoCardCallActionText--circle-menu-option {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0054A8;
+    text-align: center;
+    margin: auto;
+    margin-top: 18px;
+    text-decoration: none !important;
+}
+
+.infoCardImageContainer--circle-menu-option {
+    width: 94%;
+    text-align: center;
+}

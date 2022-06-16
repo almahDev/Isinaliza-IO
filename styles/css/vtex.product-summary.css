@@ -1,0 +1,27 @@
+.productBrand{
+    text-align: right;
+    color: #8D8D8D;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 34px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.containerNormal :global(.vtex-button) {
+    margin: 0 auto;
+    background-color:#ED6F00;
+    border: none;
+    border-radius: 40px;
+  }
+
+  .nameContainer{
+      padding-right: 1em;
+  }
+
+
+
+ 
+ 
