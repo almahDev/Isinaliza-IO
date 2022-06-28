@@ -6,7 +6,10 @@
       "__fold__",
       "flex-layout.row#firstContent",
       "flex-layout.row#banners-home",
-      "flex-layout.row#secondContent"
+      "__fold__",
+      "flex-layout.row#secondContent",
+      /*COMMENT SECTION*/
+      "flex-layout.row#banners-home2"
     ]
   },
   "list-context.image-list#bannersprincipais": {
@@ -268,6 +271,60 @@
       "orderBy": "OrderByReleaseDateDESC",
       "collection": "146",
       "maxItems": 12
+    }
+  },
+  "flex-layout.row#banners-home2":{
+    "children":[
+      "flex-layout.col#banners-home3",
+      "flex-layout.col#banners-home4"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "marginTop": 5,
+      "marginBottom": 7,
+      "preventHorizontalStretch": true,
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#banners-home3":{
+    "children":[
+      "image#banners-home3"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home3":{
+    "props": {
+      "src": "assets/banners/isinaliza-30a2ef.png",
+      "link":{
+        "properties":{
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+  "flex-layout.col#banners-home4":{
+    "children":[
+      "image#banners-home4"
+    ],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+  "image#banners-home4":{
+    "props": {
+      "src": "assets/banners/isinaliza-30a2ef1.png",
+      "link":{
+        "properties":{
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
     }
   }
  

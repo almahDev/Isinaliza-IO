@@ -1,4 +1,25 @@
+.flexRow--topbar{
+    background-color: #0054A8;
+    height: 40px;
 
+}
+
+.flexColChild--orcamento-e-social{
+    width: 100%;
+}
+
+.flexRowContent--header-links{
+    height: 40px;
+}
+
+.flexRowContent--flags__list{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.flexRow--footer__content{
+background-color: #F5F5F5;
+}
 
 
 

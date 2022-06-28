@@ -5,3 +5,36 @@
     display: flex;
 }
 
+.link--orcamento-text, .strong--socialmedia-text{
+    font-size: 11px;
+    color:white;
+    text-decoration: none;
+}
+
+.link--orcamento-text{
+font-weight: 200;
+}
+.paragraph--socialmedia-text{
+    align-items: center;
+    display: flex;
+}
+.link--socialmedia-text{
+    margin: 0px 2px 0px 2px;
+}
+
+.strong--socialmedia-text{
+margin-right: 2px;
+}
+
+.wrapper--payment__image{
+    padding: 0px 2px;
+}
+.image--payment__image{
+    width: 56px;
+}
+.paragraph--payment__image{
+    margin: 0;
+}
+
+
+

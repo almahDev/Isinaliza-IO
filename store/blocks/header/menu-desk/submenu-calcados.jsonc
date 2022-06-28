@@ -1,0 +1,183 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-calcados-col1":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":"row-menu-col",
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Botas de trilha",
+                    "href": "/calcados/botas-de-trilha"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calçados de academia",
+                    "href": "/calcados/calcados-de-academia"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calçados de basquete",
+                    "href": "/calcados/calcados-de-basquete"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calçados de corrida",
+                    "href": "/calcados/calcados-de-corrida"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Calçados de skate",
+                    "href": "/calcados/calcados-de-skate"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Chinelos de dedo e slide",
+                    "href": "/calcados/chinelos-de-dedo-e-slide"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Meias e meiões",
+                    "href": "/calcados/meias-e-meioes"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Papetes",
+                    "href": "/calcados/papetes"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Sapatênis e casual",
+                    "href": "/calcados/sapatenis-e-casual"
+                }
+            }
+            ]
+        }
+    },
+
+
+
+    "vtex.menu@2.x:menu#submenu-cat-calcados-col2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":"row-menu-col",
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Campo",
+                    "href": "/calcados/chuteiras/campo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Futsal",
+                    "href": "/calcados/chuteiras/futsal"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Society",
+                    "href": "/calcados/chuteiras/society"
+                }
+            }
+            ]
+        },
+        "children":[
+            "menu-item#subcat-calcados-2"
+        ]
+    },
+
+    "menu-item#subcat-calcados-2": {
+        "props": {
+            "type": "custom",
+            "id": "",
+            "blockClass": ["submenu", "subcat-title"],
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": false,
+                "text": "Chuteiras",
+                "href": "/calcados/chuteiras"
+            }
+        }
+    }
+}

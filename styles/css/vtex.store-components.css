@@ -13,10 +13,32 @@
     font-size: 11px;
 }
 
-.infoCardImageContainer--sellerConditionCard {
+.infoCardImageContainer--sellerConditionCard, .infoCardImageContainer--TelefoneCard {
     padding: 0;
     width: auto;
 }
+
+.infoCardTextContainer--TelefoneCard{
+    padding: 0;
+    padding-left: 10px;
+    width: 37%;
+    align-items: flex-start;
+}
+
+.infoCardContainer--TelefoneCard {
+    justify-content:flex-end;
+    background-color: #0054A8;
+    padding-left: 1.5em;
+    height: 40px;
+}
+
+.paragraph--TelefoneCard {
+    font-size: 11px;
+    color: white;
+    font-weight: 200;
+}
+
+
 
 .listPriceValue {
     text-decoration: none;
@@ -54,4 +76,34 @@
 .infoCardImageContainer--circle-menu-option {
     width: 94%;
     text-align: center;
+}
+
+.searchBarContainer {
+    max-width: 550px !important;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group) {
+    border-color: #1E7BC4;
+    border-width: 1px;
+    border-radius: 100px;
+}
+
+.searchBarIcon--external-search {
+    background-color: white;
+}
+
+:global(.vtex-store-components-3-x-externalSearchButtonWrapper) {
+    border: none;
+  }
+
+.imageElement--footer-logo{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
 }

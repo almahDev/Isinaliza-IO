@@ -1,0 +1,704 @@
+{
+    "vtex.menu@2.x:menu#category-menu-01": {
+        "children": [
+            "menu-item#calcados",
+            "menu-item#roupas",
+            "menu-item#homens",
+            "menu-item#mulheres",
+            "menu-item#crianças",
+            "menu-item#acessorios",
+            "menu-item#marcas",
+            "menu-item#peças-unicas",
+            "menu-item#outlet"
+        ],
+        "props": {
+            "blockClass": "mainMenu",
+            "experimentalOptimizeRendering": true
+        }
+    },
+    // ----------------- MARCAS ITEM -------------------
+    "menu-item#marcas": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/marcas",
+                "noFollow": true,
+                "tagTitle": "MARCAS",
+                "text": "MARCAS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#moda-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#moda-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#marcas"
+        ]
+    },
+    "flex-layout.row#marcas": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#marcas1",
+            "flex-layout.col#marcas2",
+            "flex-layout.col#marcas3",
+            "flex-layout.col#imagemMarca"
+        ]
+    },
+    "flex-layout.col#marcas1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-marcas-col1"
+        ]
+    },
+    "flex-layout.col#marcas2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-marcas-col2"
+        ]
+    },
+    "flex-layout.col#marcas3": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-marcas-col3"
+        ]
+    },
+    "flex-layout.col#imagemMarca": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#marcasbanner"
+        ]
+    },
+    "image#marcasbanner": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- HOMENS ITEM -------------------
+    "menu-item#homens": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/homens",
+                "noFollow": true,
+                "tagTitle": "HOMENS",
+                "text": "HOMENS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#homens-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#homens-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#homens"
+        ]
+    },
+    "flex-layout.row#homens": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#homens1",
+            "flex-layout.col#homens2",
+            "flex-layout.col#homens3",
+            "flex-layout.col#imagemHomens"
+        ]
+    },
+    "flex-layout.col#homens1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-homens-col1"
+        ]
+    },
+    "flex-layout.col#homens2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-homens-col2",
+            "vtex.menu@2.x:menu#submenu-cat-homens-col2b"
+        ]
+    },
+    "flex-layout.col#homens3": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-homens-col3"
+        ]
+    },
+    "flex-layout.col#imagemHomens": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#imagemHomens"
+        ]
+    },
+    "image#imagemHomens": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- CALÇADOS ITEM -------------------
+    "menu-item#calcados": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/calcados",
+                "noFollow": true,
+                "tagTitle": "CALÇADOS",
+                "text": "CALÇADOS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#calcados-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#calcados-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#calcados"
+        ]
+    },
+    "flex-layout.row#calcados": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#calcados1",
+            "flex-layout.col#calcados2",
+            "flex-layout.col#imagemCalcados"
+        ]
+    },
+    "flex-layout.col#calcados1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-calcados-col1"
+        ]
+    },
+    "flex-layout.col#calcados2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-calcados-col2"
+        ]
+    },
+    "flex-layout.col#imagemCalcados": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#imagemCalcados"
+        ]
+    },
+    "image#imagemCalcados": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- CRIANÇAS ITEM -------------------
+    "menu-item#crianças": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/criancas",
+                "noFollow": true,
+                "tagTitle": "CRIANÇAS",
+                "text": "CRIANÇAS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#crianças-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#crianças-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#crianças"
+        ]
+    },
+    "flex-layout.row#crianças": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#crianças1",
+            "flex-layout.col#crianças2",
+            "flex-layout.col#imagemCriancas"
+        ]
+    },
+    "flex-layout.col#crianças1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-crianças-col1",
+            "vtex.menu@2.x:menu#submenu-cat-crianças-col1b"
+        ]
+    },
+    "flex-layout.col#crianças2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-crianças-col2"
+        ]
+    },
+    "flex-layout.col#imagemCriancas": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#imagemCriancas"
+        ]
+    },
+    "image#imagemCriancas": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- MULHERES ITEM -------------------
+    "menu-item#mulheres": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/mulheres",
+                "noFollow": true,
+                "tagTitle": "MULHERES",
+                "text": "MULHERES"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#mulheres-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#mulheres-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#mulheres"
+        ]
+    },
+    "flex-layout.row#mulheres": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#mulheres1",
+            "flex-layout.col#mulheres2",
+            "flex-layout.col#mulheres3",
+            "flex-layout.col#imagemMulheres"
+        ]
+    },
+    "flex-layout.col#mulheres1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-mulheres-col1"
+        ]
+    },
+    "flex-layout.col#mulheres2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-mulheres-col2",
+            "vtex.menu@2.x:menu#submenu-cat-mulheres-col2b"
+        ]
+    },
+    "flex-layout.col#mulheres3": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-mulheres-col3"
+        ]
+    },
+    "flex-layout.col#imagemMulheres": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#imagemMulheres"
+        ]
+    },
+    "image#imagemMulheres": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- ACESSÓRIOS ITEM -------------------
+    "menu-item#acessorios": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/acessorios",
+                "noFollow": true,
+                "tagTitle": "ACESSÓRIOS",
+                "text": "ACESSÓRIOS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#acessorios-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#acessorios-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#acessorios"
+        ]
+    },
+    "flex-layout.row#acessorios": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#acessorios1",
+            "flex-layout.col#acessorios2",
+            "flex-layout.col#acessorios3",
+            "flex-layout.col#acessorios4",
+            "flex-layout.col#imagemAcessorio"
+        ]
+    },
+    "flex-layout.col#acessorios1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-acessorios-col1"
+        ]
+    },
+    "flex-layout.col#acessorios2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-acessorios-col2",
+            "vtex.menu@2.x:menu#submenu-cat-acessorios-col2b"
+        ]
+    },
+    "flex-layout.col#acessorios3": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-acessorios-col3"
+        ]
+    },
+    "flex-layout.col#acessorios4": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-acessorios-col4"
+        ]
+    },
+    "flex-layout.col#imagemAcessorio": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#imagemAcessorio"
+        ]
+    },
+    "image#imagemAcessorio": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- ROUPAS ITEM -------------------
+    "menu-item#roupas": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/roupas",
+                "noFollow": true,
+                "tagTitle": "ROUPAS",
+                "text": "ROUPAS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#roupas-submenu-block"
+        ]
+    },
+    "vtex.menu@2.x:submenu#roupas-submenu-block": {
+        "props": {
+            "width": "100%",
+            "blockClass": "main-menu-row-desk"
+        },
+        "children": [
+            "flex-layout.row#roupas"
+        ]
+    },
+    "flex-layout.row#roupas": {
+        "props": {
+            "blockClass": [
+                "menu-content-area"
+            ],
+            "paddingTop": 6,
+            "colGap": 3
+        },
+        "children": [
+            "flex-layout.col#roupas1",
+            "flex-layout.col#roupas2",
+            "flex-layout.col#roupas3",
+            "flex-layout.col#imagemRoupas"
+        ]
+    },
+    "flex-layout.col#roupas1": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-roupas-col1"
+        ]
+    },
+    "flex-layout.col#roupas2": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-roupas-col2"
+        ]
+    },
+    "flex-layout.col#roupas3": {
+        "props": {
+            "width": "20%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-roupas-col3"
+        ]
+    },
+    "flex-layout.col#imagemRoupas": {
+        "props": {
+            "width": "grow",
+            "horizontalAlign": "right"
+        },
+        "children": [
+            "image#imagemRoupas"
+        ]
+    },
+    "image#imagemRoupas": {
+        "props": {
+            "src": "/arquivos/Rectangle1.png",
+            "maxHeight": 355
+        }
+    },
+    // ----------------- PEÇAS ÚNICAS ITEM -------------------
+    "menu-item#peças-unicas": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/pecas-unicas",
+                "noFollow": true,
+                "tagTitle": "PEÇAS ÚNICAS",
+                "text": "PEÇAS ÚNICAS"
+            }
+        }
+    },
+    // ----------------- OUTLET ITEM -------------------
+    "menu-item#outlet": {
+        "props": {
+            "id": "menu-item-category-all",
+            "type": "custom",
+            "experimentalOptimizeRendering": true,
+            "iconId": null,
+            "highlight": false,
+            "blockClass": [
+                "allCategoryBlock",
+                "highlightCategoryBlock",
+                "department-menu",
+                "removeBorderRight",
+                "hightlight"
+            ],
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet",
+                "noFollow": true,
+                "tagTitle": "OUTLET",
+                "text": "OUTLET"
+            }
+        }
+    }
+}

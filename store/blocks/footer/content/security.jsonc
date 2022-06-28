@@ -1,0 +1,58 @@
+{
+  "flex-layout.col#security-container":{
+    "children": [
+      "flex-layout.row#security-0",
+      "flex-layout.row#security-1"
+    ],
+    "props": {
+      "blockClass": "security-container",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+       "fullWidth": true
+    }
+  },
+  "flex-layout.row#security-0":{
+    "children": [
+      "rich-text#security"    
+    ]
+  },
+  "flex-layout.row#security-1":{
+    "children": [
+      "rich-text#securityImage-0",
+      "rich-text#securityImage-1",
+      "rich-text#securityImage-2"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "security__row"
+    }
+  },
+
+  "rich-text#security": {
+    "props": {
+      "blockClass": "footer__title",
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "text": "SEGURANÇA E CERTIFICAÇÕES"
+    } 
+  },
+  "rich-text#securityImage-0": {
+    "props": {
+      "text": "[![Selo pci]( /arquivos/pci-menor.png 'Acesse a PCI')](http://secure.vtex.com/?an=isinaliza)",
+      "blockClass": ["security__image","pci"]
+    }
+  },
+  "rich-text#securityImage-1": {
+    "props": {
+      "text": "[![Selo lets encrypt]( /arquivos/logo-lets-encrypt.png 'Acesse a lets encrypt')](https://letsencrypt.org/)",
+      "blockClass": ["security__image","lets-encrypt"]
+    }
+  },
+  "rich-text#securityImage-2": {
+    "props": {
+      "text": "[![Selo ebit](/arquivos/pci-menor.png' Acesse a PCI')](http://secure.vtex.com/?an=isinaliza) [![Selo lets encrypt]( /arquivos/logo-lets-encrypt.png 'Acesse a lets encrypt')](https://letsencrypt.org/)",
+      "blockClass": ["security__image","e-bit","no-margin-r"]
+    }
+  }
+}

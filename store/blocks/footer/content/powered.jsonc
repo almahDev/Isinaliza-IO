@@ -1,0 +1,43 @@
+{
+  "flex-layout.col#powered-container":{
+    "children": [
+      "flex-layout.row#powered"
+    ],
+    "props": {
+      "blockClass": "powered-container",
+      "preventHorizontalStretch": true,
+      "width": "30%"
+    }
+  },
+
+
+  "flex-layout.row#powered" : {
+    "children": [
+      "rich-text#poweredby",
+      "rich-text#poweredImage-0",
+      "rich-text#poweredImage-1"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "powered__row"
+    }
+  },
+  "rich-text#poweredby": {
+    "props": {
+      "text": "**Powered By**",
+      "blockClass": ["powered__title"]
+    }
+  },
+  "rich-text#poweredImage-0": {
+    "props": {
+      "text": "[![Logo WEONNE](/arquivos/logo-weonne.svg 'Acesse a WEONNE')](https://weonne.com/)",
+      "blockClass": ["powered__image","cbyk"]
+    }
+  },
+  "rich-text#poweredImage-1": {
+    "props": {
+      "text": "[![Logo vtex](/arquivos/VTEX_logo.svg 'Acesse a Vtex')](https://vtex.com/)",
+      "blockClass": ["powered__image","vtex","no-margin-r"]
+    }
+  }
+}
