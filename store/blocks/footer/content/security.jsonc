@@ -39,20 +39,20 @@
   },
   "rich-text#securityImage-0": {
     "props": {
-      "text": "[![Selo pci]( /arquivos/pci-menor.png 'Acesse a PCI')](http://secure.vtex.com/?an=isinaliza)",
+      "text": "[![Selo pci]( /arquivos/new-pci.png 'Acesse a PCI')](http://secure.vtex.com/?an=isinaliza)",
       "blockClass": ["security__image","pci"]
     }
   },
   "rich-text#securityImage-1": {
     "props": {
-      "text": "[![Selo lets encrypt]( /arquivos/logo-lets-encrypt.png 'Acesse a lets encrypt')](https://letsencrypt.org/)",
+      "text": "[![Selo lets encrypt]( /arquivos/new-encrypt.png 'Acesse a lets encrypt')](https://letsencrypt.org/)",
       "blockClass": ["security__image","lets-encrypt"]
     }
   },
   "rich-text#securityImage-2": {
     "props": {
-      "text": "[![Selo ebit](/arquivos/pci-menor.png' Acesse a PCI')](http://secure.vtex.com/?an=isinaliza) [![Selo lets encrypt]( /arquivos/logo-lets-encrypt.png 'Acesse a lets encrypt')](https://letsencrypt.org/)",
-      "blockClass": ["security__image","e-bit","no-margin-r"]
+      "text": " [![Selo Google]( /arquivos/new-safe-google.png 'Acesse a Google')]( https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.isinaliza.com%2F)",
+      "blockClass": ["security__image","google","no-margin-r"]
     }
   }
 }

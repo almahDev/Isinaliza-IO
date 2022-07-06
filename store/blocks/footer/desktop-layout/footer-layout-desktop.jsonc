@@ -71,7 +71,8 @@
       "blockClass": ["footer__content-col", "footer__content-col--desktop-3"],
       "verticalAlign": "top",
       "fullWidth": true,
-      "width": "20%"
+      "width": "20%",
+      "marginRight": 2
     }
   },
 
@@ -94,13 +95,16 @@
   },
 
   "flex-layout.col#footer-0-box-4": {
-    "children": ["flex-layout.row#payment-0"],
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#newsletterRow"
+    ],
     "props": {
-      "blockClass": ["footer__content-col", "footer__content-col--desktop-3"],
+      "blockClass": ["footer__content-col", "footer__content-col--desktop-4"],
       "verticalAlign": "top",
       "fullWidth": true,
       "width": "20%",
-      "marginRight": 6
+      "marginLeft": 6
     }
   }
 }

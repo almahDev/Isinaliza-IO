@@ -60,7 +60,7 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 2,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "showNavigationArrows": "never",
@@ -281,7 +281,7 @@
     "props":{
       "horizontalAlign": "center",
       "marginTop": 5,
-      "marginBottom": 7,
+      "marginBottom": 9,
       "preventHorizontalStretch": true,
       "colGap": 7
     }

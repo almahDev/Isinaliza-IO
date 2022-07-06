@@ -50,7 +50,7 @@
 
   "rich-text#sobre-footer":{
     "props": {
-      "text": "SOBRE A SPORTBRAS",
+      "text": "INSTITUCIONAL",
       "font": "t-heading-5",
       "textPosition": "CENTER",
       "textAlign": "CENTER",
@@ -71,7 +71,8 @@
 
   "flex-layout.col#footer-1-box-1":{
     "children": [
-      "flex-layout.col#payment-container"
+      "flex-layout.row#newsletter",
+      "flex-layout.row#newsletterRow"
     
     ],
     "props": {
@@ -82,7 +83,7 @@
   },
   "flex-layout.col#footer-1-box-2":{
     "children": [
-     /* "flex-layout.col#social-container"*/
+      "rich-text#social-footer"
     
     ],
     "props": {
@@ -91,9 +92,19 @@
         "width": "100%"
     }
   },
+
+  "rich-text#social-footer":{
+    "props": {
+      "text": "REDES SOCIAIS \n [![Facebook]( /arquivos/facebook-dark.png 'Facebook')](https://www.facebook.com/isinaliza/) [![Instagram]( /arquivos/instagram-dark.png 'Instagram')](https://www.instagram.com/isinaliza/) [![Youtube]( /arquivos/youtube-dark.png 'Youtube')](https://www.youtube.com/channel/UCs2-MYW4YR-OuMjzJQP4lHA)",
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "footer-sobre"
+    }
+  },
   "flex-layout.col#footer-1-box-3":{
     "children": [
-      "flex-layout.col#powered-container"
+      "flex-layout.row#powered"
     ],
     "props": {
         "blockClass": ["footer__content-col","footer__content-col--mobile-3"],

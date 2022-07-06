@@ -29,9 +29,7 @@
   justify-content: space-between;
 }
 
-:global(.vtex-checkout-summary-0-x-price) {
-  font-family: "StretchPro", sans-serif;
-}
+
 
 :global(.vtex-reviews-and-ratings-3-x-loginLink) {
   padding-left: 0px;
@@ -85,5 +83,12 @@
 .headerStickyRow--main-header-mobile {
   padding: 0px 15px;
   background-color: #fff;
+}
+
+@media (max-width: 760px) {
+  .headerStickyRow--main-header-mobile {
+    border-top: solid 18px #0054A8;
+    padding-top: 1em;
+  }
 }
 

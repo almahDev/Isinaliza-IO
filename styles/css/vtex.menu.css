@@ -1,9 +1,88 @@
-.styledLinkContent--contacts-menu-footer{
-    color:#808080;
+.styledLinkContent--contacts-menu-footer {
+    color: #808080;
 }
 
 .styledLinkContainer--menu-footer {
     margin: 0px 0px 12px;
     padding: 0px;
     color: #3C3C3C;
-  }
+}
+
+.accordionIcon--linkList-footer-toggle--isOpen {
+    transform: translateY(-50%) rotate(180deg);
+    content: url(/arquivos/arrow-menu.svg);
+    transition: 0.3s;
+    width: 16px;
+    margin-top: 10px;
+}
+
+.accordionIcon--linkList-footer-toggle--isClosed {
+    transform: translateY(-50%) rotate(0deg);
+    content: url(/arquivos/arrow-menu.svg);
+    transition: 0.3s;
+    width: 16px;
+    margin-top: 10px;
+}
+
+.menuContainerNav--footer-accordion {
+    border: solid white;
+    border-width: 0px 0px;
+}
+
+.menuContainerNav--second-accordion {
+    margin-top: -7px;
+}
+
+:global(.vtex-menu-2-x-menuItemInnerDiv--linkList-footer-toggle) {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background-color: #F3F3F3
+}
+
+.styledLinkContent--linkList-footer-toggle {
+    margin-top: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+
+@media (max-width: 760px) {
+    .styledLinkContent--submenu {
+        font-size: 18px;
+        color: white
+    }
+
+    .styledLinkContainer--submenu--inst {
+        margin: 0;
+        padding: 0px;
+    }
+
+    .styledLinkContent--submenu--inst {
+        color: #F3F3F3;
+        border: 2px solid #F3F3F3;
+        border-radius: 2px;
+        padding: 13px 12px;
+        margin: 0;
+    }
+
+    .menuItem--linkList-footer-toggle :global(.vtex-menu-2-x-styledLink) {
+        font-size: 15px;
+    }
+
+    .menuItem--linkList-footer-toggle :global(.vtex-menu-2-x-styledLinkContainer) {
+        margin-bottom: 0px;
+    }
+
+    .styledLinkContent--linkList-footer-toggle {
+        font-size: 20px;
+    }
+
+    .menuItem--menu-footer {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .styledLinkContent--menu-sobre-footer{
+        justify-content: center;
+    }
+}

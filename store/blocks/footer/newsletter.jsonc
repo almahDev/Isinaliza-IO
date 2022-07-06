@@ -1,7 +1,12 @@
 {
+  "flex-layout.row#newsletter":{
+    "children":[
+      "rich-text#newsletter"
+
+    ]
+  },
   "flex-layout.row#newsletterRow": {
     "children": [
-      "flex-layout.col#newsletter-title",
       "flex-layout.col#newsletter-proper"
      
     ],
@@ -27,34 +32,27 @@
       },
   "newsletter-form": {
     "children": [
-      "newsletter-input-name",
       "newsletter-input-email",
       "newsletter-submit"
     ]
   },
   "rich-text#newsletter": {
     "props": {
-      "text": "Vamos manter contato!",
-      "font": "t-heading-3",
+      "text": "DEIXE SEU EMAIL",
+      "font": "t-heading-5",
       "textPosition": "LEFT",
       "textAlign": "LEFT",
-      "blockClass": "newsletterTitle"
+      "blockClass": "footer-sobre"
     }
   },
   "newsletter-input-email": {
     "props": {
-      "placeholderText": "E-mail",
+      "placeholderText": "Deixe seu E-mail",
       "inputLabel": " ",
       "blockClass": "newsletterInput"
     }
   },
-  "newsletter-input-name": {
-    "props": {
-      "placeholderText": "Nome",
-      "inputLabel": " ",
-      "blockClass": "newsletterInput"
-    }
-  },
+
   "newsletter-submit":{
       "props":{
         "submitButtonLabel": "ENVIAR"

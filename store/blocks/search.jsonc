@@ -76,19 +76,19 @@
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result",
-      "search-products-progress-bar",
       "flex-layout.row#promos-search",
       "flex-layout.row#banners-home2"
     ],
     "props": {
       "pagination": "show-more",
-      "preventRouteChange": false,
+      "preventRouteChange": true,
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
       },
-      "HiddenFacets": {
-        "categories": true
+      "hiddenFacets": {
+        "categories": true,
+        "brands": true
       }
     }
   },
@@ -157,7 +157,8 @@
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
+      "flex-layout.row#fetchmore",
+      "search-products-progress-bar"
     ],
     "props": {
       "width": "grow",
@@ -289,7 +290,9 @@
 
   "filter-navigator.v3": {
     "props": {
-      "initiallyCollapsed": true
+      "initiallyCollapsed": true,
+      "navigationTypeOnMobile":"collapsible"
+
     }
   },
 

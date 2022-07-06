@@ -14,8 +14,7 @@
   "flex-layout.row#powered" : {
     "children": [
       "rich-text#poweredby",
-      "rich-text#poweredImage-0",
-      "rich-text#poweredImage-1"
+      "rich-text#poweredImage-0"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -30,14 +29,8 @@
   },
   "rich-text#poweredImage-0": {
     "props": {
-      "text": "[![Logo WEONNE](/arquivos/logo-weonne.svg 'Acesse a WEONNE')](https://weonne.com/)",
-      "blockClass": ["powered__image","cbyk"]
-    }
-  },
-  "rich-text#poweredImage-1": {
-    "props": {
-      "text": "[![Logo vtex](/arquivos/VTEX_logo.svg 'Acesse a Vtex')](https://vtex.com/)",
-      "blockClass": ["powered__image","vtex","no-margin-r"]
+      "text": "[![Logo ALMAH](/arquivos/almah-logo.svg 'Acesse a almah')](http://www.almahcomunicacao.com.br)",
+      "blockClass": ["powered__image","almah"]
     }
   }
 }
