@@ -157,7 +157,8 @@
     text-align: center;
     color:#1E7BC4;
     font-weight: bold;
-    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    text-transform: uppercase;
 
 }
 
@@ -172,6 +173,11 @@
         width: 35%;
     }
 
+    .productNameContainer {
+        width: 73%;
+    }
+
+  
 }
 
 

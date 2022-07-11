@@ -30,6 +30,16 @@
     padding: 12px 8px;
 }
 
+.flexColChild--Institutionaltitleblock1{
+    width: 90%;
+    margin-left: -10%;
+}
+
+.flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
 @media (max-width: 760px) {
     .flexRow--footer__copyright {
         background-color: #F5F5F5;
@@ -45,6 +55,7 @@
         font-size: 12px;
         padding: 3px 0px;
     }
+  
 }
 
 

@@ -309,7 +309,8 @@
       "flex-layout.row#searchbread",
       "flex-layout.row#notfound",
       "flex-layout.row#notfoundsuggestionsTitle",
-      "flex-layout.row#notfoundsuggestions"
+      "flex-layout.row#notfoundsuggestions",
+      "flex-layout.row#banners-home2"
     ]
   },
   "flex-layout.row#notfound": {
@@ -335,11 +336,11 @@
   "rich-text#suggestionsTitle": {
     "title": "Sugestoes",
     "props": {
-      "text": "SUGESTÕES",
-      "font": "t-heading-2",
-      "textPosition": "LEFT",
-      "textAlign": "LEFT",
-      "blockClass": "sectorTitle"
+      "text": "VOCÊ PODE GOSTAR DE",
+      "font": "t-heading-4",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": "sectionRichTitle"
     }
   },
   "flex-layout.row#notfoundsuggestions":{
@@ -350,9 +351,24 @@
 
   "flex-layout.col#notFoundSuggestions":{
     "children":[
-      "list-context.product-list#maisVendidos"
+      "list-context.product-list#notfound"
     ]
   },
+
+  "list-context.product-list#notfound":{
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "146",
+      "maxItems": 12
+    }
+  },
+
   "breadcrumb": {
     "props": {
       "showOnMobile": true

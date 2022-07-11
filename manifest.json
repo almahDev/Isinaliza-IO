@@ -6,7 +6,8 @@
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
-    "assets": "0.x"
+    "assets": "0.x",
+    "react": "3.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
@@ -55,7 +56,10 @@
     "vtex.checkout-summary": "0.x",
     "vtex.disclosure-layout": "1.x",
     "vtex.recommendation-shelf": "1.x",
-    "vtex.shelf-components": "0.x"
+    "vtex.shelf-components": "0.x",
+    "vtex.overlay-layout": "0.x",
+    "vtex.store-form": "0.x",
+    "vtex.product-context": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

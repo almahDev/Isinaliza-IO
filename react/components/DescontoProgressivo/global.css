@@ -1,0 +1,50 @@
+/*.progressive-discount-container {
+  display: flex;
+  width: 130px !important;
+}*/
+
+.progressive-discount-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  color: inherit;
+  border-radius: 5px;
+  border: solid 1px #bfbcbc;
+  padding: 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: 0.3s all;
+}
+
+.progressive-discount-container label:hover {
+  background-color: #FDEEEB;
+  border: solid 1px #F04C25;
+  transition: 0.3s all;
+}
+
+.progressive-discount-container label:focus {
+  background-color: #FDEEEB;
+  border: solid 1px #F04C25;
+  transition: 0.3s all;
+}
+
+.progressive-discount-container label .progressive-discount-number {
+  font-size: 28px;
+  color: #222222;
+}
+
+.progressive-discount-container label .progressive-discount-discounts {
+  color: #0088c3!important;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.old-price {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+

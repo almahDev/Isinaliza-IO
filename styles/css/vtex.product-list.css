@@ -1,8 +1,9 @@
 .inputContainer {
     font-size: 11px;
     border-color: #53A1EF !important;
-    color: white;
+    color: white !important;
     padding-left: 6px;
+    background-color: #53A1EF !important;
 }
 
 .quantitySelectorButton {
@@ -25,4 +26,8 @@
 
 .productBrandName{
 display: none;
+}
+
+.quantitySelectorButton{
+    color: white !important
 }

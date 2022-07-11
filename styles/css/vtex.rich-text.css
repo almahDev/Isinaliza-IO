@@ -44,6 +44,40 @@
     margin: 0px 10px;
 }
 
+.paragraph--InstitutionalTitle {
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 28px;
+}
+
+.container--menu-institucional-dropdown {
+    border: 2px solid #ED6F00;
+    border-radius: 2px;
+    color: #ED6F00;
+}
+
+.paragraph--menu-institucional-dropdown {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.container--menu-institucional-dropdown {
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12' fill='none'%3E%3Cpath d='M2 2L8.74072 9.44704L15 2' stroke='%23ED6F00' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+.paragraph--subit-success {
+    color: #7AE462
+}
+
+
+.container--InstitutionalText {
+    padding-left: 40px;
+}
 
 @media (max-width: 760px) {
     .container--footer-sobre {

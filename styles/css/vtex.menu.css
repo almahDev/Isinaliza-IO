@@ -45,6 +45,26 @@
     margin-bottom: 1em;
 }
 
+.styledLinkContent--submenu--inst{
+    color: #C4C4C4;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: solid 3px #C4C4C4;
+    padding: 13px 12px;
+    font-weight: 600;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.styledLinkContent--submenu--inst:hover{
+    border: solid 3px #ED6F00;
+    color: #ED6F00;
+}
+
+.menuItem--submenu--inst .styledLinkContainer {
+    margin: 0px;
+  }
 
 @media (max-width: 760px) {
     .styledLinkContent--submenu {
@@ -85,4 +105,11 @@
     .styledLinkContent--menu-sobre-footer{
         justify-content: center;
     }
+
+    .styledLinkContent--submenu--inst{
+        border: solid 3px #ED6F00;
+        color: #ED6F00;
+        margin-bottom: 0.3em;
+    }
+    
 }
