@@ -6,9 +6,7 @@ import { useProduct } from "vtex.product-context";
 
 import "./global.css";
 
-const DescontoProgressivo: StorefrontFunctionComponent<DescontoProgressivoProps> =
-    // seta o valor do input
-    ({ value = 1, discountText = "" }) => {
+const DescontoProgressivo: StorefrontFunctionComponent<DescontoProgressivoProps> = ({ value = 1, discountText = "" }) => {
         const dispatch = useProductDispatch();
         const onChange = () => {
             dispatch({ type: "SET_QUANTITY", args: { quantity: value } });
@@ -72,19 +70,19 @@ const DescontoProgressivo: StorefrontFunctionComponent<DescontoProgressivoProps>
            
           }
 
-          if (productQuantity >= 10 && productQuantity < 19) {
+          if (productQuantity >= 10 && productQuantity <= 19) {
             descontoCalc(0.03);
           }
 
-          if (productQuantity >= 20 && productQuantity < 29) {
+          if (productQuantity >= 20 && productQuantity <= 29) {
             descontoCalc(0.08);
           }
 
-          if (productQuantity >= 30 && productQuantity < 39) {
+          if (productQuantity >= 30 && productQuantity <= 39) {
             descontoCalc(0.1);
           }
 
-          if (productQuantity >= 40 && productQuantity < 49) {
+          if (productQuantity >= 40 && productQuantity <= 49) {
             descontoCalc(0.15);
           }
           if (productQuantity >= 50) {

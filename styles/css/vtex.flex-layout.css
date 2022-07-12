@@ -55,6 +55,17 @@
         font-size: 12px;
         padding: 3px 0px;
     }
+
+    .flexRowContent--progressive-discount{
+        display: flex;
+    flex-wrap: wrap;
+    }
+
+    .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 32% !important;
+        margin-bottom: 1em;
+    }
+    
   
 }
 
