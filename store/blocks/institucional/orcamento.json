@@ -127,7 +127,7 @@
   "flex-layout.col#orcamento3":{
 "children":["image#orcamento2"],
 "props":{
-    "width": "33%",
+    "width": "50%",
     "horizontalAlign": "left"
 }
   },
@@ -142,7 +142,8 @@
     "children": ["form#orcamento"],
     "props":{
         "width": "33%",
-        "horizontalAlign": "left"
+        "horizontalAlign": "left",
+        "blockClass":"orcamentoForm"
     }
     
   },
@@ -161,9 +162,9 @@
       "form-input.textarea#mensagemOrc",
       "form-submit"
     ],
-    "blocks": ["form-success"]
+    "blocks": ["form-success#orc"]
   },
-  "form-success": {
+  "form-success#orc": {
     "children": ["rich-text#successSubmitOrc"]
   },
   "form-input.text#nomeOrc": {
