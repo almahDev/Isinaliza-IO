@@ -148,7 +148,10 @@
   },
 
   "flex-layout.row#mega-menu":{
-    "children":["mega-menu"]
+    "children":["mega-menu"],
+    "props":{
+      "blockClass":"mega-menu-container"
+    }
   },
   "mega-menu":{
     "props":{

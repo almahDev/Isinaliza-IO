@@ -41,6 +41,13 @@
 }
 
 
+.flexRow--mega-menu-container{
+    position: sticky;
+    top: 160px;
+    z-index: 9999;
+}
+
+
 
 .flexRow--menu-content-area-personalizadas{
     position: relative;
@@ -62,8 +69,30 @@
     left: 28%;
 }
 
+.flexRow--menu-content-area-TRANSITO{
+    position: relative;
+    left: 15%;
+}
+
+.flexRow--menu-content-area-INCENDIO{
+    position: relative;
+    left: -7%;
+}
+
 .flexRow--menu-content-area{
     background-color: white;
+    border: solid white 13px;
+    border-top: 0;
+    border-left: 0;
+
+}
+.flexRowContent--menu-content-area{
+    padding: 0;
+}
+
+.flexRow--menu-content-area :global(.vtex-store-components-3-x-container){
+    margin: 0;
+    padding: 0;
 }
 
 

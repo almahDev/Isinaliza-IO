@@ -321,19 +321,19 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#mulheres-submenu-block"
+            "vtex.menu@2.x:submenu#TRANSITO-submenu-block"
         ]
     },
-    "vtex.menu@2.x:submenu#mulheres-submenu-block": {
+    "vtex.menu@2.x:submenu#TRANSITO-submenu-block": {
         "props": {
             "width": "100%",
             "blockClass": "main-menu-row-desk"
         },
         "children": [
-            "flex-layout.row#mulheres"
+            "flex-layout.row#TRANSITO"
         ]
     },
-    "flex-layout.row#mulheres": {
+    "flex-layout.row#TRANSITO": {
         "props": {
             "blockClass": [
                 "menu-content-area",
@@ -344,53 +344,29 @@
             "horizontalAlign":"center"
         },
         "children": [
-            "flex-layout.col#mulheres1",
-            "flex-layout.col#mulheres2",
-            "flex-layout.col#mulheres3",
-            "flex-layout.col#imagemMulheres"
+            "flex-layout.col#TRANSITO",
+            "flex-layout.col#IMG-TRANSITO"
         ]
     },
-    "flex-layout.col#mulheres1": {
+    "flex-layout.col#TRANSITO": {
         "props": {
-            "width": "20%",
             "preventVerticalStretch": true
         },
         "children": [
-            "vtex.menu@2.x:menu#submenu-cat-mulheres-col1"
+            "vtex.menu@2.x:menu#submenu-cat-TRANSITO"
         ]
     },
-    "flex-layout.col#mulheres2": {
-        "props": {
-            "width": "20%",
-            "preventVerticalStretch": true
-        },
+ 
+ 
+    "flex-layout.col#IMG-TRANSITO": {
         "children": [
-            "vtex.menu@2.x:menu#submenu-cat-mulheres-col2",
-            "vtex.menu@2.x:menu#submenu-cat-mulheres-col2b"
+            "image#IMG-TRANSITO"
         ]
     },
-    "flex-layout.col#mulheres3": {
+    "image#IMG-TRANSITO": {
         "props": {
-            "width": "20%",
-            "preventVerticalStretch": true
-        },
-        "children": [
-            "vtex.menu@2.x:menu#submenu-cat-mulheres-col3"
-        ]
-    },
-    "flex-layout.col#imagemMulheres": {
-        "props": {
-            "width": "grow",
-            "horizontalAlign": "right"
-        },
-        "children": [
-            "image#imagemMulheres"
-        ]
-    },
-    "image#imagemMulheres": {
-        "props": {
-            "src": "/arquivos/Rectangle1.png",
-            "maxHeight": 355
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
         }
     },
     // ----------------- BRAILLE TÁTIL ITEM -------------------
@@ -486,19 +462,19 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#roupas-submenu-block"
+            "vtex.menu@2.x:submenu#INCENDIO-submenu-block"
         ]
     },
-    "vtex.menu@2.x:submenu#roupas-submenu-block": {
+    "vtex.menu@2.x:submenu#INCENDIO-submenu-block": {
         "props": {
             "width": "100%",
             "blockClass": "main-menu-row-desk"
         },
         "children": [
-            "flex-layout.row#roupas"
+            "flex-layout.row#INCENDIO"
         ]
     },
-    "flex-layout.row#roupas": {
+    "flex-layout.row#INCENDIO": {
         "props": {
             "blockClass": [
                 "menu-content-area",
@@ -509,52 +485,29 @@
             "horizontalAlign":"center"
         },
         "children": [
-            "flex-layout.col#roupas1",
-            "flex-layout.col#roupas2",
-            "flex-layout.col#roupas3",
-            "flex-layout.col#imagemRoupas"
+            "flex-layout.col#INCENDIO",
+            "flex-layout.col#IMG-INCENDIO"
         ]
     },
-    "flex-layout.col#roupas1": {
+    "flex-layout.col#INCENDIO": {
         "props": {
-            "width": "20%",
             "preventVerticalStretch": true
         },
         "children": [
-            "vtex.menu@2.x:menu#submenu-cat-roupas-col1"
+            "vtex.menu@2.x:menu#submenu-cat-INCENDIO"
         ]
     },
-    "flex-layout.col#roupas2": {
-        "props": {
-            "width": "20%",
-            "preventVerticalStretch": true
-        },
+
+    "flex-layout.col#IMG-INCENDIO": {
+     
         "children": [
-            "vtex.menu@2.x:menu#submenu-cat-roupas-col2"
+            "image#IMG-INCENDIO"
         ]
     },
-    "flex-layout.col#roupas3": {
+    "image#IMG-INCENDIO": {
         "props": {
-            "width": "20%",
-            "preventVerticalStretch": true
-        },
-        "children": [
-            "vtex.menu@2.x:menu#submenu-cat-roupas-col3"
-        ]
-    },
-    "flex-layout.col#imagemRoupas": {
-        "props": {
-            "width": "grow",
-            "horizontalAlign": "right"
-        },
-        "children": [
-            "image#imagemRoupas"
-        ]
-    },
-    "image#imagemRoupas": {
-        "props": {
-            "src": "/arquivos/Rectangle1.png",
-            "maxHeight": 355
+            "src": "assets/banners/generico-banner.png",
+            "maxHeight": 234
         }
     }
 
