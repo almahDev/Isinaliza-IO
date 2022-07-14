@@ -1,5 +1,5 @@
 {
-    "vtex.menu@2.x:menu#submenu-cat-calcados-col1":{
+    "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS":{
         "props":{
             "orientation": "vertical",
             "blockClass":"row-menu-col",
@@ -12,8 +12,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Botas de trilha",
-                    "href": "/calcados/botas-de-trilha"
+                    "text": "5s Todo Dia",
+                    "href": "/placas-personalizadas/5s-todo-dia"
                 }
             },
             {
@@ -24,8 +24,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Calçados de academia",
-                    "href": "/calcados/calcados-de-academia"
+                    "text": "Aluga-se",
+                    "href": "/placas-personalizadas/aluga-se"
                 }
             },
             {
@@ -36,8 +36,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Calçados de basquete",
-                    "href": "/calcados/calcados-de-basquete"
+                    "text": "Atenção",
+                    "href": "/placas-personalizadas/atencao"
                 }
             },
             {
@@ -48,8 +48,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Calçados de corrida",
-                    "href": "/calcados/calcados-de-corrida"
+                    "text": "Aviso",
+                    "href": "/placas-personalizadas/aviso"
                 }
             },
             {
@@ -60,8 +60,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Calçados de skate",
-                    "href": "/calcados/calcados-de-skate"
+                    "text": "Coleta Seletiva",
+                    "href": "/placas-personalizadas/coleta-seletiva"
                 }
             },
             {
@@ -72,8 +72,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Chinelos de dedo e slide",
-                    "href": "/calcados/chinelos-de-dedo-e-slide"
+                    "text": "Cuidado",
+                    "href": "/placas-personalizadas/cuidado"
                 }
             },
             {
@@ -84,8 +84,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Meias e meiões",
-                    "href": "/calcados/meias-e-meioes"
+                    "text": "Higiene",
+                    "href": "/placas-personalizadas/higiene"
                 }
             },
             {
@@ -96,8 +96,8 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Papetes",
-                    "href": "/calcados/papetes"
+                    "text": "Meio Ambiente",
+                    "href": "/placas-personalizadas/meio-ambiente"
                 }
             },
             {
@@ -108,76 +108,86 @@
                     "type": "internal",
                     "noFollow": false,
                     "blockClass": "sub-cat-item",
-                    "text": "Sapatênis e casual",
-                    "href": "/calcados/sapatenis-e-casual"
+                    "text": "Pense",
+                    "href": "/placas-personalizadas/pense"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Perigo",
+                    "href": "/placas-personalizadas/perigo"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Proibido",
+                    "href": "/placas-personalizadas/proibido"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Qualidade",
+                    "href": "/placas-personalizadas/qualidade"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Reservado",
+                    "href": "/placas-personalizadas/reservado"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Segurança",
+                    "href": "/placas-personalizadas/seguranca"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Vende-se",
+                    "href": "/placas-personalizadas/vende-se"
                 }
             }
+              
             ]
-        }
-    },
-
-
-
-    "vtex.menu@2.x:menu#submenu-cat-calcados-col2":{
-        "props":{
-            "orientation": "vertical",
-            "blockClass":"row-menu-col",
-            "items": [
-              {
-                "type": "custom",
-                "id": "",
-                "highlight": false,
-                "itemProps": {
-                    "type": "internal",
-                    "noFollow": false,
-                    "blockClass": "sub-cat-item",
-                    "text": "Campo",
-                    "href": "/calcados/chuteiras/campo"
-                }
-            },
-            {
-                "type": "custom",
-                "id": "",
-                "highlight": false,
-                "itemProps": {
-                    "type": "internal",
-                    "noFollow": false,
-                    "blockClass": "sub-cat-item",
-                    "text": "Futsal",
-                    "href": "/calcados/chuteiras/futsal"
-                }
-            },
-            {
-                "type": "custom",
-                "id": "",
-                "highlight": false,
-                "itemProps": {
-                    "type": "internal",
-                    "noFollow": false,
-                    "blockClass": "sub-cat-item",
-                    "text": "Society",
-                    "href": "/calcados/chuteiras/society"
-                }
-            }
-            ]
-        },
-        "children":[
-            "menu-item#subcat-calcados-2"
-        ]
-    },
-
-    "menu-item#subcat-calcados-2": {
-        "props": {
-            "type": "custom",
-            "id": "",
-            "blockClass": ["submenu", "subcat-title"],
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "noFollow": false,
-                "text": "Chuteiras",
-                "href": "/calcados/chuteiras"
-            }
         }
     }
+
+    
 }

@@ -40,13 +40,35 @@
     padding-left: 0.3rem;
 }
 
-.flexColChild--orcamentoForm{
-    box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 25%);
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 2vh 2vw;
-    margin-left: -14%;
+
+
+.flexRow--menu-content-area-personalizadas{
+    position: relative;
+    left: 35%;
 }
+
+.flexRow--menu-content-area-CAVALETE-DE-SINALIZACAO{
+    position: relative;
+    left: -16%;
+}
+
+.flexRow--menu-content-area-CONDOMINIO{
+    position: relative;
+    left: 20%;
+}
+
+.flexRow--menu-content-area-BRAILLE{
+    position: relative;
+    left: 28%;
+}
+
+.flexRow--menu-content-area{
+    background-color: white;
+}
+
+
+
+
 
 @media (max-width: 760px) {
     .flexRow--footer__copyright {
@@ -73,6 +95,15 @@
         width: 32% !important;
         margin-bottom: 1em;
     }
+
+    .flexRowContent--orcamentos-points{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexRowContent--orcamentos-points :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 50% !important;
+    }
     
   
 }
@@ -81,6 +112,18 @@
 @media (min-width: 1125px) {
     :global(.vtex-flex-layout-0-x-flexCol--filterCol) {
       width: 330px;
+    }
+
+    .flexColChild--orcamentoForm{
+        box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 25%);
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 2vh 2vw;
+        margin-top: 10%;
+    }
+    
+    .flexCol--orcamentoForm{
+        margin-left: -100%;
     }
     
   }

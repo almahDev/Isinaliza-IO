@@ -9,7 +9,8 @@
     "children": [
       "responsive-layout.desktop#topbar",
       "header-row#1-desktop",
-      "header-row#2-desktop"
+      "header-row#2-desktop",
+      "flex-layout.row#mega-menu"
     ]
   },
   "responsive-layout.desktop#topbar": {
@@ -133,10 +134,26 @@
           }
       }, */
   "header-row#2-desktop": {
-    "children": ["vtex.menu@2.x:menu#category-menu-01"],
+    "children": ["mega-menu-trigger-btn", "vtex.menu@2.x:menu#category-menu-01"],
     "props": {
       /*"sticky": true,*/
       "blockClass": "main-menu"
+    }
+  },
+
+  "mega-menu-trigger-btn":{
+    "props":{
+      "id":"everything-menu"
+    }
+  },
+
+  "flex-layout.row#mega-menu":{
+    "children":["mega-menu"]
+  },
+  "mega-menu":{
+    "props":{
+      "title":"Departamentos",
+      "blockClass":"mega-menu"
     }
   },
 
@@ -193,22 +210,15 @@
   "drawer#menu-mobile": {
     "children": [
       "login#mob",
-      "rich-text#menu-mob-title",
-      "vtex.menu@2.x:menu#category-menu-01--mob"
+      "mega-menu-go-back-btn",
+      "mega-menu"
     ],
     "props": {
       "blockClass": "menu-mobile"
     }
   },
 
-  "rich-text#menu-mob-title": {
-    "props": {
-      "text": "Todas as Categorias",
-      "textPosition": "LEFT",
-      "textAlign": "LEFT",
-      "blockClass": "sectorTitle-mob"
-    }
-  },
+
 
   /*   "drawer": {
           "children": ["flex-layout.row#drawer"],
@@ -232,7 +242,7 @@
     "props": {
       //"optionsTitle": "Elija una de las opciones para confirmar su identidad",
       // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
-      "showIconProfile": false,
+      "showIconProfile": true,
       "mirrorTooltipToRight": true,
       "iconLabel": "ENTRE OU CADASTRE-SE",
       "labelClasses": "login__header"

@@ -153,9 +153,9 @@
     display: none;
 }
 
-.productDescriptionTitle{
+.productDescriptionTitle {
     text-align: center;
-    color:#1E7BC4;
+    color: #1E7BC4;
     font-weight: bold;
     margin-top: 1.5em;
     text-transform: uppercase;
@@ -163,7 +163,7 @@
 }
 
 
-.infoCardContainer--orcamento-cards{
+.infoCardContainer--orcamento-cards {
     height: 205px;
     align-items: flex-start;
     padding: 8px;
@@ -176,6 +176,16 @@
     margin-right: 20px;
     box-shadow: 0 4px 4px 2px rgb(0 0 0 / 25%);
 }
+
+:global(.vtex-mega-menu-2-x-styledLinkText--mega-menu):hover {
+    color: #fe5000;
+}
+
+:global(.vtex-mega-menu-2-x-styledLinkText--mega-menu) {
+    font-weight: 400;
+}
+
+
 
 @media (max-width: 1300px) {
     .container {
@@ -192,7 +202,7 @@
         width: 73%;
     }
 
-  
+
 }
 
 
@@ -207,8 +217,36 @@
     }
 
     .price_listPriceContainer--pdp {
-   
+
         margin-left: -43%;
+    }
+
+    .infoCardContainer--orcamento-cards {
+        height: 218px;
+        margin-bottom: 3em;
+    }
+
+    :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu), :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu), :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu), :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
+        color: white;
+    }
+    :global(.vtex-mega-menu-2-x-goBackButtonText){
+        color: white;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    :global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu){
+        color: #FFF !important;
+    }
+
+    :global(.vtex-login-2-x-label){
+        color: white;
+    display: block;
+    }
+
+    :global(.vtex-login-2-x-container){
+        display: block;
+        float: initial;
     }
 
 }

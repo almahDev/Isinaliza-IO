@@ -1,3 +1,6 @@
+.styledLinkContent--department-menu{
+    font-size: 12px;
+}
 .styledLinkContent--contacts-menu-footer {
     color: #808080;
 }
@@ -64,6 +67,22 @@
 
 .menuItem--submenu--inst .styledLinkContainer {
     margin: 0px;
+  }
+
+  .submenuWrapper--main-menu-row-desk{
+    background-color: transparent;
+    border: none;
+  }
+
+
+  .submenu--main-menu-row-desk{
+      height: 258px;
+      overflow: hidden;
+  }
+
+  .menuContainerNav--row-menu-col{
+    overflow: scroll;
+    height: 258px;
   }
 
 @media (max-width: 760px) {
