@@ -185,7 +185,9 @@
     font-weight: 400;
 }
 
-
+:global(.vtex-product-list-0-x-productVariationsContainer){
+    font-size: 11px;
+}
 
 @media (max-width: 1300px) {
     .container {
