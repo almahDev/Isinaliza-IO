@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import { DescontoProgressivoProps } from "./types";
 import { useProductDispatch } from "vtex.product-context/ProductDispatchContext";
 import { getDefaultSeller } from "./helpers/seller";

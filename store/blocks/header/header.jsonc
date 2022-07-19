@@ -269,18 +269,21 @@
       // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
       "showIconProfile": false,
       "iconLabel": "LOGIN OU CADASTRE-SE",
-      "labelClasses": "login__header"
-      /* "accountOptionLinks": [
-                  {
-                      "label": "Mi Cuenta",
-                      "path": "/account",
-                      "cssClass": "myAccountLink"
-                  },                {
-                      "label": "Mis Pedidos",
-                      "path": "/account#/orders",
-                      "cssClass": "myAccountLink"
-                  }
-              ] */
+      "labelClasses": "login__header",
+      "accountOptionLinks":[
+        {
+          "label": "Meus Dados",
+          "path":"/account"
+        },
+        {
+          "label": "Meus Pedidos",
+          "path":"/account#/orders"
+        },
+        {
+          "label": "Alterar senha",
+          "path":"/account#/authentication"
+        }
+      ]
     }
   },
   "logo#mobile": {

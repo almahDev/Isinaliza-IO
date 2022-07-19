@@ -150,8 +150,8 @@
 
   "form#orcamento": {
     "props": {
-      "entity": "FC",
-      "schema": "contact"
+      "entity": "OC",
+      "schema": "orcamentoio"
     },
     "children": [
       "form-input.text#nomeOrc",
@@ -169,38 +169,38 @@
   },
   "form-input.text#nomeOrc": {
     "props": {
-      "pointer": "#/properties/message",
+      "pointer": "#/properties/name",
       "label": "Nome*"
     }
   },
   "form-input.text#emailOrc": {
     "props": {
-      "pointer": "#/properties/message",
+      "pointer": "#/properties/email",
       "label": "E-mail*"
     }
   },
   "form-input.text#CNPJOrc": {
     "props": {
-      "pointer": "#/properties/message",
+      "pointer": "#/properties/cnpj",
       "label": "CNPJ*"
     }
   },
   "form-input.text#telefoneOrc": {
     "props": {
-      "pointer": "#/properties/message",
+      "pointer": "#/properties/telefone",
       "label": "Telefone*"
     }
   },
 
   "form-input.upload#arquivo": {
     "props": {
-      "pointer": "#/properties/message"
+      "pointer": "#/properties/anexoFile"
     }
   },
 
   "form-input.textarea#mensagemOrc": {
     "props": {
-      "pointer": "#/properties/message",
+      "pointer": "#/properties/mensagem",
       "label": "Mensagem*"
     }
   },

@@ -1,0 +1,14 @@
+
+.vtex-flex-layout-0-x-flexRowContent--security__row .items-stretch:nth-child(4){
+width: 0% !important;
+}
+
+/*MUDANÇAS DE CSS QUE A LOJA NAO DEIXA FAZER*/
+
+.vtex-product-list-0-x-inputContainer input {
+    color: white;
+}
+
+.vtex-product-list-0-x-inputContainer span {
+    color: white;
+}

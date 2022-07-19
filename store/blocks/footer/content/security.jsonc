@@ -20,7 +20,8 @@
     "children": [
       "rich-text#securityImage-0",
       "rich-text#securityImage-1",
-      "rich-text#securityImage-2"
+      "rich-text#securityImage-2",
+      "seloAvaliacoes"
     ],
     "props": {
       "preventHorizontalStretch": true,

@@ -1,5 +1,20 @@
 {
     "progressive-discount": {
         "component": "DescontoProgressivo"
+      },
+
+      "reviews": {
+        "component": "AvaliacoesProd"
+      },
+      "storereviews": {
+        "component": "AvaliacoesIframe"
+      },
+      "productStars": {
+        "component": "AvaliacoesStars"
+      },
+      "seloAvaliacoes": {
+        "component": "SeloAvaliacoes"
       }
+
+      
 }
