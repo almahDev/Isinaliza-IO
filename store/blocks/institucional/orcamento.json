@@ -194,7 +194,8 @@
 
   "form-input.upload#arquivo": {
     "props": {
-      "pointer": "#/properties/anexoFile"
+      "pointer": "#/properties/anexoFile",
+      "accept":"image/*,.pdf,.doc,.xlsx,.csv"
     }
   },
 
