@@ -300,20 +300,9 @@
       "productLayout": "VERTICAL",
       "maxSuggestedProducts": 2
     },
-    "blocks": ["product-summary.shelf#search"]
+    "blocks": ["product-summary.shelf"]
   },
 
-  "product-summary.shelf#search": {
-    "props": {
-      "blockClass": ["search-shelf"]
-    },
-    "children": [
-      "product-summary-name#search",
-      "product-summary-image#shelf",
-      "product-summary-price#search",
-      "product-summary-buy-button#search"
-    ]
-  },
 
   "product-summary-image#shelf": {
     "props": {
