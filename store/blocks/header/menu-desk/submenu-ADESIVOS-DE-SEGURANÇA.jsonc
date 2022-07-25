@@ -2,7 +2,7 @@
     "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA":{
         "props":{
             "orientation": "vertical",
-            "blockClass":"row-menu-col",
+            "blockClass":["row-menu-col", "row-menu-col-adesivos"],
             "items": [
               {
                 "type": "custom",

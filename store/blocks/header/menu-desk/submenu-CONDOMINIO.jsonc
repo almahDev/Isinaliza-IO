@@ -2,7 +2,7 @@
     "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO":{
         "props":{
             "orientation": "vertical",
-            "blockClass":"row-menu-col",
+            "blockClass":["row-menu-col","row-menu-col-condominio"],
             "items": [
               {
                 "type": "custom",

@@ -51,7 +51,7 @@
   "product-summary-image": {
     "props": {
       "showBadge": false,
-      "height": 268
+      "height": 250
     }
   },
 

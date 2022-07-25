@@ -2,7 +2,7 @@
     "vtex.menu@2.x:menu#submenu-cat-TRANSITO":{
         "props":{
             "orientation": "vertical",
-            "blockClass":"row-menu-col",
+            "blockClass":["row-menu-col","row-menu-col-transito"],
             "items": [
               {
                 "type": "custom",
