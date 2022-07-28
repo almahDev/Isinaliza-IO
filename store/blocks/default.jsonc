@@ -42,7 +42,7 @@
       "product-summary-space",
       "product-list-price#shelf",
       "product-selling-price#shelf",
-      "add-to-cart-button"
+      "add-to-cart-button#shelf"
     ],
     "props":{
       "blockClass": "default-prod-shelf"
@@ -67,10 +67,11 @@
   },
 
 
-  "add-to-cart-button": {
+  "add-to-cart-button#shelf": {
     "props": {
       "text": "COMPRAR",
-      "blockClass": "buy-button-shelf"
+      "blockClass": "buy-button-shelf",
+      "onClickBehavior":"go-to-product-page"
     }
   }
 

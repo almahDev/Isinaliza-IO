@@ -4,3 +4,13 @@
     }
 
 }
+
+
+.term, .link{
+    font-size: 11px;
+}
+
+.homeIcon{
+    width: 16px;
+    margin-top: 4px;
+}

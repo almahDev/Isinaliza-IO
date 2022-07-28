@@ -183,7 +183,9 @@
   },
   "header-row#2mobile": {
     "children": ["search-bar"],
-    "props": {}
+    "props": {
+      "blockClass": "main-header-mobile-search-box"
+    }
   },
   "drawer#search-bar": {
     "children": ["search-bar"],

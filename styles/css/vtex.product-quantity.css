@@ -3,7 +3,8 @@
 }
 
 .quantitySelectorContainer{
-    margin:0
+    margin:0;
+    padding-left: 12px;
 }
 
 :global(.vtex-numeric-stepper__input){

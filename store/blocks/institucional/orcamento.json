@@ -27,7 +27,7 @@
       "textPosition": "LEFT",
       "text": "Atendimento Corporativo",
       "font": "t-heading-4",
-      "blockClass": "sectionRichTitle"
+      "blockClass": "sectionRichTitleCorporate"
     }
   },
   "rich-text#orcamento-intro": {

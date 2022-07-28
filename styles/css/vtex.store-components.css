@@ -2,7 +2,6 @@
     padding: 0;
     padding-left: 10px;
     width: 68%;
-    align-items: center;
 }
 
 .infoCardContainer--sellerConditionCard {
@@ -10,7 +9,7 @@
 }
 
 .paragraph--sellerConditionCard {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .infoCardImageContainer--sellerConditionCard, .infoCardImageContainer--TelefoneCard {
@@ -103,6 +102,7 @@
 
 .productBrand {
     font-size: 26px;
+    letter-spacing: 0.03em;
 }
 
 .productNameContainer {
@@ -162,6 +162,20 @@
 
 }
 
+.productDescriptionTitle::after {
+    content:url('/arquivos/line-title.png');
+    position:relative;
+    right: -50px;
+    top: -7px;
+}
+
+.productDescriptionTitle::before{
+    content:url('/arquivos/line-title.png');
+    position:relative; 
+    left:-50px;
+    top: -7px;
+}
+
 
 .infoCardContainer--orcamento-cards {
     height: 205px;
@@ -185,8 +199,70 @@
     font-weight: 400;
 }
 
-:global(.vtex-product-list-0-x-productVariationsContainer){
+:global(.vtex-product-list-0-x-productVariationsContainer) {
     font-size: 11px;
+}
+
+.skuSelectorSubcontainer--tamanho {
+    order: 3
+}
+
+.skuSelectorSubcontainer--material {
+    order: 1
+}
+
+.skuSelectorSubcontainer--fixacao {
+    order: 2
+}
+
+.skuSelectorName{
+    color: #1E7BC4;
+    font-weight: 600;
+}
+:global( .vtex-dropdown__container):hover{
+    border-color: #ED6F00 !important;
+}
+
+:global( .vtex-dropdown__container){
+    border-color: #eb9659 !important;
+}
+
+:global(.vtex-styleguide-9-x-popup){
+    background-color: #FFC700 !important;
+}
+
+:global(.vtex-add-to-cart-button-0-x-tooltipLabelText){
+    color: #000;
+}
+
+:global(.vtex-dropdown__button){
+    background-color: #FDEEEB;
+
+}
+
+.productDescriptionText{
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 1.5em
+}
+
+:global(.vtex-store-components-3-x-productImagesThumb){
+    margin-top: 1em;
+}
+
+:global(.vtex-store-components-3-x-swiperPaginationClickable){
+    bottom: -4px;
+}
+
+:global(.vtex-menu-2-x-submenu--main-menu-row-desk){
+    width: 37%;
+    margin: auto;
+}
+
+:global(.vtex-store-components-3-x-productImage)::before{
+    content:url('/arquivos/flagPDP.png');
+    position:relative; 
+ 
 }
 
 @media (max-width: 1300px) {
@@ -198,6 +274,7 @@
 @media (min-width: 1200px) {
     .shippingContainer {
         width: 35%;
+        padding-left: 12px;
     }
 
     .productNameContainer {
@@ -210,6 +287,26 @@
 
 
 @media (max-width: 760px) {
+
+    .productDescriptionTitle::after {
+       /* content:url('/arquivos/line-title.png');*/
+        content:'';
+        position:relative;
+        right: -24px;
+        top: -7px;
+        width: 65px;
+        overflow: hidden;
+    }
+    
+    .productDescriptionTitle::before{
+       /* content:url('/arquivos/line-title.png');*/
+        content:'';
+        position:relative; 
+        left: -24px;
+        top: -7px;
+        width: 65px;
+        overflow: hidden;
+    }
     .infoCardContainer--sellerConditionCard {
         display: flex;
     }
@@ -231,22 +328,23 @@
     :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu), :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu), :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu), :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
         color: white;
     }
-    :global(.vtex-mega-menu-2-x-goBackButtonText){
+
+    :global(.vtex-mega-menu-2-x-goBackButtonText) {
         color: white;
         font-weight: 600;
         text-transform: capitalize;
     }
 
-    :global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu){
+    :global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu) {
         color: #FFF !important;
     }
 
-    :global(.vtex-login-2-x-label){
+    :global(.vtex-login-2-x-label) {
         color: white;
-    display: block;
+        display: block;
     }
 
-    :global(.vtex-login-2-x-container){
+    :global(.vtex-login-2-x-container) {
         display: block;
         float: initial;
     }

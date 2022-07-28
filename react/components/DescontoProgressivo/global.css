@@ -50,3 +50,23 @@
 #netreviewsWidgetNum3863widget10av{
   display: none;
   }
+
+
+
+  .nr-star:before{
+    font-size: 18px;
+  }
+
+  .netreviews_reviews_rate{
+    left: 98px;
+    top: 5px;
+  }
+
+  @media (max-width: 700px) {
+  
+    .progressive-discount-container label{
+      
+    height: 80px;
+
+    }
+  }

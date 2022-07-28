@@ -1,0 +1,8 @@
+.nr-star:before{
+    font-size: 18px;
+  }
+
+  .netreviews_reviews_rate{
+    left: 98px !important;
+    top: 5px !important;
+  }

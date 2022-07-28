@@ -1,5 +1,6 @@
 .headerRowBackground--main-menu {
   background-color: #F2F2F2;
+  box-shadow: 0 4px 4px RGB(0 0 0/40%);
 }
 
 .headerStickyRow--main-header{
@@ -90,5 +91,6 @@
     border-top: solid 18px #0054A8;
     padding-top: 1em;
   }
+
 }
 

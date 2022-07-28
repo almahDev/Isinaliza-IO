@@ -1,6 +1,6 @@
 import React  from "react";
 import { useProduct } from "vtex.product-context";
-
+import "./global.css";
 interface ProductAvailableProps {
     // children: any;
 };

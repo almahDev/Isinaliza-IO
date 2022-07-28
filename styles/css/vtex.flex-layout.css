@@ -28,7 +28,21 @@
 .flexRowContent--buy-area :global(.vtex-button){
     border-radius: 100px;
     padding: 12px 8px;
+    background-color: #fe5000!important;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
+
 }
+
+.flexRowContent--buy-area :global(.vtex-button):hover{
+    background-color: #ff7636!important;
+
+}
+
+.flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
 
 .flexColChild--Institutionaltitleblock1{
     width: 90%;
@@ -123,6 +137,7 @@
     .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
         width: 32% !important;
         margin-bottom: 1em;
+        
     }
 
     .flexRowContent--orcamentos-points{
