@@ -59,7 +59,8 @@
     "vtex.shelf-components": "0.x",
     "vtex.overlay-layout": "0.x",
     "vtex.store-form": "0.x",
-    "vtex.product-context": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.sandbox": "0.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x"

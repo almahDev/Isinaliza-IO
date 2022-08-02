@@ -64,7 +64,8 @@
       "flex-layout.row#payment-0",
       "flex-layout.row#payment-1",
       "flex-layout.row#security-0",
-      "flex-layout.row#security-1"
+      "flex-layout.row#security-1",
+      "flex-layout.row#security-2"
 
     ],
     "props": {

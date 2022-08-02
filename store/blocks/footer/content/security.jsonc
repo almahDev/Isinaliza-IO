@@ -2,7 +2,8 @@
   "flex-layout.col#security-container":{
     "children": [
       "flex-layout.row#security-0",
-      "flex-layout.row#security-1"
+      "flex-layout.row#security-1",
+      "flex-layout.row#security-2"
     ],
     "props": {
       "blockClass": "security-container",
@@ -54,6 +55,28 @@
     "props": {
       "text": " [![Selo Google]( /arquivos/new-safe-google.png 'Acesse a Google')]( https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.isinaliza.com%2F)",
       "blockClass": ["security__image","google","no-margin-r"]
+    }
+  },
+
+
+
+  "flex-layout.row#security-2":{
+    "children": [
+      "sandbox#google"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "security__row"
+    }
+  },
+
+
+  "sandbox#google": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "initialContent": "<div class='review-widget_net' data-uuid='9938af75-4904-454d-a8ae-777d7171fd20' data-template='10' data-filter='' data-lang='pt' data-theme='light'><center><a href='https://www.review-widget.net/' target='_blank' rel='noopener'><img src='https://grwapi.net/assets/spinner/spin.svg' title='Google Review Widget' alt='Review Widget'></a></center></div><script async type='text/javascript' src='https://grwapi.net/widget.min.js'></script>",
+      "allowCookies": false
     }
   }
 }

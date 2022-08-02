@@ -265,6 +265,16 @@
  
 }
 
+:global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+:global(.vtex-product-summary-2-x-container--default-prod-shelf):hover :global(.vtex-product-summary-2-x-clearLink--default-prod-shelf) :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
+    visibility:visible;
+    opacity:1;
+}
 @media (max-width: 1300px) {
     .container {
         max-width: 1200px;
