@@ -254,10 +254,7 @@
     bottom: -4px;
 }
 
-:global(.vtex-menu-2-x-submenu--main-menu-row-desk){
-    width: 37%;
-    margin: auto;
-}
+
 
 :global(.vtex-store-components-3-x-productImage)::before{
     content:url('/arquivos/flagPDP.png');
