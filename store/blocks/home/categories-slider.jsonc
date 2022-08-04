@@ -26,7 +26,7 @@
       },
       "info-card#categorie02": {
         "props": {
-          "imageUrl": "assets/banners/combate.png",
+          "imageUrl": "assets/banners/incendio.png",
           "callToActionText": "COMBATE À INCÊNDIO",
           "callToActionUrl": "/combate-a-incendio",
           "textPosition": "right",

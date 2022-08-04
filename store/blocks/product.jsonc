@@ -108,7 +108,7 @@
       "product-price#product-details",
       /* "product-installments#default",*/
       "flex-layout.row#buy-area",
-      "shipping-simulator",
+      "flex-layout.row#shipping-and-benefits",
       "availability-subscriber"
     ]
   },
@@ -213,6 +213,29 @@
   "text":"COMPRAR",
   "blockClass":"btn-buy-pdp"
 }
+  },
+
+  "flex-layout.row#shipping-and-benefits":{
+    "props":{
+      "marginTop": 4
+    },
+    "children":[
+      "flex-layout.col#shipping-and-benefits1",
+      "flex-layout.col#shipping-and-benefits2"
+    ]
+  },
+  "flex-layout.col#shipping-and-benefits1":{
+    "props":{
+      "width": "55%"
+    },
+    "children":[
+      "shipping-simulator"
+    ]
+  },
+  "flex-layout.col#shipping-and-benefits2":{
+    "children":[
+      "prod-benefits"
+    ]
   },
 
   "flex-layout.row#relatedshelf": {

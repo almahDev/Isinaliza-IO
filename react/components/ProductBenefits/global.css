@@ -1,0 +1,14 @@
+
+.under-img ul li {
+    margin-bottom: 12px;
+    color: #B6B6B6;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.under-img ul li img{
+    width: 18px;
+    margin-right: 10px;
+}
