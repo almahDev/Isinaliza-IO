@@ -16,5 +16,8 @@
   },
   "prod-benefits": {
     "component": "ProductBenefits"
+  },
+  "wpp-btn":{
+    "component": "WhatsappBTN"
   }
 }

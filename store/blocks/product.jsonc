@@ -77,7 +77,8 @@
     "children": ["stack-layout"],
     "props": {
       "width": "54%",
-      "rowGap": 0
+      "rowGap": 0,
+      "paddingLeft": 4
     }
   },
   "flex-layout.row#product-image": {
@@ -100,6 +101,7 @@
     },
     "children": [
       "vtex.store-components:product-name",
+      "product-identifier.product",
       "productStars",
       "product-rating-summary",
       "sku-selector",

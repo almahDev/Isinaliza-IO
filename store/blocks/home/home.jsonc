@@ -64,7 +64,11 @@
       },
       "infinite": true,
       "showNavigationArrows": "never",
-      "blockClass": "carousel-sellingConditions"
+      "blockClass": "carousel-sellingConditions",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
     },
     "children": [
       "info-card#sellerCondition1",

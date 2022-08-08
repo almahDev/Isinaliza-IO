@@ -7,7 +7,8 @@
       "vtex.menu@2.x:menu#linkList-container-mobile",
       "vtex.menu@2.x:menu#linkList-container-mobile-2",
       "flex-layout.row#footer-container-0-mobile",
-      "flex-layout.row#footer-container-1-mobile"
+      "flex-layout.row#footer-container-1-mobile",
+      "wpp-btn"
     ]
   },
   "flex-layout.row#footer-container-0-mobile": {

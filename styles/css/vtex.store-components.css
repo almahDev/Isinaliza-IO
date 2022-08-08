@@ -272,6 +272,14 @@
     visibility:visible;
     opacity:1;
 }
+
+:global(.vtex-menu-2-x-styledLinkContent--menu-footer){
+font-weight: 300;
+}
+
+
+
+
 @media (max-width: 1300px) {
     .container {
         max-width: 1200px;

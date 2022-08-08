@@ -62,7 +62,8 @@
 
   "flex-layout.row#security-2":{
     "children": [
-      "sandbox#google"
+     /* "sandbox#google",*/
+      "rich-text#googlereviews"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -70,6 +71,26 @@
     }
   },
 
+  "image#googlereviews":{
+    "props": {
+      "src": "assets/banners/selo-google.png",
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": true,
+          "url": "https://customerreviews.google.com/v/merchant?q=isinaliza.com&c=BR&v=17"
+        }
+      }
+    }
+  },
+
+  "rich-text#googlereviews": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[![Google avaliações](/arquivos/selo-google.png 'Google')](https://customerreviews.google.com/v/merchant?q=isinaliza.com&c=BR&v=17)"
+    }
+  },
 
   "sandbox#google": {
     "props": {

@@ -16,7 +16,7 @@
       },
       "info-card#categorie01": {
         "props": {
-          "imageUrl": "assets/banners/cavalete.png",
+          "imageUrl": "assets/banners/cavaletes.png",
           "callToActionText": "CAVALETE DE SINALIZAÇÃO",
           "callToActionUrl": "/cavalete-de-sinalizacao",
           "textPosition": "right",
