@@ -123,7 +123,18 @@
                     "text": "Identificação dos Setores",
                     "href": "/condominios/identificacao-dos-setores"
                 }
-            },
+            }
+        
+            ]
+        }
+        
+    },
+    "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-condominio"],
+            "items": [
+                
             {
                 "type": "custom",
                 "id": "",

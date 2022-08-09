@@ -67,6 +67,7 @@
         },
         "children": [
             "flex-layout.col#PERSONALIZADAS",
+            "flex-layout.col#PERSONALIZADAS2",
             "flex-layout.col#IMG-PERSONALIZADAS"
         ]
     },
@@ -77,6 +78,15 @@
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS"
+        ]
+    },
+    "flex-layout.col#PERSONALIZADAS2": {
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass":"menu-items-part"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS2"
         ]
     },
     "flex-layout.col#IMG-PERSONALIZADAS": {
@@ -137,6 +147,8 @@
         },
         "children": [
             "flex-layout.col#ADESIVOS-DE-SEGURANÇA",
+            "flex-layout.col#ADESIVOS-DE-SEGURANÇA2",
+            "flex-layout.col#ADESIVOS-DE-SEGURANÇA3",
             "flex-layout.col#IMG-ADESIVOS-DE-SEGURANÇA"
         ]
     },
@@ -146,6 +158,22 @@
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA"
+        ]
+    },
+    "flex-layout.col#ADESIVOS-DE-SEGURANÇA2": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA2"
+        ]
+    },
+    "flex-layout.col#ADESIVOS-DE-SEGURANÇA3": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA3"
         ]
     },
     
@@ -276,6 +304,7 @@
         },
         "children": [
             "flex-layout.col#CONDOMINIO",
+            "flex-layout.col#CONDOMINIO2",
             "flex-layout.col#IMG-CONDOMINIO"
         ]
     },
@@ -285,6 +314,14 @@
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO"
+        ]
+    },
+    "flex-layout.col#CONDOMINIO2": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO2"
         ]
     },
     "flex-layout.col#IMG-CONDOMINIO": {
@@ -486,6 +523,7 @@
         },
         "children": [
             "flex-layout.col#INCENDIO",
+            "flex-layout.col#INCENDIO2",
             "flex-layout.col#IMG-INCENDIO"
         ]
     },
@@ -495,6 +533,14 @@
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-INCENDIO"
+        ]
+    },
+    "flex-layout.col#INCENDIO2": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-cat-INCENDIO2"
         ]
     },
 

@@ -69,11 +69,7 @@
     margin: 0px;
   }
 
-  .submenuWrapper--main-menu-row-desk{
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
+
 
 
   .submenu--main-menu-row-desk{
@@ -81,16 +77,17 @@
       overflow: hidden;*/
   }
 
-  .menuContainerNav--row-menu-col{
-    /*overflow: scroll;
-    height: 258px;*/
-    min-height: 258px;
-    padding-top: 10px;
-    background-color: #0054A8;
-    
+  .styledLinkContent--row-menu-col{
+    white-space: break-spaces;
   }
 
 
+
+  .submenuWrapper--main-menu-row-desk {
+    background-color: #0054A8;
+    z-index: 10000;
+  }
+  
 
   .styledLink--row-menu-col{
     color: white;

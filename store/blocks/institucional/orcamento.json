@@ -10,7 +10,8 @@
   "flex-layout.row#orcamento1": {
     "children": ["flex-layout.col#orcamento1", "flex-layout.col#orcamento2"],
     "props": {
-      "marginTop": 7
+      "marginTop": 7,
+      "blockClass":"orcamento-row"
     }
   },
   "flex-layout.col#orcamento1": {
@@ -60,7 +61,7 @@
       "info-card#orcamentoCondition4"
     ],
     "props": {
-      "blockClass": "orcamentos-points"
+      "blockClass": ["orcamentos-points", "orcamento-row"]
     }
   },
   "info-card#orcamentoCondition1": {
@@ -120,7 +121,8 @@
     "children": ["flex-layout.col#orcamento3", "flex-layout.col#orcamento4"],
     "props": {
       "marginTop": 7,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass":"orcamento-row"
     }
   },
 

@@ -123,7 +123,17 @@
                     "text": "Explosivo",
                     "href": "/adesivos-de-seguranca/explosivo"
                 }
-            },
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col", "row-menu-col-adesivos"],
+            "items": [
+             
             {
                 "type": "custom",
                 "id": "",
@@ -243,7 +253,17 @@
                     "text": "Tóxico",
                     "href": "/adesivos-de-seguranca/toxico"
                 }
-            },
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA3":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col", "row-menu-col-adesivos"],
+            "items": [
+             
             {
                 "type": "custom",
                 "id": "",

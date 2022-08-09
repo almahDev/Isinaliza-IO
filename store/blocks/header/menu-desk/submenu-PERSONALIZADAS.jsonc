@@ -123,7 +123,18 @@
                     "text": "Perigo",
                     "href": "/placas-personalizadas/perigo"
                 }
-            },
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-personalizadas"],
+            "items": [
+             
+     
             {
                 "type": "custom",
                 "id": "",

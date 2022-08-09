@@ -123,7 +123,17 @@
                     "text": "Ponto de Encontro",
                     "href": "/combate-a-incendio/ponto-de-encontro"
                 }
-            },
+            }
+              
+            ]
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cat-INCENDIO2":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":["row-menu-col","row-menu-col-incendio"],
+            "items": [
+          
             {
                 "type": "custom",
                 "id": "",
