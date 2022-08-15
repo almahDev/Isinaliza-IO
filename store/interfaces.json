@@ -11,6 +11,9 @@
   "productStars": {
     "component": "AvaliacoesStars"
   },
+  "productStarsShelf": {
+    "component": "AvaliacoesStarsShelf"
+  },
   "seloAvaliacoes": {
     "component": "SeloAvaliacoes"
   },

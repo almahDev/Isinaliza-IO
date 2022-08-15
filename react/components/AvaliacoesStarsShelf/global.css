@@ -1,0 +1,17 @@
+.nr-star:before{
+    font-size: 18px;
+  }
+
+  .netreviews_reviews_rate{
+    left: 98px !important;
+    top: 5px !important;
+  }
+
+  .NETREVIEWS_PRODUCT_STARS.no_text {
+    margin: auto 32%;
+  }
+
+  .NETREVIEWS_PRODUCT_STARS.no_text .netreviews_review_rate_and_stars > div{
+    display: flex;
+
+  }
