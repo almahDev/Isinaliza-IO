@@ -21,6 +21,15 @@
     margin-bottom: 5em;
 }
 
+.slideChildrenContainer--cat-rectangle-slider{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.slideChildrenContainer--cat-rectangle-slider :global(.vtex-store-components-3-x-imageElementLink) :global(.vtex-store-components-3-x-imageElement){
+    height: auto !important;
+}
+
 @media screen and (max-width: 768px) {
     .slide--slider-shelf--default{
         margin: 0px 10px;

@@ -99,8 +99,7 @@
   "image#brand1": {
     "props": {
       "src": "assets/banners/braille-rec.png",
-      "width": 246,
-      "height": 353,
+  
       "link":{
         "properties":{
           "attributeNofollow": false,
@@ -113,8 +112,7 @@
   "image#brand2": {
     "props": {
         "src": "assets/banners/acessibilidade-rec.png",
-        "width": 246,
-        "height": 353,
+  
         "link":{
           "properties":{
             "attributeNofollow": false,
@@ -127,8 +125,7 @@
   "image#brand3": {
     "props": {
         "src": "assets/banners/totem-rec.png",
-        "width": 246,
-        "height": 353,
+  
         "link":{
           "properties":{
             "attributeNofollow": false,
@@ -141,8 +138,7 @@
   "image#brand4": {
     "props": {
         "src": "assets/banners/sinalizacao-rec.png",
-        "width": 246,
-        "height": 353,
+      
         "link":{
           "properties":{
             "attributeNofollow": false,
@@ -155,8 +151,7 @@
   "image#brand5": {
     "props": {
         "src": "assets/banners/etiquetas-rec.png",
-        "width": 246,
-        "height": 353,
+      
         "link":{
           "properties":{
             "attributeNofollow": false,

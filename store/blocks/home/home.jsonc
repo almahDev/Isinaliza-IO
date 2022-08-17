@@ -178,7 +178,7 @@
   },
   "image#banners-home1": {
     "props": {
-      "src": "assets/banners/fita-antiderrapante.png",
+      "src": "assets/banners/cavalete-sil.png",
       "link": {
         "properties": {
           "attributeNofollow": false,
@@ -196,7 +196,7 @@
   },
   "image#banners-home2": {
     "props": {
-      "src": "assets/banners/etiquetasSinalizacao.png",
+      "src": "assets/banners/transito-sil.png",
       "link": {
         "properties": {
           "attributeNofollow": false,
@@ -290,7 +290,7 @@
   },
   "image#banners-home3": {
     "props": {
-      "src": "assets/banners/isinaliza-30a2ef.png",
+      "src": "assets/banners/adesivo-sil.png",
       "link": {
         "properties": {
           "attributeNofollow": false,
@@ -308,7 +308,7 @@
   },
   "image#banners-home4": {
     "props": {
-      "src": "assets/banners/isinaliza-30a2ef1.png",
+      "src": "assets/banners/combate-sil.png",
       "link": {
         "properties": {
           "attributeNofollow": false,
