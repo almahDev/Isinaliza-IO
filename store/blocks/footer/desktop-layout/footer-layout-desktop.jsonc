@@ -5,8 +5,7 @@
     },
     "children": [
       "flex-layout.row#footer-container-0-desktop",
-      "flex-layout.row#footer-container-1-desktop",
-      "wpp-btn"
+      "flex-layout.row#footer-container-1-desktop"
     ]
   },
 
