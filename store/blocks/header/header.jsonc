@@ -7,6 +7,7 @@
   },
   "header-layout.desktop": {
     "children": [
+      "CSSWorkaround",
       "responsive-layout.desktop#topbar",
       "header-row#1-desktop",
       "header-row#2-desktop",
@@ -167,6 +168,7 @@
   },
   "header-row#1-mobile": {
     "children": [
+      "CSSWorkaround",
       "drawer#menu-mobile",
       "header-spacer",
       "logo#mobile",

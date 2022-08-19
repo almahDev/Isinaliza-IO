@@ -84,14 +84,14 @@
 
 
   .submenuWrapper--main-menu-row-desk {
-    background-color: #0054A8;
+    background-color: #FFF;
     z-index: 10000;
   }
   
 
-  .styledLink--row-menu-col{
+ /* .styledLink--row-menu-col{
     color: white;
-  }
+  }*/
 
 @media (max-width: 760px) {
     .styledLinkContent--submenu {

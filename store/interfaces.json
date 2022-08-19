@@ -22,5 +22,8 @@
   },
   "wpp-btn":{
     "component": "WhatsappBTN"
+  },
+  "CSSWorkaround":{
+    "component": "CSSWorkaround"
   }
 }

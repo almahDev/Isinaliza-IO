@@ -1,0 +1,13 @@
+/*MUDANÇAS DE CSS QUE A LOJA NAO DEIXA FAZER*/
+
+.vtex-product-list-0-x-inputContainer input {
+    color: white;
+}
+
+.vtex-product-list-0-x-inputContainer span {
+    color: white;
+}
+
+#netreviewsWidgetNum3863widget10av{
+display: none;
+}

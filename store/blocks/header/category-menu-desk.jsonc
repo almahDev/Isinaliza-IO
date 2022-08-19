@@ -6,8 +6,8 @@
             "menu-item#ADESIVOS-DE-SEGURANÇA",
             "menu-item#TRÂNSITO",
             "menu-item#CONDOMÍNIO",
-            "menu-item#BRAILLE-TÁTIL",
-            "menu-item#PERSONALIZADAS"
+            "menu-item#BRAILLE-TÁTIL"/*,
+            "menu-item#PERSONALIZADAS"*/
         ],
         "props": {
             "blockClass": "mainMenu",
