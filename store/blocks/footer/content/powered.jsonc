@@ -14,7 +14,8 @@
   "flex-layout.row#powered" : {
     "children": [
       "rich-text#poweredby",
-      "rich-text#poweredImage-0"
+      "rich-text#poweredImage-0",
+      "rich-text#poweredImage-1"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -31,6 +32,12 @@
     "props": {
       "text": "[![Logo ALMAH](/arquivos/almah-logo.svg 'Acesse a almah')](http://www.almahcomunicacao.com.br)",
       "blockClass": ["powered__image","almah"]
+    }
+  },
+  "rich-text#poweredImage-1": {
+    "props": {
+      "text": "[![Logo ALMAH](/arquivos/VTEX_pink_RGB.png 'Acesse a VTEX')](https://vtex.com/br-pt/)",
+      "blockClass": ["powered__image","vtex-icon"]
     }
   }
 }
