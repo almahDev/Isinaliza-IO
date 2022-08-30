@@ -29,7 +29,7 @@ const CSSWorkaround: StorefrontFunctionComponent<ProductAvailableProps> = () => 
     document.body.appendChild(script3);
 
 
-   // var smarthintkey = "SH-561147";
+    var smarthintkey = "SH-561147";
     (function () {  
         var script = document.createElement('script');
         script.type = 'text/javascript';
@@ -37,7 +37,7 @@ const CSSWorkaround: StorefrontFunctionComponent<ProductAvailableProps> = () => 
         script.src = 'https://service.smarthint.co/Scripts/i/Vtex.IO.min.js';
         var s = document.getElementsByTagName('script')[0];
         s?.parentNode?.insertBefore(script, s);
-        //console.log("test")
+  
     })();
 
      
