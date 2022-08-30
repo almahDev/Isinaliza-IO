@@ -27,6 +27,19 @@ const CSSWorkaround: StorefrontFunctionComponent<ProductAvailableProps> = () => 
     script3.setAttribute('src', 'https://cl.avis-verifies.com/br/cache/d/7/2/d726a728-f205-6ae4-7dd0-31bb2fe6e2c6/AWS/PRODUCT_API/tag.min.js');
     
     document.body.appendChild(script3);
+
+
+   // var smarthintkey = "SH-561147";
+    (function () {  
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://service.smarthint.co/Scripts/i/Vtex.IO.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s?.parentNode?.insertBefore(script, s);
+        //console.log("test")
+    })();
+
      
           }, []);
 
