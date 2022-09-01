@@ -28,17 +28,21 @@ const CSSWorkaround: StorefrontFunctionComponent<ProductAvailableProps> = () => 
     
     document.body.appendChild(script3);
 
+    var script_tag = document.createElement('script');
+script_tag.type = 'text/javascript';
+script_tag.text = `
+var smarthintkey = "SH-561147";
+(function () {  
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://service.smarthint.co/Scripts/i/Vtex.IO.min.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(script, s);
 
-    var smarthintkey = "SH-561147";
-    (function () {  
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = 'https://service.smarthint.co/Scripts/i/Vtex.IO.min.js';
-        var s = document.getElementsByTagName('script')[0];
-        s?.parentNode?.insertBefore(script, s);
-  
-    })();
+})();
+`;
+document.body.appendChild(script_tag);
 
      
           }, []);
