@@ -106,7 +106,7 @@
       "product-rating-summary",
       "sku-selector",
       "flex-layout.row#progressive-discount",
-      
+      "placa-customizada",
       "product-price#product-details",
       /* "product-installments#default",*/
       "flex-layout.row#buy-area",

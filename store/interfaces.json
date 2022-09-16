@@ -25,5 +25,8 @@
   },
   "CSSWorkaround":{
     "component": "CSSWorkaround"
+  },
+  "placa-customizada":{
+    "component":"PlacasCustom"
   }
 }

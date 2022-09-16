@@ -7,7 +7,6 @@ interface ProductAvailableProps {
 
 const AvaliacoesProd: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     const productInfo = useProduct();
-    console.log(productInfo)
     const [url, setURL] = useState('');
 
 

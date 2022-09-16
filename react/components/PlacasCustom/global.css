@@ -1,0 +1,27 @@
+.styles_modal__gNwvD{
+    max-width: 80% !important;
+}
+
+.custom-prod-interface{
+    width: 50%;
+}
+.productName{
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+.customTextForm{
+    padding: 1em;
+    border: 1px solid #D9D9D9;
+}
+
+.slick-prev:before {
+    content: url(/arquivos/slick-arrow-left.svg);
+    width: 11px;
+    height: 17px;
+  }
+
+  .slick-next:before {
+    content: url(/arquivos/slick-arrow-right.svg);
+    width: 11px;
+    height: 17px;
+  }
