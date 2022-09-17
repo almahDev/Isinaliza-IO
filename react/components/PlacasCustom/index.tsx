@@ -42,16 +42,17 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const pictogramFetcher = async (currentCat: any) => {
     let data = await fetch(`/api/dataentities/PG/search?_fields=filename,ref&type=*${currentCat}*`);
     let response = await data.json();
-    console.log(response);
+
     setPictogramas(
       response.map((element: any) => {
         return (
-          <fieldset>
+          <fieldset className="list-item">
             <input
               name="pictograma"
               type="radio"
               value={element.ref}
               id={`pic-${element.ref}`}
+              onChange={selectedPictogramHandler}
             />
             <label htmlFor={`pic-${element.ref}`}>
               <img src={`/arquivos/${element.filename}`} />
@@ -86,6 +87,11 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const pictogramClassHandler = (event: any) => {
     setCurrentPictogramasCategories(event.target.value);
   };
+
+  const selectedPictogramHandler = (event:any) =>{
+    setSelectedPictogram(event.target.value)
+    console.log(event.target.value)
+  }
 
   useEffect(() => {
     placasAlternativasFetcher();
@@ -162,7 +168,11 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
             >
               {pictogramasCategories}
             </select>
-            <div className="list pictograma">{pictogramas}</div>
+            <div className="list-pictograma">
+              
+            <Slider {...settings}>{pictogramas}</Slider>
+              
+              </div>
           </div>
         </div>
       </Modal>

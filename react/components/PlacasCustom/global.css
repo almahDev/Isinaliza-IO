@@ -1,5 +1,5 @@
 .styles_modal__gNwvD{
-    max-width: 80% !important;
+    max-width: 90% !important;
 }
 
 .custom-prod-interface{
@@ -12,6 +12,7 @@
 .customTextForm{
     padding: 1em;
     border: 1px solid #D9D9D9;
+    width: 100%;
 }
 
 .slick-prev:before {
@@ -25,3 +26,31 @@
     width: 11px;
     height: 17px;
   }
+
+  #select-pictograma{
+    padding: 6px;
+    margin-bottom: 2em;
+    float: right;
+  }
+
+  .list-pictograma{
+    clear: both;
+  }
+
+  .list-pictograma fieldset{
+    width: 75% !important;
+    border: none;
+  }
+  .list-pictograma fieldset label img{
+   padding: 1em;
+   border: 3px solid transparent;
+  }
+
+  .list-pictograma fieldset input{
+    display: none;
+  }
+
+  .list-item input:checked + label img {
+    border: 3px solid #ed6f00;
+    border-radius: 15px;
+}
