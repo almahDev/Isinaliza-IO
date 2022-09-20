@@ -89,3 +89,17 @@
     overflow-wrap: break-word;
     margin-top: 32%;
 }
+
+.fewer-options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fewer-options fieldset label img {
+width: 126px;
+}
+
+.fewer-options fieldset{
+    width: 25% !important;
+}

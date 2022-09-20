@@ -18,7 +18,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const [showModal, setShowModal] = useState(false);
   const [customTextValue, setCustomTextValue] = useState("");
   const [placas, setplacas] = useState();
-  const [pictogramas, setPictogramas] = useState();
+  const [pictogramas, setPictogramas] = useState("");
   const [pictogramasCategories, setPictogramasCategories] = useState();
   const [currentPictogramasCategories, setCurrentPictogramasCategories] = useState("");
   const [selectedPictogram, setSelectedPictogram] = useState();
@@ -94,8 +94,14 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const selectedPictogramHandler = (event:any, img:string) =>{
     console.log(event.target.value);
     console.log(img)
+    if(event.target.value == selectedPictogram){
+      setPictogramImage("")
+    setSelectedPictogram(undefined)
+console.log("unselected")
+    }
     setPictogramImage(img)
     setSelectedPictogram(event.target.value)
+    
    
   }
 
@@ -216,8 +222,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
               {pictogramasCategories}
             </select>
             <div className="list-pictograma">
-              {/* to do: Não renderizar o slider quando for até 4 items*/ }
-            <Slider {...settings}>{pictogramas}</Slider>
+            {pictogramas.length > 4 ? <Slider {...settings}>{pictogramas}</Slider>: <div className="fewer-options">{pictogramas}</div> }
               
               </div>
           </div>
