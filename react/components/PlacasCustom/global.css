@@ -54,3 +54,38 @@
     border: 3px solid #ed6f00;
     border-radius: 15px;
 }
+
+.custom-prod-img {
+    position: relative;
+}
+.custom-text-simulation span{
+    position: absolute;
+    left: -21px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    font-size: 4vw;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-top: 32%;
+}
+
+.custom-text-simulation span.has-pictogram{
+    margin-top: 29%;
+    margin-left: 29%;
+    width: 66%;
+}
+
+.custom-text-simulation img{
+    width: 150px;
+    position: absolute;
+    left: -21px;
+    right: 0;
+    margin-left: 7%;
+    margin-right: auto;
+    font-size: 4vw;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-top: 32%;
+}

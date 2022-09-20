@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import { useProduct } from "vtex.product-context";
 import { Button, Modal } from "vtex.styleguide";
 import { ExtensionPoint } from "vtex.render-runtime";
@@ -22,7 +22,10 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const [pictogramasCategories, setPictogramasCategories] = useState();
   const [currentPictogramasCategories, setCurrentPictogramasCategories] = useState("");
   const [selectedPictogram, setSelectedPictogram] = useState();
-
+  const [pictogramImage, setPictogramImage] = useState("");
+  const [customFontSize, setCustomFontSize] = useState("");
+  
+/*Criar states de loading*/
 
 
   const pictogramsCategoryFetcher = async () => {
@@ -52,7 +55,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
               type="radio"
               value={element.ref}
               id={`pic-${element.ref}`}
-              onChange={selectedPictogramHandler}
+              onChange={(e)=>{selectedPictogramHandler(e,`/arquivos/${element.filename}`)}}
             />
             <label htmlFor={`pic-${element.ref}`}>
               <img src={`/arquivos/${element.filename}`} />
@@ -88,9 +91,12 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     setCurrentPictogramasCategories(event.target.value);
   };
 
-  const selectedPictogramHandler = (event:any) =>{
+  const selectedPictogramHandler = (event:any, img:string) =>{
+    console.log(event.target.value);
+    console.log(img)
+    setPictogramImage(img)
     setSelectedPictogram(event.target.value)
-    console.log(event.target.value)
+   
   }
 
   useEffect(() => {
@@ -101,6 +107,39 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   useEffect(() => {
     pictogramFetcher(currentPictogramasCategories);
   }, [currentPictogramasCategories]);
+
+
+  useEffect(() => {
+   
+      if(customTextValue.length <= 30){
+        setCustomFontSize("3.5vw")
+      } 
+      else if (customTextValue.length > 30 && customTextValue.length <= 60){
+        setCustomFontSize("2.5vw")
+      }
+      else if (customTextValue.length > 60 && customTextValue.length <= 90){
+        setCustomFontSize("2.3vw")
+      }
+      else if (customTextValue.length > 90 && customTextValue.length <= 120){
+        setCustomFontSize("1.8vw")
+      }
+      else if (customTextValue.length > 120 && customTextValue.length <= 150){
+        setCustomFontSize("1.7vw")
+      }
+      else if (customTextValue.length > 150 && customTextValue.length <= 190){
+        setCustomFontSize("1.5vw")
+      }
+      else if (customTextValue.length > 190 && customTextValue.length <= 220){
+        setCustomFontSize("1.4vw")
+      }
+      else if (customTextValue.length > 220 && customTextValue.length <= 280){
+        setCustomFontSize("1.3vw")
+      } else{
+        setCustomFontSize("1.2vw")
+      }
+    
+    
+  }, [customTextValue]);
 
   const settings = {
     infinite: true,
@@ -140,8 +179,15 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
       >
         <div className="flex">
           <div className="custom-prod-img  mv3 mh5">
-            <span>{customTextValue}</span>
+            <div className="custom-text-simulation">
+            <img src={pictogramImage} style={{"width": "7.8vw"}}/>
+            <span  style={{"fontSize": customFontSize}} className={selectedPictogram && "has-pictogram"}>{customTextValue}</span>
+           
+            </div>
+            
             <img src={prodIMG} />
+
+            
           </div>
           <div className="custom-prod-interface mv3 mh5">
             <p className="productName">{productInfo?.product?.productName}</p>
@@ -157,6 +203,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
               cols={65}
               placeholder="INSIRA O TEXTO"
               className="customTextForm"
+              maxLength={300}
             />
 
             <Slider {...settings}>{placas}</Slider>
@@ -169,7 +216,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
               {pictogramasCategories}
             </select>
             <div className="list-pictograma">
-              
+              {/* to do: Não renderizar o slider quando for até 4 items*/ }
             <Slider {...settings}>{pictogramas}</Slider>
               
               </div>
