@@ -14,6 +14,8 @@ interface ProductAvailableProps {
 const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const productInfo = useProduct();
   const prodIMG = productInfo?.selectedItem?.images[0].imageUrl;
+  
+
 
   const [showModal, setShowModal] = useState(false);
   const [customTextValue, setCustomTextValue] = useState("");
@@ -151,9 +153,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   };
 
   const selectedPictogramHandler = (event: any, img: string) => {
-    console.log(event.target.value);
-    console.log(img);
-  
+   
     setPictogramImage(img);
     setSelectedPictogram(event.target.value);
   };
@@ -168,25 +168,53 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   }, [currentPictogramasCategories]);
 
   useEffect(() => {
-    if (customTextValue.length <= 30) {
-      setCustomFontSize("3.5vw");
-    } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
-      setCustomFontSize("2.5vw");
-    } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
-      setCustomFontSize("2.3vw");
-    } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
-      setCustomFontSize("1.8vw");
-    } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
-      setCustomFontSize("1.7vw");
-    } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
-      setCustomFontSize("1.5vw");
-    } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
-      setCustomFontSize("1.4vw");
-    } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
-      setCustomFontSize("1.3vw");
-    } else {
-      setCustomFontSize("1.2vw");
+
+    const mq = window.matchMedia("(min-width: 1200px)");
+
+    
+    console.log(customTextValue.length)
+    if(mq.matches){
+      if (customTextValue.length <= 30) {
+        setCustomFontSize("3.5vw");
+      } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
+        setCustomFontSize("2.5vw");
+      } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
+        setCustomFontSize("2.3vw");
+      } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
+        setCustomFontSize("1.8vw");
+      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+        setCustomFontSize("1.7vw");
+      } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
+        setCustomFontSize("1.5vw");
+      } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
+        setCustomFontSize("1.4vw");
+      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+        setCustomFontSize("1.3vw");
+      } else {
+        setCustomFontSize("1.2vw");
+      }
+    } else{
+      if (customTextValue.length <= 30) {
+        setCustomFontSize("7.5vw");
+      } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
+        setCustomFontSize("5.2vw");
+      } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
+        setCustomFontSize("4.6vw");
+      } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
+        setCustomFontSize("4vw");
+      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+        setCustomFontSize("3.8vw");
+      } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
+        setCustomFontSize("3.4vw");
+      } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
+        setCustomFontSize("3.3vw");
+      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+        setCustomFontSize("2.9vw");
+      } else {
+        setCustomFontSize("2.7vw");
+      }
     }
+ 
   }, [customTextValue]);
 
   const settings = {
@@ -228,10 +256,10 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
         centered
         responsiveFullScreen
       >
-        <div className="flex">
+        <div className="flex modal-custom-body">
           <div className="custom-prod-img  mv3 mh5">
             <div className="custom-text-simulation">
-              <img src={pictogramImage} style={{ width: "7.8vw" }} />
+              <img src={pictogramImage}  className="simulation-pictogram" />
               <span
                 style={{ fontSize: customFontSize }}
                 className={selectedPictogram && "has-pictogram"}

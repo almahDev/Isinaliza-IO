@@ -4,7 +4,8 @@
 
 .placaCustomBtnBuy button{
   border-radius: 100px;
-    padding: 12px 8px;
+  padding-left: 5em;
+  padding-right: 5em;
     background-color: #fe5000!important;
     box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
 }
@@ -90,8 +91,12 @@
     width: 66%;
 }
 
+
+
+
+
 .custom-text-simulation img{
-    width: 150px;
+  width: 7.8vw;
     position: absolute;
     left: -21px;
     right: 0;
@@ -115,4 +120,38 @@ width: 126px;
 
 .fewer-options fieldset{
     width: 25% !important;
+}
+
+@media (min-width: 1200px)  and (max-width: 1700px){
+  .custom-text-simulation img{
+    margin-left: 9%;
+    width: 7vw;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .custom-text-simulation img{
+    margin-left: 12%;
+    width: 14.8vw;
+  }
+  
+  .modal-custom-body{
+    display: block !important;
+  }
+  .custom-prod-img, .custom-prod-interface{
+    width: 100%;
+    margin: 1px;
+  }
+
+  .productName {
+    font-size: 22px;
+}
+
+.custom-text-simulation span{
+  left: -9px;
+}
+
+
 }
