@@ -21,7 +21,7 @@ const DescontoProgressivo: StorefrontFunctionComponent<DescontoProgressivoProps>
         const seller: any = getDefaultSeller(
             // @ts-ignore
             productContextValue?.selectedItem?.sellers.map((sellers, Price) => {
-              console.log()
+              
                 return sellers.commertialOffer.Price;
             })
         );

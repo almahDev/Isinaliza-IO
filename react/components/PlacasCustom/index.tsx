@@ -172,7 +172,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     const mq = window.matchMedia("(min-width: 1200px)");
 
     
-    console.log(customTextValue.length)
+    
     if(mq.matches){
       if (customTextValue.length <= 30) {
         setCustomFontSize("3.5vw");
