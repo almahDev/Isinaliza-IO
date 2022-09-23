@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useProduct } from "vtex.product-context";
 import { Button, Modal } from "vtex.styleguide";
 import { ExtensionPoint } from "vtex.render-runtime";
@@ -20,13 +20,14 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const [placas, setplacas] = useState();
   const [pictogramas, setPictogramas] = useState("");
   const [pictogramasCategories, setPictogramasCategories] = useState();
-  const [currentPictogramasCategories, setCurrentPictogramasCategories] = useState("");
+  const [currentPictogramasCategories, setCurrentPictogramasCategories] =
+    useState("");
   const [selectedPictogram, setSelectedPictogram] = useState();
   const [pictogramImage, setPictogramImage] = useState("");
   const [customFontSize, setCustomFontSize] = useState("");
-  
-/*Criar states de loading*/
 
+
+  /*Criar states de loading*/
 
   const pictogramsCategoryFetcher = async () => {
     let data = await fetch(
@@ -43,7 +44,9 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   };
 
   const pictogramFetcher = async (currentCat: any) => {
-    let data = await fetch(`/api/dataentities/PG/search?_fields=filename,ref&type=*${currentCat}*`);
+    let data = await fetch(
+      `/api/dataentities/PG/search?_fields=filename,ref&type=*${currentCat}*`
+    );
     let response = await data.json();
 
     setPictogramas(
@@ -55,7 +58,9 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
               type="radio"
               value={element.ref}
               id={`pic-${element.ref}`}
-              onChange={(e)=>{selectedPictogramHandler(e,`/arquivos/${element.filename}`)}}
+              onChange={(e) => {
+                selectedPictogramHandler(e, `/arquivos/${element.filename}`);
+              }}
             />
             <label htmlFor={`pic-${element.ref}`}>
               <img src={`/arquivos/${element.filename}`} />
@@ -75,14 +80,68 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     setplacas(
       response.map((element: any) => {
         return (
-          <a key={element.items[0].itemId} className="list-item" href={element.link}>
-            <img src={`/arquivos/ids/${element.items[0].images[0].imageId}-140-140/${element.items[0].images[0].imageId}.jpg`} alt="" />
+          <a
+            key={element.items[0].itemId}
+            className="list-item"
+            href={element.link}
+          >
+            <img
+              src={`/arquivos/ids/${element.items[0].images[0].imageId}-140-140/${element.items[0].images[0].imageId}.jpg`}
+              alt=""
+            />
           </a>
         );
       })
     );
   };
 
+  const addAndCustomize = async () => {
+   
+
+    let orderForm = await fetch("/api/checkout/pub/orderForm");
+    let orderFormResponse = await orderForm.json()
+    let {orderFormId} = orderFormResponse;
+    const current = [
+      {
+        index: orderFormResponse.items.length,
+        id: productInfo?.selectedItem?.itemId,
+        quantity: productInfo?.selectedQuantity,
+        seller: "1"
+      }
+    ];
+    const attachmentsInfo = { 
+      modelo: selectedPictogram, 
+      texto: customTextValue, 
+      pictograma: selectedPictogram, 
+      thumb: pictogramImage }
+
+
+
+
+    let data = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({orderItems: current})
+    });
+
+    let attachments = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items/${orderFormResponse.items.length}/attachments/Personalização`,{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({content: attachmentsInfo})
+    })
+
+    let aa = await attachments.json()
+    console.log(aa)
+ 
+  };
+
+  //EVENT HANDLERS
   const customtextHandler = (event: any) => {
     setCustomTextValue(event.target.value);
   };
@@ -91,19 +150,13 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     setCurrentPictogramasCategories(event.target.value);
   };
 
-  const selectedPictogramHandler = (event:any, img:string) =>{
+  const selectedPictogramHandler = (event: any, img: string) => {
     console.log(event.target.value);
-    console.log(img)
-    if(event.target.value == selectedPictogram){
-      setPictogramImage("")
-    setSelectedPictogram(undefined)
-console.log("unselected")
-    }
-    setPictogramImage(img)
-    setSelectedPictogram(event.target.value)
-    
-   
-  }
+    console.log(img);
+  
+    setPictogramImage(img);
+    setSelectedPictogram(event.target.value);
+  };
 
   useEffect(() => {
     placasAlternativasFetcher();
@@ -114,37 +167,26 @@ console.log("unselected")
     pictogramFetcher(currentPictogramasCategories);
   }, [currentPictogramasCategories]);
 
-
   useEffect(() => {
-   
-      if(customTextValue.length <= 30){
-        setCustomFontSize("3.5vw")
-      } 
-      else if (customTextValue.length > 30 && customTextValue.length <= 60){
-        setCustomFontSize("2.5vw")
-      }
-      else if (customTextValue.length > 60 && customTextValue.length <= 90){
-        setCustomFontSize("2.3vw")
-      }
-      else if (customTextValue.length > 90 && customTextValue.length <= 120){
-        setCustomFontSize("1.8vw")
-      }
-      else if (customTextValue.length > 120 && customTextValue.length <= 150){
-        setCustomFontSize("1.7vw")
-      }
-      else if (customTextValue.length > 150 && customTextValue.length <= 190){
-        setCustomFontSize("1.5vw")
-      }
-      else if (customTextValue.length > 190 && customTextValue.length <= 220){
-        setCustomFontSize("1.4vw")
-      }
-      else if (customTextValue.length > 220 && customTextValue.length <= 280){
-        setCustomFontSize("1.3vw")
-      } else{
-        setCustomFontSize("1.2vw")
-      }
-    
-    
+    if (customTextValue.length <= 30) {
+      setCustomFontSize("3.5vw");
+    } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
+      setCustomFontSize("2.5vw");
+    } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
+      setCustomFontSize("2.3vw");
+    } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
+      setCustomFontSize("1.8vw");
+    } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+      setCustomFontSize("1.7vw");
+    } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
+      setCustomFontSize("1.5vw");
+    } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
+      setCustomFontSize("1.4vw");
+    } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+      setCustomFontSize("1.3vw");
+    } else {
+      setCustomFontSize("1.2vw");
+    }
   }, [customTextValue]);
 
   const settings = {
@@ -186,14 +228,16 @@ console.log("unselected")
         <div className="flex">
           <div className="custom-prod-img  mv3 mh5">
             <div className="custom-text-simulation">
-            <img src={pictogramImage} style={{"width": "7.8vw"}}/>
-            <span  style={{"fontSize": customFontSize}} className={selectedPictogram && "has-pictogram"}>{customTextValue}</span>
-           
+              <img src={pictogramImage} style={{ width: "7.8vw" }} />
+              <span
+                style={{ fontSize: customFontSize }}
+                className={selectedPictogram && "has-pictogram"}
+              >
+                {customTextValue}
+              </span>
             </div>
-            
-            <img src={prodIMG} />
 
-            
+            <img src={prodIMG} />
           </div>
           <div className="custom-prod-interface mv3 mh5">
             <p className="productName">{productInfo?.product?.productName}</p>
@@ -222,9 +266,19 @@ console.log("unselected")
               {pictogramasCategories}
             </select>
             <div className="list-pictograma">
-            {pictogramas.length > 4 ? <Slider {...settings}>{pictogramas}</Slider>: <div className="fewer-options">{pictogramas}</div> }
-              
-              </div>
+              {pictogramas.length > 4 ? (
+                <Slider {...settings}>{pictogramas}</Slider>
+              ) : (
+                <div className="fewer-options">{pictogramas}</div>
+              )}
+            </div>
+            <div className="flex flex-column items-center w-100">
+              <span className="mb4">
+                <Button variation="primary" onClick={addAndCustomize}>
+                  COMPRAR
+                </Button>
+              </span>
+            </div>
           </div>
         </div>
       </Modal>
