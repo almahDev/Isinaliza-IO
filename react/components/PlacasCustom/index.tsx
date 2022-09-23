@@ -22,7 +22,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const [pictogramasCategories, setPictogramasCategories] = useState();
   const [currentPictogramasCategories, setCurrentPictogramasCategories] =
     useState("");
-  const [selectedPictogram, setSelectedPictogram] = useState();
+  const [selectedPictogram, setSelectedPictogram] = useState("");
   const [pictogramImage, setPictogramImage] = useState("");
   const [customFontSize, setCustomFontSize] = useState("");
 
@@ -136,8 +136,8 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
       body: JSON.stringify({content: attachmentsInfo})
     })
 
-    let aa = await attachments.json()
-    console.log(aa)
+    location.href = "/checkout/#/cart"
+
  
   };
 
@@ -208,14 +208,17 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
 
   return (
     <>
-      <Button
-        className="placaCustomBtn"
-        onClick={() => {
-          setShowModal(true);
-        }}
-      >
-        Customizar placa
-      </Button>
+    <div  className="placaCustomBtn">
+    <Button
+       
+       onClick={() => {
+         setShowModal(true);
+       }}
+     >
+       Customizar placa
+     </Button>
+    </div>
+   
 
       <Modal
         isOpen={showModal}
@@ -274,9 +277,13 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
             </div>
             <div className="flex flex-column items-center w-100">
               <span className="mb4">
-                <Button variation="primary" onClick={addAndCustomize}>
+
+                <div className="placaCustomBtnBuy">
+                <Button variation="primary" onClick={addAndCustomize}  >
                   COMPRAR
                 </Button>
+                </div>
+               
               </span>
             </div>
           </div>

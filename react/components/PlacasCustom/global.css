@@ -2,6 +2,19 @@
     max-width: 90% !important;
 }
 
+.placaCustomBtnBuy button{
+  border-radius: 100px;
+    padding: 12px 8px;
+    background-color: #fe5000!important;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
+}
+
+.placaCustomBtn button{
+  border-radius: 100px;
+    padding: 12px 8px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 .custom-prod-interface{
     width: 50%;
 }
