@@ -199,7 +199,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
       } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
         setCustomFontSize("5.2vw");
       } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
-        setCustomFontSize("4.6vw");
+        setCustomFontSize("4.4vw");
       } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
         setCustomFontSize("4vw");
       } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
