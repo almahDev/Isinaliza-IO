@@ -22,5 +22,10 @@
     font-weight: 200;
   }
 
+  @font-face {
+    font-family: 'HelveticaLTS';
+    src: url('assets/fonts/HelveticaLTStdBlkCond.otf');
+  }
+
 
   

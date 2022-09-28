@@ -73,6 +73,11 @@
 
 
 @media (max-width: 760px) {
+
+    .flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
     .flexRow--footer__copyright {
         background-color: #F5F5F5;
     }

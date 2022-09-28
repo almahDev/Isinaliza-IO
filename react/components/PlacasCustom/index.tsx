@@ -303,9 +303,10 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
                 <div className="fewer-options">{pictogramas}</div>
               )}
             </div>
-            <div className="flex flex-column items-center w-100">
+            <div className="flex flex-column items-center w-100 buy-area-modal">
+            <ExtensionPoint id="product-quantity" skuSelected={productInfo?.selectedItem}/>
               <span className="mb4">
-
+              
                 <div className="placaCustomBtnBuy">
                 <Button variation="primary" onClick={addAndCustomize}  >
                   COMPRAR

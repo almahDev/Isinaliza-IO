@@ -106,7 +106,7 @@
       "product-rating-summary",
       "sku-selector",
       "flex-layout.row#progressive-discount",
-      "condition-layout.product#personalizada",
+     
       "product-price#product-details",
       /* "product-installments#default",*/
       "flex-layout.row#buy-area",
@@ -180,8 +180,16 @@
       }
     ],
     "matchType": "any",
-    "Then": "placa-customizada"
+    "Then": "placa-customizada",
+    "Else": "add-to-cart-button#pdp"
     }
+  },
+
+  "placa-customizada":{
+    "blocks":[
+      "sku-selector",
+      "product-quantity"
+    ]
   },
 
   "flex-layout.row#progressive-discount": {
@@ -273,7 +281,7 @@
     }
   },
   "flex-layout.col#buy-area2": {
-    "children": ["add-to-cart-button#pdp"],
+    "children": [ "condition-layout.product#personalizada"],
     "props":{
       "verticalAlign": "middle"
     }
