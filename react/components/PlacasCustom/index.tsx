@@ -175,27 +175,27 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     
     if(mq.matches){
       if (customTextValue.length <= 30) {
-        setCustomFontSize("3.5vw");
+        setCustomFontSize("3.4vw");
       } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
-        setCustomFontSize("2.5vw");
+        setCustomFontSize("2.4vw");
       } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
-        setCustomFontSize("2.3vw");
+        setCustomFontSize("2.1vw");
       } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
-        setCustomFontSize("1.8vw");
-      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
         setCustomFontSize("1.7vw");
+      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+        setCustomFontSize("1.6vw");
       } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
-        setCustomFontSize("1.5vw");
-      } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
         setCustomFontSize("1.4vw");
-      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+      } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
         setCustomFontSize("1.3vw");
-      } else {
+      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
         setCustomFontSize("1.2vw");
+      } else {
+        setCustomFontSize("1.1vw");
       }
     } else{
       if (customTextValue.length <= 30) {
-        setCustomFontSize("7.5vw");
+        setCustomFontSize("7.4vw");
       } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
         setCustomFontSize("5.2vw");
       } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
