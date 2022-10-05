@@ -41,8 +41,10 @@
       "product-rating-inline",
       "productStarsShelf",
       "product-summary-space",
-      "product-list-price#shelf",
-      "product-selling-price#shelf",
+      /*"product-list-price#shelf",
+      "product-selling-price#shelf",*/
+      "product-list-price-range#shelf",
+      "product-selling-price-range#shelf",  
       "add-to-cart-button#shelf"
     ],
     "props":{
@@ -55,6 +57,21 @@
       "height": 250
     }
   },
+
+  "product-list-price-range#shelf":{
+    "props":{
+      "message":"{minPriceValue}",
+      "blockClass":"selling-listprice-shelf"
+    }
+  },
+
+  "product-selling-price-range#shelf":{
+    "props":{
+      "message":"{minPriceValue}",
+      "blockClass":"selling-price-shelf"
+    }
+  },
+
 
   "product-list-price#shelf":{
     "props":{

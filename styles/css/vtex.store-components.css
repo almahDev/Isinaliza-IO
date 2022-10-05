@@ -163,16 +163,16 @@
 }
 
 .productDescriptionTitle::after {
-    content:url('/arquivos/line-title.png');
-    position:relative;
+    content: url('/arquivos/line-title.png');
+    position: relative;
     right: -50px;
     top: -7px;
 }
 
-.productDescriptionTitle::before{
-    content:url('/arquivos/line-title.png');
-    position:relative; 
-    left:-50px;
+.productDescriptionTitle::before {
+    content: url('/arquivos/line-title.png');
+    position: relative;
+    left: -50px;
     top: -7px;
 }
 
@@ -216,66 +216,67 @@
     order: 2
 }
 
-.skuSelectorName{
+.skuSelectorName {
     color: #1E7BC4;
     font-weight: 600;
 }
-:global( .vtex-dropdown__container):hover{
+
+:global(.vtex-dropdown__container):hover {
     border-color: #ED6F00 !important;
 }
 
-:global( .vtex-dropdown__container){
+:global(.vtex-dropdown__container) {
     border-color: #eb9659 !important;
 }
 
-:global(.vtex-styleguide-9-x-popup){
+:global(.vtex-styleguide-9-x-popup) {
     background-color: #FFC700 !important;
 }
 
-:global(.vtex-add-to-cart-button-0-x-tooltipLabelText){
+:global(.vtex-add-to-cart-button-0-x-tooltipLabelText) {
     color: #000;
 }
 
-:global(.vtex-dropdown__button){
+:global(.vtex-dropdown__button) {
     background-color: #FDEEEB;
 
 }
 
-.productDescriptionText{
+.productDescriptionText {
     font-weight: 300;
     letter-spacing: 0.03em;
     line-height: 1.5em
 }
 
-:global(.vtex-store-components-3-x-productImagesThumb){
+:global(.vtex-store-components-3-x-productImagesThumb) {
     margin-top: 1em;
 }
 
-:global(.vtex-store-components-3-x-swiperPaginationClickable){
+:global(.vtex-store-components-3-x-swiperPaginationClickable) {
     bottom: -4px;
 }
 
 
 
-:global(.vtex-store-components-3-x-productImage)::before{
-    content:url('/arquivos/flagPDP.png');
-    position:relative; 
- 
+:global(.vtex-store-components-3-x-productImage)::before {
+    content: url('/arquivos/flagPDP.png');
+    position: relative;
+
 }
 
-:global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
-    visibility:hidden;
-    opacity:0;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
+:global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button) {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
-:global(.vtex-product-summary-2-x-container--default-prod-shelf):hover :global(.vtex-product-summary-2-x-clearLink--default-prod-shelf) :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
-    visibility:visible;
-    opacity:1;
+:global(.vtex-product-summary-2-x-container--default-prod-shelf):hover :global(.vtex-product-summary-2-x-clearLink--default-prod-shelf) :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button) {
+    visibility: visible;
+    opacity: 1;
 }
 
-:global(.vtex-menu-2-x-styledLinkContent--menu-footer){
-font-weight: 300;
+:global(.vtex-menu-2-x-styledLinkContent--menu-footer) {
+    font-weight: 300;
 }
 
 
@@ -289,7 +290,7 @@ font-weight: 300;
 
 @media (min-width: 1200px) {
     .shippingContainer {
-       
+
         padding-left: 12px;
     }
 
@@ -304,25 +305,31 @@ font-weight: 300;
 
 @media (max-width: 760px) {
 
+
+    :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+        width: 90vw;
+    }
+
     .productDescriptionTitle::after {
-       /* content:url('/arquivos/line-title.png');*/
-        content:'';
-        position:relative;
+        /* content:url('/arquivos/line-title.png');*/
+        content: '';
+        position: relative;
         right: -24px;
         top: -7px;
         width: 65px;
         overflow: hidden;
     }
-    
-    .productDescriptionTitle::before{
-       /* content:url('/arquivos/line-title.png');*/
-        content:'';
-        position:relative; 
+
+    .productDescriptionTitle::before {
+        /* content:url('/arquivos/line-title.png');*/
+        content: '';
+        position: relative;
         left: -24px;
         top: -7px;
         width: 65px;
         overflow: hidden;
     }
+
     .infoCardContainer--sellerConditionCard {
         display: flex;
     }

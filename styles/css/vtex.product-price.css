@@ -1,24 +1,26 @@
-.listPrice--selling-listprice-shelf{
+.listPrice--selling-listprice-shelf, .listPriceRange--selling-listprice-shelf{
     text-align: right;
     color: #000;
     text-transform: uppercase;
     padding-right: 1em;
 }
-.listPriceValue--selling-listprice-shelf{
+.listPriceValue--selling-listprice-shelf, .listPriceRangeUniqueValue--selling-listprice-shelf{
     text-decoration: none;
 }
 
-.sellingPriceValue::before {
+.sellingPriceValue::before,  .sellingPriceRange::before{
     content: "Por: ";
     font-size: 12px;
+    text-transform: uppercase;
   }
 
-  .listPrice::before {
+  .listPrice::before, .listPriceRange::before {
     content: "De: ";
     font-size: 12px;
+    text-transform: uppercase;
   }
 
-  .sellingPrice--selling-price-shelf{
+  .sellingPrice--selling-price-shelf, .sellingPriceRange--selling-price-shelf{
     text-transform: uppercase;
     padding-right: 0.5em;
     text-align: right;
