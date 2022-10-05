@@ -104,7 +104,7 @@
       "product-identifier.product",
       "productStars",
       "product-rating-summary",
-      "sku-selector",
+      "condition-layout.product#personalizada-show-selector",
       "flex-layout.row#progressive-discount",
      
       "product-price#product-details",
@@ -113,6 +113,74 @@
       "flex-layout.row#shipping-and-benefits",
       "availability-subscriber"
     ]
+  },
+  "condition-layout.product#personalizada-show-selector":{
+    "props":{
+      "conditions":[
+        {
+        "subject": "categoryId",
+        "arguments": {"id": "25"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "221"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "18"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "19"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "20"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "21"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "22"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "23"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "24"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "26"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "27"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "28"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "29"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "30"}
+      },
+      {
+        "subject": "categoryId",
+        "arguments": {"id": "222"}
+      }
+    ],
+    "matchType": "none",
+    "Then": "sku-selector"
+    }
   },
  
   "condition-layout.product#personalizada":{
@@ -187,7 +255,7 @@
 
   "placa-customizada":{
     "blocks":[
-      "sku-selector",
+      "sku-selector#personalizado",
       "product-quantity"
     ]
   },
@@ -246,6 +314,17 @@
   "sku-selector": {
     "props": {
       "initialSelection": "empty",
+      "hideImpossibleCombinations": true,
+      "showValueForVariation": "all",
+      "maxItems": 10,
+      "displayMode": "select",
+      "visibility": "more-than-one"
+    }
+  },
+
+  "sku-selector#personalizado": {
+    "props": {
+      "initialSelection": "complete",
       "hideImpossibleCombinations": true,
       "showValueForVariation": "all",
       "maxItems": 10,

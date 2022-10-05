@@ -2,6 +2,19 @@
     max-width: 90% !important;
 }
 
+.slick-prev:before {
+  content: url(/arquivos/slick-arrow-left-orange.svg) !important;
+  width: 11px;
+  height: 17px;
+}
+
+.slick-next:before {
+  content: url(/arquivos/slick-arrow-right-orange.svg) !important;
+  width: 11px;
+  height: 17px;
+}
+
+
 .placaCustomBtnBuy button{
   border-radius: 100px;
   padding-left: 5em;
@@ -29,17 +42,6 @@
     width: 100%;
 }
 
-.slick-prev:before {
-    content: url(/arquivos/slick-arrow-left-orange.svg);
-    width: 11px;
-    height: 17px;
-  }
-
-  .slick-next:before {
-    content: url(/arquivos/slick-arrow-right-orange.svg);
-    width: 11px;
-    height: 17px;
-  }
 
   #select-pictograma{
     padding: 6px;
@@ -80,6 +82,9 @@
     margin-right: auto;
     width: 88%;
     font-size: 4vw;
+    font-family: "HelveticaLTS";
+    text-transform: uppercase;
+    font-weight: bold;
     text-align: center;
     overflow-wrap: break-word;
     margin-top: 32%;
@@ -101,9 +106,7 @@
 margin-top: -1%;
 }
 
-.custom-text-simulation span{
-  text-transform: uppercase;
-}
+
 
 
 

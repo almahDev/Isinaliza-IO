@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "./global.css";
 import { useProduct } from "vtex.product-context";
 import { Button, Modal } from "vtex.styleguide";
 import { ExtensionPoint } from "vtex.render-runtime";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./global.css";
+
 
 interface ProductAvailableProps {
   // children: any;
@@ -175,23 +176,23 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     
     if(mq.matches){
       if (customTextValue.length <= 30) {
-        setCustomFontSize("3.4vw");
+        setCustomFontSize("3.6vw");
       } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
-        setCustomFontSize("2.4vw");
+        setCustomFontSize("2.6vw");
       } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
-        setCustomFontSize("2.1vw");
+        setCustomFontSize("2.3vw");
       } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
-        setCustomFontSize("1.7vw");
+        setCustomFontSize("2vw");
       } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
-        setCustomFontSize("1.6vw");
+        setCustomFontSize("1.8vw");
       } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
-        setCustomFontSize("1.4vw");
+        setCustomFontSize("1.6vw");
       } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
-        setCustomFontSize("1.3vw");
+        setCustomFontSize("1.5vw");
       } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
-        setCustomFontSize("1.2vw");
+        setCustomFontSize("1.3vw");
       } else {
-        setCustomFontSize("1.1vw");
+        setCustomFontSize("1.3vw");
       }
     } else{
       if (customTextValue.length <= 30) {
@@ -201,17 +202,17 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
       } else if (customTextValue.length > 60 && customTextValue.length <= 90) {
         setCustomFontSize("4.4vw");
       } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
-        setCustomFontSize("4vw");
-      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
         setCustomFontSize("3.8vw");
+      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+        setCustomFontSize("3.5vw");
       } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
-        setCustomFontSize("3.4vw");
+        setCustomFontSize("3.1vw");
       } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
-        setCustomFontSize("3.3vw");
-      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
         setCustomFontSize("2.9vw");
+      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+        setCustomFontSize("2.5vw");
       } else {
-        setCustomFontSize("2.7vw");
+        setCustomFontSize("2.5vw");
       }
     }
  
@@ -273,7 +274,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
           <div className="custom-prod-interface mv3 mh5">
             <p className="productName">{productInfo?.product?.productName}</p>
 
-            <ExtensionPoint id="sku-selector" />
+            <ExtensionPoint id="sku-selector"/>
 
             <textarea
               value={customTextValue}
@@ -314,6 +315,8 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
                 </div>
                
               </span>
+
+              
             </div>
           </div>
         </div>
