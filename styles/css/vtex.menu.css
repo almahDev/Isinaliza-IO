@@ -79,6 +79,7 @@
 
   .styledLinkContent--row-menu-col{
     white-space: break-spaces;
+    min-width: 120px;
   }
 
 
