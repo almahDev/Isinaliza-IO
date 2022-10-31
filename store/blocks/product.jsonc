@@ -256,7 +256,8 @@
   "placa-customizada":{
     "blocks":[
       "sku-selector#personalizado",
-      "product-quantity"
+      "product-quantity",
+      "product-price#product-details"
     ]
   },
 
