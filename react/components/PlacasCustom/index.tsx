@@ -130,14 +130,16 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
       body: JSON.stringify({orderItems: current})
     });
 
+
     let attachments = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items/${orderFormResponse.items.length}/attachments/Personalização`,{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json"
       },
-      body: JSON.stringify({content: attachmentsInfo})
+      body: JSON.stringify({content: attachmentsInfo, noSplitItem: true})
     })
+
 
     location.href = "/checkout/#/cart"
 
