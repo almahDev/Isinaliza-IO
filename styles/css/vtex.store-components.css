@@ -26,7 +26,7 @@
 
 .infoCardContainer--TelefoneCard {
     justify-content: flex-end;
-    background-color: #333; /*#0054A8;*/
+    background-color: #0054A8;
     padding-left: 1.5em;
     height: 40px;
 }
