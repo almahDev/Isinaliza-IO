@@ -370,7 +370,8 @@
   "add-to-cart-button#pdp":{
 "props":{
   "text":"COMPRAR",
-  "blockClass":"btn-buy-pdp"
+  "blockClass":"btn-buy-pdp",
+  "customPixelEventId": "example-add-to-cart"
 }
   },
 
