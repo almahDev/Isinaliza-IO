@@ -371,7 +371,8 @@
 "props":{
   "text":"COMPRAR",
   "blockClass":"btn-buy-pdp",
-  "customPixelEventId": "example-add-to-cart"
+  "customPixelEventId": "example-add-to-cart",
+  "addToCartFeedback": "customEvent" 
 }
   },
 
