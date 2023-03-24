@@ -74,7 +74,8 @@
     "flex-layout.col#PERSONALIZADAS": {
         "props": {
             "preventVerticalStretch": true,
-            "blockClass":"menu-items-part"
+            "blockClass":"menu-items-part",
+            "width":"25%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS"
@@ -83,7 +84,8 @@
     "flex-layout.col#PERSONALIZADAS2": {
         "props": {
             "preventVerticalStretch": true,
-            "blockClass":"menu-items-part"
+            "blockClass":"menu-items-part",
+            "width":"25%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-PERSONALIZADAS2"
@@ -92,12 +94,15 @@
     "flex-layout.col#IMG-PERSONALIZADAS": {
         "children": [
             "image#IMG-PERSONALIZADAS"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-PERSONALIZADAS": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     },
     // ----------------- ADESIVOS DE SEGURANÇA ITEM -------------------
@@ -154,7 +159,8 @@
     },
     "flex-layout.col#ADESIVOS-DE-SEGURANÇA": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"20%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA"
@@ -162,7 +168,8 @@
     },
     "flex-layout.col#ADESIVOS-DE-SEGURANÇA2": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"20%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA2"
@@ -170,7 +177,8 @@
     },
     "flex-layout.col#ADESIVOS-DE-SEGURANÇA3": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"20%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-ADESIVOS-DE-SEGURANÇA3"
@@ -180,12 +188,15 @@
     "flex-layout.col#IMG-ADESIVOS-DE-SEGURANÇA": {
         "children": [
             "image#IMG-ADESIVOS-DE-SEGURANÇA"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-ADESIVOS-DE-SEGURANÇA": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     },
     // ----------------- CAVALETE DE SINALIZAÇÃO ITEM -------------------
@@ -240,7 +251,8 @@
     },
     "flex-layout.col#CAVALETE-DE-SINALIZAÇÃO": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"33%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-CAVALETE-DE-SINALIZACAO"
@@ -249,12 +261,15 @@
     "flex-layout.col#IMG-CAVALETE-DE-SINALIZAÇÃO": {
         "children": [
             "image#IMG-CAVALETE-DE-SINALIZAÇÃO"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-CAVALETE-DE-SINALIZAÇÃO": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     },
     // ----------------- CONDOMÍNIO ITEM -------------------
@@ -310,7 +325,8 @@
     },
     "flex-layout.col#CONDOMINIO": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"25%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO"
@@ -318,7 +334,8 @@
     },
     "flex-layout.col#CONDOMINIO2": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"25%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-CONDOMINIO2"
@@ -327,12 +344,15 @@
     "flex-layout.col#IMG-CONDOMINIO": {
         "children": [
             "image#IMG-CONDOMINIO"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-CONDOMINIO": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     },
     // ----------------- TRÂNSITO ITEM -------------------
@@ -387,7 +407,8 @@
     },
     "flex-layout.col#TRANSITO": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"33%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-TRANSITO"
@@ -398,12 +419,15 @@
     "flex-layout.col#IMG-TRANSITO": {
         "children": [
             "image#IMG-TRANSITO"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-TRANSITO": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     },
     // ----------------- BRAILLE TÁTIL ITEM -------------------
@@ -458,7 +482,8 @@
     },
     "flex-layout.col#BRAILLE": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"33%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-BRAILLE"
@@ -468,12 +493,15 @@
     "flex-layout.col#IMG-BRAILLE": {
         "children": [
             "image#IMG-BRAILLE"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-BRAILLE": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     },
     // ----------------- COMBATE À INCÊNDIO ITEM -------------------
@@ -529,7 +557,8 @@
     },
     "flex-layout.col#INCENDIO": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"25%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-INCENDIO"
@@ -537,7 +566,8 @@
     },
     "flex-layout.col#INCENDIO2": {
         "props": {
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "width":"25%"
         },
         "children": [
             "vtex.menu@2.x:menu#submenu-cat-INCENDIO2"
@@ -548,12 +578,15 @@
      
         "children": [
             "image#IMG-INCENDIO"
-        ]
+        ],
+        "props":{
+            "width":"grow"
+        }
     },
     "image#IMG-INCENDIO": {
         "props": {
             "src": "assets/banners/generico-banner.png",
-            "maxHeight": 234
+            "maxHeight": 260
         }
     }
 

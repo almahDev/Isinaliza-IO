@@ -17,6 +17,12 @@
     display: flex;
 }
 
+.flexRowContent--menu-content-area{
+    background-color: #0054A8;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
 .flexRow--footer__content {
     background-color: #F5F5F5;
 }

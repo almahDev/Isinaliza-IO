@@ -36,6 +36,8 @@
     margin-top: -7px;
 }
 
+
+
 :global(.vtex-menu-2-x-menuItemInnerDiv--linkList-footer-toggle) {
     margin-bottom: 8px;
     margin-top: 8px;
@@ -81,13 +83,15 @@
     white-space: break-spaces;
     min-width: 120px;
     font-size: .975rem;
+    color: white;
   }
 
 
 
   .submenuWrapper--main-menu-row-desk {
-    background-color: #FFF;
+    background-color: transparent;
     z-index: 10000;
+    border: none;
   }
   
 
