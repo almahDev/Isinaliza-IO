@@ -161,9 +161,24 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
     setSelectedPictogram(event.target.value);
   };
 
+  const clickPhotoOpens = ()=>{
+      let imageArea: HTMLElement  = document!.querySelector(".vtex-store-components-3-x-productImageTag") as HTMLElement;
+
+      imageArea.onclick = function () {
+        let element: HTMLElement  = document!.querySelector(".vtex-flex-layout-0-x-flexRowContent--buy-area .vtex-button") as HTMLElement;
+    element.click()
+      }
+  
+  }
+
+
+
   useEffect(() => {
+
     placasAlternativasFetcher();
     pictogramsCategoryFetcher();
+    clickPhotoOpens()
+   
   }, []);
 
   useEffect(() => {
