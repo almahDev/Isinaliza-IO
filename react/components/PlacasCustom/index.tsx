@@ -287,6 +287,11 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
             </div>
 
             <img src={prodIMG} />
+          <div className="text-obs-container">
+          <p className="obs-text-placa">*Nossa equipe ajustará o texto para melhor compreensão da sinalização.</p>
+            <p className="obs-text-placa">** Após finalizar a compra não será possível modificar qualquer dados.</p>
+          </div>
+         
           </div>
           <div className="custom-prod-interface mv3 mh5">
             <p className="productName">{productInfo?.product?.productName}</p>
