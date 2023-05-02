@@ -55,7 +55,6 @@ $( window ).load(function() {
 
 
 $(document).ready(function () {
-alert("final")
     setInterval(()=>{
       $("#ship-number").attr("maxlength", 15)
       $("#ship-complement").attr("maxlength", 70)
