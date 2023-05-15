@@ -37,6 +37,15 @@
     font-weight: 200;
 }
 
+.shareContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+.shareLabel{
+    margin-right: 1em;
+}
 
 
 .listPriceValue {

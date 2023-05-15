@@ -74,11 +74,17 @@
     }
   },
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": ["stack-layout", "share"],
     "props": {
       "width": "54%",
       "rowGap": 0,
       "paddingLeft": 4
+    }
+  },
+
+  "share": {
+    "props":{
+      "className": "Share-btns"
     }
   },
   "flex-layout.row#product-image": {

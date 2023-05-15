@@ -100,48 +100,52 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
 
   const addAndCustomize = async () => {
    
-
-    let orderForm = await fetch("/api/checkout/pub/orderForm");
-    let orderFormResponse = await orderForm.json()
-    let {orderFormId} = orderFormResponse;
-    const current = [
-      {
-        index: orderFormResponse.items.length,
-        id: productInfo?.selectedItem?.itemId,
-        quantity: productInfo?.selectedQuantity,
-        seller: "1"
-      }
-    ];
-    const attachmentsInfo = { 
-      modelo: selectedPictogram, 
-      texto: customTextValue, 
-      pictograma: selectedPictogram, 
-      thumb: pictogramImage }
-
-
+if(customTextValue.length > 0){
+  let orderForm = await fetch("/api/checkout/pub/orderForm");
+  let orderFormResponse = await orderForm.json()
+  let {orderFormId} = orderFormResponse;
+  const current = [
+    {
+      index: orderFormResponse.items.length,
+      id: productInfo?.selectedItem?.itemId,
+      quantity: productInfo?.selectedQuantity,
+      seller: "1"
+    }
+  ];
+  const attachmentsInfo = { 
+    modelo: selectedPictogram, 
+    texto: customTextValue, 
+    pictograma: selectedPictogram, 
+    thumb: pictogramImage }
 
 
-    let data = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({orderItems: current})
-    });
 
 
-    let attachments = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items/${orderFormResponse.items.length}/attachments/Personalização`,{
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({content: attachmentsInfo, noSplitItem: true})
-    })
+  let data = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({orderItems: current})
+  });
 
 
-    location.href = "/checkout/#/cart"
+  let attachments = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items/${orderFormResponse.items.length}/attachments/Personalização`,{
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({content: attachmentsInfo, noSplitItem: true})
+  })
+
+
+  location.href = "/checkout/#/cart"
+} else{
+  alert("Insira um texto na placa.")
+}
+    
 
  
   };
