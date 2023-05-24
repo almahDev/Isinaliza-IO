@@ -1,154 +1,154 @@
-$(window).on('orderFormUpdated.vtex',function(e,orderForm){
-  
-  if(!vtexjs.checkout.orderForm.openTextField){
+$(window).on('orderFormUpdated.vtex', function (e, orderForm) {
+
+  if (!vtexjs.checkout.orderForm.openTextField) {
     vtexjs.checkout.sendAttachment('openTextField', { value: " " });
   }
-  
-  setTimeout(function(){
-    $('.mini-cart .quantity.badge').each(function(){
+
+  setTimeout(function () {
+    $('.mini-cart .quantity.badge').each(function () {
       var $_this = $(this);
       $_this.text(parseInt($_this.text()));
-      
+
     })
-    
-    $('.item-attachments-content.item-attachments-name-personalizacao').each(function(){
+
+    $('.item-attachments-content.item-attachments-name-personalizacao').each(function () {
       var $_this = $(this);
       var $_itemAttachmentsImage = $_this.find('.item-attachments-item-fields')
-      
-      if($(".item-attachments-item-fields img").length <= 2){
-          var _thumb = $_this.find('.item-attachment-name-thumb input').val()
-      $_itemAttachmentsImage.prepend($('<img>',{'src':_thumb}))
+
+      if ($(".item-attachments-item-fields img").length <= 2) {
+        var _thumb = $_this.find('.item-attachment-name-thumb input').val()
+        $_itemAttachmentsImage.prepend($('<img>', { 'src': _thumb }))
       }
-      
-    
+
+
       $_this.prev().prev().addClass('has-attachment');
-      $(this).find('textarea').attr('disabled','disabled')
+      $(this).find('textarea').attr('disabled', 'disabled')
     })
 
-    
-    
-  },500)
-  
-  
+
+
+  }, 500)
+
+
 })
-    
 
 
 
 
 
-$(window).on('hashchange',function(){ 
-   vtexjs.checkout.getOrderForm()
-  
+
+$(window).on('hashchange', function () {
+  vtexjs.checkout.getOrderForm()
+
 });
 
-$( document ).ready(function() {
-    vtexjs.checkout.getOrderForm()
+$(document).ready(function () {
+  vtexjs.checkout.getOrderForm()
 })
 
 
-$( window ).load(function() {
-    vtexjs.checkout.getOrderForm()
+$(window).load(function () {
+  vtexjs.checkout.getOrderForm()
 });
 
 
 
 
 $(document).ready(function () {
-    setInterval(()=>{
-      $("#ship-number").attr("maxlength", 15)
-      $("#ship-complement").attr("maxlength", 70)
-    }, 1000)
+  setInterval(() => {
+    $("#ship-number").attr("maxlength", 15)
+    $("#ship-complement").attr("maxlength", 70)
+  }, 1000)
 
- 
-  if(window.location.href.indexOf("cart") != -1){
-      $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones1.svg'/>`);
+
+  if (window.location.href.indexOf("cart") != -1) {
+    $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones1.svg'/>`);
     $(".cart-template-holder").prepend("<div style='display: flex;align-items: stretch;margin-bottom: 2em;'><img src='/arquivos/cart.svg' style='height: 34px;    margin-right: 1em;'><h1 style='font-size: 26px;'>Meu Carrinho</h1></div>")
-  
+
   }
 
-  
-  
-  window.onhashchange = function() { 
-      if($(".logo-site-seguro .content a")) {
-          $(".logo-site-seguro .content a").html("");
-      }
-      
-      if(window.location.href.indexOf("cart") != -1){
-          $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones1.svg'/> `)
-      
-      } else if (window.location.href.indexOf("profile") != -1) {
-           $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones2.svg'/> `)
-      } else if (window.location.href.indexOf("shipping") != -1) {
-          $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones3.svg'/> `)
-      } else if (window.location.href.indexOf("payment") != -1) {
-          $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones4.svg'/> `)
-      } 
+
+
+  window.onhashchange = function () {
+    if ($(".logo-site-seguro .content a")) {
+      $(".logo-site-seguro .content a").html("");
+    }
+
+    if (window.location.href.indexOf("cart") != -1) {
+      $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones1.svg'/> `)
+
+    } else if (window.location.href.indexOf("profile") != -1) {
+      $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones2.svg'/> `)
+    } else if (window.location.href.indexOf("shipping") != -1) {
+      $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones3.svg'/> `)
+    } else if (window.location.href.indexOf("payment") != -1) {
+      $(".logo-site-seguro .content a").append(`<img src='/arquivos/icones4.svg'/> `)
+    }
   }
-  
-  
-  setTimeout(function(){
-  
+
+
+  setTimeout(function () {
+
     $(".srp-result").append("<p  style='margin-top:10px'>Clique abaixo para ver todas as opções</p>")
+
+    /*  $(".srp-delivery-current-many__price").append(`
+  <svg style='transform: translate(4px) rotate(-90deg);position: relative;top: 8px;' xmlns="http://www.w3.org/2000/svg" width="19.523" height="30.523" viewBox="0 0 39.523 50.523">
+  <path fill="none" stroke="rgb(227,80,60)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
+  </svg>
   
-  /*  $(".srp-delivery-current-many__price").append(`
-<svg style='transform: translate(4px) rotate(-90deg);position: relative;top: 8px;' xmlns="http://www.w3.org/2000/svg" width="19.523" height="30.523" viewBox="0 0 39.523 50.523">
-<path fill="none" stroke="rgb(227,80,60)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
-</svg>
-
-`);
-
-$(".srp-delivery-current-many__price").css({"margin-top":"-15px"})*/
-
-
+  `);
   
-  },1000)
+  $(".srp-delivery-current-many__price").css({"margin-top":"-15px"})*/
 
-  setTimeout(function(){
-      jQuery(function($){
 
-          $("#quantoFalta").html(function() { 
-      
-                return $(this).html().replace(".", ",");  
-      
-          });
+
+  }, 1000)
+
+  setTimeout(function () {
+    jQuery(function ($) {
+
+      $("#quantoFalta").html(function () {
+
+        return $(this).html().replace(".", ",");
+
       });
+    });
   }, 10000);
-  
 
 
-  
-  
-const totalfrete = 250;
-
-function getdevileryprice(){
-
-if(window.location.href.indexOf("cart") != -1){
-//console.log(orderForm);
-
-/*let currentPrice = orderForm.totalizers[0].value;
-currentPrice = currentPrice.toString().replace(/\B(?=(\d{2})+(?!\d))/g, '.');
-currentPrice =  Number(currentPrice);*/
-
-let currentPrice = $(".summary-template-holder .summary-totalizers table .monetary").html()
-currentPrice = currentPrice.replace(/,/g, '.').replace(/[\sR$]+/g, '');
-if(currentPrice.length > 6){
-let segregator  = currentPrice.split(".")
-currentPrice = `${segregator[0]}${segregator[1]}.${segregator[2]}`
-}
-
-currentPrice = Number(currentPrice);
 
 
-let qtdUntilGoal = totalfrete - currentPrice;
-qtdUntilGoal = qtdUntilGoal.toFixed(2)
-let percentage = 0;
-$(".myprogressbar").remove()
-if(qtdUntilGoal <= 0){
-  percentage = 100
-  qtdUntilGoal = 0
 
-  $(".summary-totalizers").append(`
+  const totalfrete = 250;
+
+  function getdevileryprice() {
+
+    if (window.location.href.indexOf("cart") != -1) {
+      //console.log(orderForm);
+
+      /*let currentPrice = orderForm.totalizers[0].value;
+      currentPrice = currentPrice.toString().replace(/\B(?=(\d{2})+(?!\d))/g, '.');
+      currentPrice =  Number(currentPrice);*/
+
+      let currentPrice = $(".summary-template-holder .summary-totalizers table .monetary").html()
+      currentPrice = currentPrice.replace(/,/g, '.').replace(/[\sR$]+/g, '');
+      if (currentPrice.length > 6) {
+        let segregator = currentPrice.split(".")
+        currentPrice = `${segregator[0]}${segregator[1]}.${segregator[2]}`
+      }
+
+      currentPrice = Number(currentPrice);
+
+
+      let qtdUntilGoal = totalfrete - currentPrice;
+      qtdUntilGoal = qtdUntilGoal.toFixed(2)
+      let percentage = 0;
+      $(".myprogressbar").remove()
+      if (qtdUntilGoal <= 0) {
+        percentage = 100
+        qtdUntilGoal = 0
+
+        $(".summary-totalizers").append(`
   <div class="myprogressbar">
   <label for="file" style="color: #0CBC5F;    margin-top: 2em;line-height: 22px;font-size: 12px;">
   <svg xmlns="http://www.w3.org/2000/svg" width="27.172" height="18.824" viewBox="0 0 27.172 18.824" style="    margin-bottom: -5px;">
@@ -191,9 +191,9 @@ if(qtdUntilGoal <= 0){
   
   `)
 
-} else{
-percentage = (100 * currentPrice) / totalfrete;
-$(".summary-totalizers").append(`
+      } else {
+        percentage = (100 * currentPrice) / totalfrete;
+        $(".summary-totalizers").append(`
 <div class="myprogressbar">
 <label for="file" style="color: #0CBC5F;    margin-top: 2em;line-height: 22px;font-size: 12px;">
 <svg xmlns="http://www.w3.org/2000/svg" width="27.172" height="18.824" viewBox="0 0 27.172 18.824" style="    margin-bottom: -5px;">
@@ -235,63 +235,80 @@ Faltam <span id="quantoFalta" style="font-weight: 900;">R$ ${qtdUntilGoal}</span
 
 
 `)
-}
+      }
 
 
 
 
 
-}
+    }
 
 
-  
 
-}
 
-setInterval(function(){
-if(window.location.href.indexOf("cart") == -1){
-  $(".myprogressbar").remove()
-}
-},1000)
+  }
 
-getdevileryprice()
+  setInterval(function () {
+    if (window.location.href.indexOf("cart") == -1) {
+      $(".myprogressbar").remove()
+    }
+  }, 1000)
 
-$(window).on("orderFormUpdated.vtex", (a, obj) => {
   getdevileryprice()
 
-
-/* if($(".srp-delivery-current-many__price svg").length == 0){
-   $(".srp-delivery-current-many__price").append(`
-<svg style='transform: translate(4px) rotate(-90deg);position: relative;top: 8px;' xmlns="http://www.w3.org/2000/svg" width="19.523" height="30.523" viewBox="0 0 39.523 50.523">
-<path fill="none" stroke="rgb(227,80,60)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
-</svg>
-
-`);
-
-$(".srp-delivery-current-many__price").css({"margin-top":"-15px"})
-}*/
-  
+  $(window).on("orderFormUpdated.vtex", (a, obj) => {
+    getdevileryprice()
 
 
-})
-
+    /* if($(".srp-delivery-current-many__price svg").length == 0){
+       $(".srp-delivery-current-many__price").append(`
+    <svg style='transform: translate(4px) rotate(-90deg);position: relative;top: 8px;' xmlns="http://www.w3.org/2000/svg" width="19.523" height="30.523" viewBox="0 0 39.523 50.523">
+    <path fill="none" stroke="rgb(227,80,60)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
+    </svg>
+    
+    `);
+    
+    $(".srp-delivery-current-many__price").css({"margin-top":"-15px"})
+    }*/
 
 
 
+  })
+
+
+const removeSpecialchars = (selectors)=>{
+
+  selectors.forEach(el=>{
+    $(el).on( "change", function() {
+      $(el).val($(el).val().replace(/[^a-zA-Z0-9 ]/g, ''))
+    } );
+   
+  })
+
+}
+
+let valuesInput =[
+  "#client-first-name",
+  "#client-last-name",
+  "#client-company-name",
+  "#client-company-nickname",
+  "#ship-number",
+  "#ship-complement"
+]
+removeSpecialchars(valuesInput)
 
 
 
-  
-  
-  
+
+
 });
 
 
 
 var script = document.createElement("script");
 script.src = "https://www.mercadopago.com/v2/security.js";
-script.setAttribute("output","vtex.deviceFingerprint");
-script.setAttribute("view","checkout");
+script.setAttribute("output", "vtex.deviceFingerprint");
+script.setAttribute("view", "checkout");
 document.body.appendChild(script);
 
 

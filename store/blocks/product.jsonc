@@ -21,7 +21,6 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#product-buy-together",
-    //  "__fold__",
       "flex-layout.row#description",
      /* "flex-layout.row#relatedshelf" para quando o app da vtex sair do alpha*/
      "flex-layout.row#relatedshelfPlaceholder",

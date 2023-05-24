@@ -28,6 +28,7 @@
   "store.search#department": {
     "blocks": [
       "search-result-layout",
+      "__fold__",
       "flex-layout.row#seoText"
     ],
     "props": {
@@ -42,6 +43,7 @@
   "store.search#category": {
     "blocks": [
       "search-result-layout",
+      "__fold__",
       "flex-layout.row#seoText"
     ],
     "props": {
@@ -56,6 +58,7 @@
   "store.search#subcategory": {
     "blocks": [
       "search-result-layout",
+      "__fold__",
       "flex-layout.row#seoText"
     ],
     "props": {
