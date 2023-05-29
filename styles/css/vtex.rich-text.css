@@ -4,6 +4,12 @@
     font-weight: bold;
     display: flex;
 }
+.headingLevel1--sectionRichTitleSEO{
+    color: #1E7BC4;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    display: flex;
+}
 
 .paragraph--sectionRichTitle::before{
     content:url('/arquivos/line-title.png');

@@ -132,10 +132,20 @@
 
   "flex-layout.col#firstContent": {
     "children": [
+      "rich-text#textoSEO",
       "rich-text#novidades",
       "list-context.product-list#novidades",
       "slider-layout#categories-circle-slider"
     ]
+  },
+
+  "rich-text#textoSEO": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# Sua loja de placas de sinalização profissional",
+      "blockClass": "sectionRichTitleSEO"
+    }
   },
   "rich-text#novidades": {
     "props": {
