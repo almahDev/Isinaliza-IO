@@ -303,6 +303,8 @@ removeSpecialchars(valuesInput)
 
 });
 
+    
+    var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.async=!0,g.src="https://cdn-te.e-goi.com/tng/vtex-te.min.js",g.setAttribute("client_id","1587694"),g.setAttribute("list_id","1"),s.parentNode.insertBefore(g,s)
 
 
 var script = document.createElement("script");
