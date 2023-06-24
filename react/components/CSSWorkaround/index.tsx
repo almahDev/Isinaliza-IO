@@ -82,12 +82,7 @@ var smarthintkey = "SH-561147";
     document.body.appendChild(egoi);
 
 
-    var egoi = document.createElement("script");
-    egoi.type = "text/javascript";
-    egoi.text = `
-    if(window._mtmReady){  console.error('Connected sites script already loaded. You might have it dupplicated.'); } else { window._mtmReady=true; var _mtm = window._mtm = window._mtm || [];_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];g.async=true; g.src='https://egoi.site/1587694_isinaliza.com.js'; s.parentNode.insertBefore(g,s);}
-`;
-    document.body.appendChild(egoi);
+   
 
 
     var egoi2 = document.createElement( 'script' );
@@ -97,6 +92,13 @@ var smarthintkey = "SH-561147";
     document.body.appendChild( egoi2 );
 
 
+
+    var _egoiaq = document.createElement("script");
+    _egoiaq.type = "text/javascript";
+    _egoiaq.text = `
+    var _egoiaq = _egoiaq || []; (function(){ var u=(("https:" == document.location.protocol) ? "https://egoimmerce.e-goi.com/" : "http://egoimmerce.e-goi.com/"); var u2=(("https:" == document.location.protocol) ? "https://cdn-te.e-goi.com/" : "http://cdn-te.e-goi.com/"); _egoiaq.push(['setClientId', "1587694"]); _egoiaq.push(['setSubscriber', "Sample"]);  _egoiaq.push(['setCampaignId', "Sample"]);  _egoiaq.push(['setTrackerUrl', u+'collect']); _egoiaq.push(['trackEcommerceCartUpdate', {{GRAND TOTAL}}  ]); _egoiaq.push(['trackPageView']); _egoiaq.push(['enableLinkTracking']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src=u2+'egoimmerce.js'; s.parentNode.insertBefore(g,s);})();
+`;
+    document.body.appendChild(_egoiaq);
 
 
     var _egoiaq2 = document.createElement("script");
