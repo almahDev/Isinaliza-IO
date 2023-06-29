@@ -74,6 +74,9 @@ var smarthintkey = "SH-561147";
     document.body.appendChild(Clarity);
 
 
+
+
+    <script></script>
     var egoi = document.createElement("script");
     egoi.type = "text/javascript";
     egoi.text = `
