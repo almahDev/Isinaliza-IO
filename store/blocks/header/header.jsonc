@@ -15,17 +15,77 @@
       "flex-layout.row#mega-menu"
     ]
   },
-  "responsive-layout.desktop#topbar": {
+  /*"responsive-layout.desktop#topbar": {
     "children": ["flex-layout.row#topbar-desktop"]
+  },*/
+
+  "responsive-layout.desktop#topbar": {
+    "children": ["flex-layout.row#topbar-desktop-wppgroup"]
   },
 
-  "flex-layout.row#topbar-desktop": {
+  "flex-layout.row#topbar-desktop-wppgroup": {
+    "children": ["flex-layout.col#topbar-wpp1", "flex-layout.col#topbar-wpp2", "flex-layout.col#topbar-wpp3"],
+    "props":{
+      "blockClass":"topbar-wpp",
+      "preventVerticalStretch": true,
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#topbar-wpp1": {
+    "children": ["image#wppgroup--icon"],
+    "props":{
+      "horizontalAlign": "center",
+      "width": "6%",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#topbar-wpp2": {
+    "children": ["rich-text#wppgroup-text"],
+    "props":{
+      "horizontalAlign": "center",
+      "width": "78%",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#topbar-wpp3": {
+    "children": ["rich-text#wppgroup-btn"],
+    "props":{
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+
+  "image#wppgroup--icon": {
+    "props": {
+      "src": "/arquivos/wpp-icon.png",
+      "blockClass": "wpp-group-img",
+      "maxWidth": "20px",
+      "maxHeight": "18px"
+    }
+  },
+  "rich-text#wppgroup-text": {
+    "props": {
+      "text": "ENTRE NO NOSSO **GRUPO VIP DO WHATSAPP** PARA RECEBER **OFERTAS EXCLUSIVAS!** *OFERTAS VÁLIDAS APENAS NO GRUPO",
+      "blockClass":"wppgroup-text"
+    }
+  },
+
+  "rich-text#wppgroup-btn": {
+    "props": {
+      "text": "<a class='wppgrouplink' href='https://chat.whatsapp.com/LNoMytBAN9UGwRee8hr106' target='_blank'>ENTRAR NO GRUPO VIP</a>",
+      "blockClass":"wppgroup-btn"
+    }
+  },
+
+ /* "flex-layout.row#topbar-desktop": {
     "children": ["flex-layout.col#topbar-1", "flex-layout.col#topbar-2"],
     "props":{
       "blockClass":"topbar",
       "preventVerticalStretch": true
     }
-  },
+  },*/
 
   "flex-layout.col#topbar-1": {
     "children": ["info-card#headerTelefone"],
@@ -165,7 +225,7 @@
   /* MOBILE */
   "header-layout.mobile": {
     // "children": ["header-row#1-mobile", "header-row#2mobile"]
-    "children": ["header-row#1-mobile", "header-row#2mobile"]
+    "children": [ "flex-layout.row#topbar-desktop-wppgroup","header-row#1-mobile", "header-row#2mobile"]
   },
   "header-row#1-mobile": {
     "children": [

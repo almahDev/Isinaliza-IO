@@ -11,3 +11,37 @@
 #netreviewsWidgetNum3863widget10av{
 display: none;
 }
+
+.wppgrouplink{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    .wppgrouplink{
+       font-size: 13px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wppgrouplink{
+       font-size: 11px;
+    }
+    .vtex-rich-text-0-x-paragraph--wppgroup-btn{
+        line-height: 13px;
+    }
+
+    .vtex-flex-layout-0-x-flexRowContent--topbar-wpp > :first-child{
+        width: 15% !important;
+    }
+    .vtex-flex-layout-0-x-flexRowContent--topbar-wpp > :nth-child(2){
+        width: 55% !important;
+    }
+    .vtex-flex-layout-0-x-flexRowContent--topbar-wpp > :last-child{
+        width: 30% !important;
+    }
+    
+}
+
+
+

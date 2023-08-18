@@ -109,6 +109,10 @@
     margin-top: 10%;
     margin-bottom: 10%;
 }
+.imageElement--wpp-group-img{
+        max-width: 44px !important; 
+     max-height: 44px !important;
+}
 
 
 .productBrand {

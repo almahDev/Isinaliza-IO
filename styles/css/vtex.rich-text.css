@@ -104,7 +104,40 @@
     height: auto;
 }
 
+.paragraph--wppgroup-text, .paragraph--wppgroup-btn{
+    color: white;
+    margin: 0;
+    padding: 8px;
+    font-size: 1.11rem;
+}
+
+.paragraph--wppgroup-text .strong--wppgroup-text{
+    color: #FEED17
+}
+
+.paragraph--wppgroup-btn{
+    background-color: #ed6f00;
+    border-radius: 100px;
+    padding: 8px 18px;
+    text-align: center;
+}
+
+.link--wppgroup-btn .wppgrouplink{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    .paragraph--wppgroup-text{
+      font-size: 13px;
+    }
+}
+
 @media (max-width: 760px) {
+
+    .paragraph--wppgroup-text{
+        font-size: 11px;
+      }
     .container--footer-sobre {
         justify-content: center;
         margin-top: 1.5em;

@@ -4,6 +4,11 @@
 
 }
 
+.flexRow--topbar-wpp {
+    background-color: #0054A8;
+    margin-bottom:11px;
+}
+
 .flexColChild--orcamento-e-social {
     width: 100%;
 }

@@ -87,10 +87,10 @@
 }
 
 @media (max-width: 760px) {
-  .headerStickyRow--main-header-mobile {
+ /* .headerStickyRow--main-header-mobile {
     border-top: solid 18px #0054A8;
     padding-top: 1em;
-  }
+  }*/
 
 }
 
