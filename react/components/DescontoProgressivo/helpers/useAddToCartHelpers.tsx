@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { pathOr } from 'ramda'
+import { pathOr } from "ramda";
 
 const useAddToCartHelpers = () => {
   const mapItemToCart = (
@@ -14,11 +14,11 @@ const useAddToCartHelpers = () => {
       !selectedSeller ||
       !selectedSeller.commertialOffer
     ) {
-      return null
+      return null;
     }
 
     if (!selectedSeller || !selectedSeller.commertialOffer) {
-      selectedSeller = selectedItem.sellers[0]
+      selectedSeller = selectedItem.sellers[0];
     }
 
     return {
@@ -31,14 +31,14 @@ const useAddToCartHelpers = () => {
       id: selectedItem.itemId,
       productId: product.productId,
       quantity: selectedQuantity,
-      uniqueId: '',
+      uniqueId: "",
       detailUrl: `/${product.linkText}/p`,
       name: product.productName,
       brand: product.brand,
       category:
         product.categories && product.categories.length > 0
           ? product.categories[0]
-          : '',
+          : "",
       productRefId: product.productReference,
       seller: selectedSeller.sellerId,
       variant: selectedItem.name,
@@ -52,13 +52,13 @@ const useAddToCartHelpers = () => {
       options: [],
       imageUrl: selectedItem.images[0].imageUrl,
       referenceId: selectedItem.referenceId,
-    }
-  }
+    };
+  };
 
   const adjustSkuItemForPixelEvent = (skuItem: any) => {
     // Changes this `/Apparel & Accessories/Clothing/Tops/`
     // to this `Apparel & Accessories/Clothing/Tops`
-    const category = skuItem.category ? skuItem.category.slice(1, -1) : ''
+    const category = skuItem.category ? skuItem.category.slice(1, -1) : "";
 
     return {
       skuId: skuItem.id,
@@ -72,11 +72,11 @@ const useAddToCartHelpers = () => {
       category,
       detailUrl: skuItem.detailUrl,
       imageUrl: skuItem.imageUrl,
-      referenceId: pathOr('', ['referenceId', '0', 'Value'], skuItem),
-    }
-  }
+      referenceId: pathOr("", ["referenceId", "0", "Value"], skuItem),
+    };
+  };
 
-  return { mapItemToCart, adjustSkuItemForPixelEvent }
-}
+  return { mapItemToCart, adjustSkuItemForPixelEvent };
+};
 
-export default useAddToCartHelpers
+export default useAddToCartHelpers;

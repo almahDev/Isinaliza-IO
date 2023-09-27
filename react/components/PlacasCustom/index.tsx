@@ -7,7 +7,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 interface ProductAvailableProps {
   // children: any;
 }
@@ -15,8 +14,6 @@ interface ProductAvailableProps {
 const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const productInfo = useProduct();
   const prodIMG = productInfo?.selectedItem?.images[0].imageUrl;
-  
-
 
   const [showModal, setShowModal] = useState(false);
   const [customTextValue, setCustomTextValue] = useState("");
@@ -28,7 +25,6 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   const [selectedPictogram, setSelectedPictogram] = useState("");
   const [pictogramImage, setPictogramImage] = useState("");
   const [customFontSize, setCustomFontSize] = useState("");
-
 
   /*Criar states de loading*/
 
@@ -99,55 +95,53 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   };
 
   const addAndCustomize = async () => {
-   
-if(customTextValue.length > 0){
-  let orderForm = await fetch("/api/checkout/pub/orderForm");
-  let orderFormResponse = await orderForm.json()
-  let {orderFormId} = orderFormResponse;
-  const current = [
-    {
-      index: orderFormResponse.items.length,
-      id: productInfo?.selectedItem?.itemId,
-      quantity: productInfo?.selectedQuantity,
-      seller: "1"
+    if (customTextValue.length > 0) {
+      let orderForm = await fetch("/api/checkout/pub/orderForm");
+      let orderFormResponse = await orderForm.json();
+      let { orderFormId } = orderFormResponse;
+      const current = [
+        {
+          index: orderFormResponse.items.length,
+          id: productInfo?.selectedItem?.itemId,
+          quantity: productInfo?.selectedQuantity,
+          seller: "1",
+        },
+      ];
+      const attachmentsInfo = {
+        modelo: selectedPictogram,
+        texto: customTextValue,
+        pictograma: selectedPictogram,
+        thumb: pictogramImage,
+      };
+
+      let data = await fetch(
+        `/api/checkout/pub/orderForm/${orderFormId}/items`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({ orderItems: current }),
+        }
+      );
+
+      let attachments = await fetch(
+        `/api/checkout/pub/orderForm/${orderFormId}/items/${orderFormResponse.items.length}/attachments/Personalização`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({ content: attachmentsInfo, noSplitItem: true }),
+        }
+      );
+
+      location.href = "/checkout/#/cart";
+    } else {
+      alert("Insira um texto na placa.");
     }
-  ];
-  const attachmentsInfo = { 
-    modelo: selectedPictogram, 
-    texto: customTextValue, 
-    pictograma: selectedPictogram, 
-    thumb: pictogramImage }
-
-
-
-
-  let data = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    },
-    body: JSON.stringify({orderItems: current})
-  });
-
-
-  let attachments = await fetch(`/api/checkout/pub/orderForm/${orderFormId}/items/${orderFormResponse.items.length}/attachments/Personalização`,{
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    },
-    body: JSON.stringify({content: attachmentsInfo, noSplitItem: true})
-  })
-
-
-  location.href = "/checkout/#/cart"
-} else{
-  alert("Insira um texto na placa.")
-}
-    
-
- 
   };
 
   //EVENT HANDLERS
@@ -160,29 +154,27 @@ if(customTextValue.length > 0){
   };
 
   const selectedPictogramHandler = (event: any, img: string) => {
-   
     setPictogramImage(img);
     setSelectedPictogram(event.target.value);
   };
 
-  const clickPhotoOpens = ()=>{
-      let imageArea: HTMLElement  = document!.querySelector(".vtex-store-components-3-x-productImageTag") as HTMLElement;
+  const clickPhotoOpens = () => {
+    let imageArea: HTMLElement = document!.querySelector(
+      ".vtex-store-components-3-x-productImageTag"
+    ) as HTMLElement;
 
-      imageArea.onclick = function () {
-        let element: HTMLElement  = document!.querySelector(".vtex-flex-layout-0-x-flexRowContent--buy-area .vtex-button") as HTMLElement;
-    element.click()
-      }
-  
-  }
-
-
+    imageArea.onclick = function () {
+      let element: HTMLElement = document!.querySelector(
+        ".vtex-flex-layout-0-x-flexRowContent--buy-area .vtex-button"
+      ) as HTMLElement;
+      element.click();
+    };
+  };
 
   useEffect(() => {
-
     placasAlternativasFetcher();
     pictogramsCategoryFetcher();
-    clickPhotoOpens()
-   
+    clickPhotoOpens();
   }, []);
 
   useEffect(() => {
@@ -190,12 +182,9 @@ if(customTextValue.length > 0){
   }, [currentPictogramasCategories]);
 
   useEffect(() => {
-
     const mq = window.matchMedia("(min-width: 1200px)");
 
-    
-    
-    if(mq.matches){
+    if (mq.matches) {
       if (customTextValue.length <= 30) {
         setCustomFontSize("3.6vw");
       } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
@@ -204,18 +193,30 @@ if(customTextValue.length > 0){
         setCustomFontSize("2.3vw");
       } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
         setCustomFontSize("2vw");
-      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+      } else if (
+        customTextValue.length > 120 &&
+        customTextValue.length <= 150
+      ) {
         setCustomFontSize("1.8vw");
-      } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
+      } else if (
+        customTextValue.length > 150 &&
+        customTextValue.length <= 190
+      ) {
         setCustomFontSize("1.6vw");
-      } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
+      } else if (
+        customTextValue.length > 190 &&
+        customTextValue.length <= 220
+      ) {
         setCustomFontSize("1.5vw");
-      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+      } else if (
+        customTextValue.length > 220 &&
+        customTextValue.length <= 280
+      ) {
         setCustomFontSize("1.3vw");
       } else {
         setCustomFontSize("1.3vw");
       }
-    } else{
+    } else {
       if (customTextValue.length <= 30) {
         setCustomFontSize("7.4vw");
       } else if (customTextValue.length > 30 && customTextValue.length <= 60) {
@@ -224,19 +225,30 @@ if(customTextValue.length > 0){
         setCustomFontSize("4.4vw");
       } else if (customTextValue.length > 90 && customTextValue.length <= 120) {
         setCustomFontSize("3.8vw");
-      } else if (customTextValue.length > 120 && customTextValue.length <= 150) {
+      } else if (
+        customTextValue.length > 120 &&
+        customTextValue.length <= 150
+      ) {
         setCustomFontSize("3.5vw");
-      } else if (customTextValue.length > 150 && customTextValue.length <= 190) {
+      } else if (
+        customTextValue.length > 150 &&
+        customTextValue.length <= 190
+      ) {
         setCustomFontSize("3.1vw");
-      } else if (customTextValue.length > 190 && customTextValue.length <= 220) {
+      } else if (
+        customTextValue.length > 190 &&
+        customTextValue.length <= 220
+      ) {
         setCustomFontSize("2.9vw");
-      } else if (customTextValue.length > 220 && customTextValue.length <= 280) {
+      } else if (
+        customTextValue.length > 220 &&
+        customTextValue.length <= 280
+      ) {
         setCustomFontSize("2.5vw");
       } else {
         setCustomFontSize("2.5vw");
       }
     }
- 
   }, [customTextValue]);
 
   const settings = {
@@ -258,17 +270,15 @@ if(customTextValue.length > 0){
 
   return (
     <>
-    <div  className="placaCustomBtn">
-    <Button
-       
-       onClick={() => {
-         setShowModal(true);
-       }}
-     >
-       Customizar placa
-     </Button>
-    </div>
-   
+      <div className="placaCustomBtn">
+        <Button
+          onClick={() => {
+            setShowModal(true);
+          }}
+        >
+          Customizar placa
+        </Button>
+      </div>
 
       <Modal
         isOpen={showModal}
@@ -281,7 +291,7 @@ if(customTextValue.length > 0){
         <div className="flex modal-custom-body">
           <div className="custom-prod-img  mv3 mh5">
             <div className="custom-text-simulation">
-              <img src={pictogramImage}  className="simulation-pictogram" />
+              <img src={pictogramImage} className="simulation-pictogram" />
               <span
                 style={{ fontSize: customFontSize }}
                 className={selectedPictogram && "has-pictogram"}
@@ -291,16 +301,21 @@ if(customTextValue.length > 0){
             </div>
 
             <img src={prodIMG} />
-          <div className="text-obs-container">
-          <p className="obs-text-placa">*Nossa equipe ajustará o texto para melhor compreensão da sinalização.</p>
-            <p className="obs-text-placa">** Após finalizar a compra não será possível modificar quaisquer dados.</p>
-          </div>
-         
+            <div className="text-obs-container">
+              <p className="obs-text-placa">
+                *Nossa equipe ajustará o texto para melhor compreensão da
+                sinalização.
+              </p>
+              <p className="obs-text-placa">
+                ** Após finalizar a compra não será possível modificar quaisquer
+                dados.
+              </p>
+            </div>
           </div>
           <div className="custom-prod-interface mv3 mh5">
             <p className="productName">{productInfo?.product?.productName}</p>
 
-          {/*<ExtensionPoint id="sku-selector"/>*/ }  
+            {/*<ExtensionPoint id="sku-selector"/>*/}
 
             <textarea
               value={customTextValue}
@@ -331,21 +346,19 @@ if(customTextValue.length > 0){
               )}
             </div>
             <div className="flex flex-column items-center w-100 buy-area-modal">
-            <ExtensionPoint id="product-quantity" skuSelected={productInfo?.selectedItem}/>
+              <ExtensionPoint
+                id="product-quantity"
+                skuSelected={productInfo?.selectedItem}
+              />
 
-            <ExtensionPoint id="product-price" />
-             
-
-              
+              <ExtensionPoint id="product-price" />
             </div>
             <span className="mb4">
-              
               <div className="placaCustomBtnBuy">
-              <Button variation="primary" onClick={addAndCustomize}  >
-                COMPRAR
-              </Button>
+                <Button variation="primary" onClick={addAndCustomize}>
+                  COMPRAR
+                </Button>
               </div>
-             
             </span>
           </div>
         </div>

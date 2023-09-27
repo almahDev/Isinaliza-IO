@@ -36,7 +36,7 @@
 }
 
 .progressive-discount-container label .progressive-discount-discounts {
-  color: #0088c3!important;
+  color: #0088c3 !important;
   margin-top: 8px;
   text-align: center;
   font-size: 13px;
@@ -47,26 +47,26 @@
   text-decoration: line-through;
 }
 
-#netreviewsWidgetNum3863widget10av{
+#netreviewsWidgetNum3863widget10av {
   display: none;
-  }
+}
 
 
 
-  .nr-star:before{
-    font-size: 18px;
-  }
+.nr-star:before {
+  font-size: 18px;
+}
 
-  .netreviews_reviews_rate{
-    left: 98px;
-    top: 5px;
-  }
+.netreviews_reviews_rate {
+  left: 98px;
+  top: 5px;
+}
 
-  @media (max-width: 700px) {
-  
-    .progressive-discount-container label{
-      
+@media (max-width: 700px) {
+
+  .progressive-discount-container label {
+
     height: 80px;
 
-    }
   }
+}
