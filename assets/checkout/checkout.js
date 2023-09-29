@@ -119,7 +119,7 @@ $(document).ready(function () {
 
 
 
-  const totalfrete = 250;
+  const totalfrete = 300;
 
   function getdevileryprice() {
 
@@ -162,7 +162,7 @@ $(document).ready(function () {
   </svg>
   
   
-  <span id="quantoFalta" style="font-weight: 900;">Você ganhou o frete grátis!</span><br/> (Válido para Sul e Sudeste)</label>
+  <span id="quantoFalta" style="font-weight: 900;">Você ganhou o frete grátis!</span><br/> (Válido para Sul e Sudeste*)<br/>*Somente produtos elegíveis.</label>
   <progress id="file" value="${percentage}" max="100">  </progress>
   
   <style>
@@ -207,7 +207,7 @@ $(document).ready(function () {
 </svg>
 
 
-Faltam <span id="quantoFalta" style="font-weight: 900;">R$ ${qtdUntilGoal}</span> para você ter <strong style="font-weight: 900;">Frete Grátis</strong><br/> (Válido para Sul e Sudeste)</label>
+Faltam <span id="quantoFalta" style="font-weight: 900;">R$ ${qtdUntilGoal}</span> para você ter <strong style="font-weight: 900;">Frete Grátis</strong><br/> (Válido para Sul e Sudeste*)<br/>*Somente produtos elegíveis.</label>
 <progress id="file" value="${percentage}" max="100">  </progress>
 
 <style>
