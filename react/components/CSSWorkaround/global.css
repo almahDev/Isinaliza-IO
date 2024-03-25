@@ -17,6 +17,10 @@ display: none;
     text-decoration: none;
 }
 
+#smarthint-search-result{
+    padding-top: 8%;
+}
+
 @media (max-width: 1300px) {
     .wppgrouplink{
        font-size: 13px;
