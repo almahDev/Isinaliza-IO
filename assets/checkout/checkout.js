@@ -124,30 +124,47 @@ $(document).ready(function () {
   function getdevileryprice() {
 
     if (window.location.href.indexOf("cart") != -1) {
-      //console.log(orderForm);
 
-      /*let currentPrice = orderForm.totalizers[0].value;
-      currentPrice = currentPrice.toString().replace(/\B(?=(\d{2})+(?!\d))/g, '.');
-      currentPrice =  Number(currentPrice);*/
 
-      let currentPrice = $(".summary-template-holder .summary-totalizers table .monetary").html()
+      let currentPrice = $(".summary-template-holder .summary-totalizers table .monetary").html();
       currentPrice = currentPrice.replace(/,/g, '.').replace(/[\sR$]+/g, '');
+
+      let currentPriceFrete =  $(".cart-active .table .srp-summary-result .monetary").html();
+      if (currentPriceFrete !== undefined && typeof currentPriceFrete === 'string') {
+        currentPriceFrete = currentPriceFrete.replace(/,/g, '.').replace(/[\sR$]+/g, '');
+      } else {
+        // Handle the case where currentPriceFrete is undefined or not a string
+        console.error("currentPriceFrete is undefined or not a string.");
+        return;
+      }
+
       if (currentPrice.length > 6) {
-        let segregator = currentPrice.split(".")
-        currentPrice = `${segregator[0]}${segregator[1]}.${segregator[2]}`
+        let segregator = currentPrice.split(".");
+        currentPrice = `${segregator[0]}${segregator[1]}.${segregator[2]}`;
+      }
+
+      if (currentPriceFrete && currentPriceFrete.length > 6) {
+        let segregatorFrete = currentPriceFrete.split(".");
+        currentPriceFrete = `${segregatorFrete[0]}${segregatorFrete[1]}.${segregatorFrete[2]}`;
       }
 
       currentPrice = Number(currentPrice);
+      currentPriceFrete = Number(currentPriceFrete);
 
+      console.log(currentPrice, "currentPrice");
+      console.log(currentPriceFrete, "currenPriceFrete");
 
-      let qtdUntilGoal = totalfrete - currentPrice;
+      let qtdUntilGoal = totalfrete - (currentPrice + currentPriceFrete);
       qtdUntilGoal = qtdUntilGoal.toFixed(2)
+      console.log(qtdUntilGoal,"qtdUntilGoal")
+
       let percentage = 0;
       $(".myprogressbar").remove()
       if (qtdUntilGoal <= 0) {
         percentage = 100
         qtdUntilGoal = 0
 
+        
         $(".summary-totalizers").append(`
   <div class="myprogressbar">
   <label for="file" style="color: #0CBC5F;    margin-top: 2em;line-height: 22px;font-size: 12px;">

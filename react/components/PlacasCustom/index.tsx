@@ -315,7 +315,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
           <div className="custom-prod-interface mv3 mh5">
             <p className="productName">{productInfo?.product?.productName}</p>
 
-            {/*<ExtensionPoint id="sku-selector"/>*/}
+            <ExtensionPoint id="sku-selector"/>
 
             <textarea
               value={customTextValue}
