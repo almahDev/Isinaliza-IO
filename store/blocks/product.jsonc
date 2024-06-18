@@ -154,12 +154,11 @@
       /*"condition-layout.product#personalizada-show-selector",*/
       "sku-selector",
       // "flex-layout.row#progressive-discount",
-     
+      "availability-subscriber",
       "product-price#product-details",
       /* "product-installments#default",*/
       "flex-layout.row#buy-area",
-      "flex-layout.row#shipping-and-benefits",
-      "availability-subscriber"
+      "flex-layout.row#shipping-and-benefits"
     ]
   },
   "flex-layout.col#right-col": {
@@ -184,8 +183,8 @@
 
       
       "flex-layout.row#buy-area",
-      "flex-layout.row#shipping-and-benefits",
-      "availability-subscriber"
+      "flex-layout.row#shipping-and-benefits"
+      
     ]
   },
 
