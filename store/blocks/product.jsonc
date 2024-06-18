@@ -3,7 +3,7 @@
     "props": {
       "blockClass": ["pdp"]
     },
-    "children": ["flex-layout.row#pdp"]
+    "children": ["condition-layout.product#availability"]
   },
 
   "flex-layout.row#pdp": {
@@ -11,6 +11,36 @@
       "blockClass": ["pdp-container"]
     },
     "children": ["flex-layout.col#pdp"]
+  },
+
+  "condition-layout.product#availability": {
+    "title": "Almah | Produto Desktop",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#pdp",
+      "Else": "flex-layout.row#product-main-availability"
+    }
+  },
+
+
+
+  "flex-layout.col#product-main-availability": {
+    "props": {
+      "blockClass": ["pdp-col"]
+    },
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main-availability",
+      "flex-layout.row#product-buy-together",
+      "flex-layout.row#description",
+     /* "flex-layout.row#relatedshelf" para quando o app da vtex sair do alpha*/
+     "flex-layout.row#relatedshelfPlaceholder",
+     "flex-layout.row#avaliacoes"
+    ]
   },
 
   "flex-layout.col#pdp": {
@@ -58,6 +88,18 @@
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
+  "flex-layout.row#product-main-availability": {
+    "props": {
+      "colGap": 9,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 8,
+      "paddingTop": 7,
+      "paddingBottom": 5,
+      "blockClass": "product-main"
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col-availability"]
+  },
   "stack-layout": {
     "children": [
       "flex-layout.row#product-image",
@@ -96,6 +138,32 @@
       "thumbnailMaxHeight": 127
     }
   },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "product-content-section",
+      "paddingLeft": 1,
+      "paddingRight": 1
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "productStars",
+      "product-rating-summary",
+      /*"condition-layout.product#personalizada-show-selector",*/
+      "sku-selector",
+      // "flex-layout.row#progressive-discount",
+     
+      "product-price#product-details",
+      /* "product-installments#default",*/
+
+      "availability-notify",
+      "flex-layout.row#buy-area",
+      "flex-layout.row#shipping-and-benefits",
+      "availability-subscriber"
+    ]
+  },
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
@@ -115,11 +183,14 @@
      
       "product-price#product-details",
       /* "product-installments#default",*/
+
+      "availability-notify",
       "flex-layout.row#buy-area",
       "flex-layout.row#shipping-and-benefits",
       "availability-subscriber"
     ]
   },
+
   "condition-layout.product#personalizada-show-selector":{
     "props":{
       "conditions":[
