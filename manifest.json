@@ -1,7 +1,7 @@
 {
   "vendor": "isinaliza",
   "name": "isinaliza-theme",
-  "version": "0.1.44",
+  "version": "0.1.46",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -66,8 +66,7 @@
     "vtex.condition-layout": "2.x"
   },
   "peerDependencies": {
-    "vtex.mega-menu": "2.x",
-    "vtex.availability-notify": "1.x"
+    "vtex.mega-menu": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

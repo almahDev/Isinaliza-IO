@@ -157,8 +157,6 @@
      
       "product-price#product-details",
       /* "product-installments#default",*/
-
-      "availability-notify",
       "flex-layout.row#buy-area",
       "flex-layout.row#shipping-and-benefits",
       "availability-subscriber"
