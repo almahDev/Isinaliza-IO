@@ -30,7 +30,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
 
   const pictogramsCategoryFetcher = async () => {
     let data = await fetch(
-      "/api/dataentities/CT/search?_fields=pictypename&_sort=pictypename ASC"
+      "/api/dataentities/CT/scroll?pictypename&_fields=pictypename"
     );
     let response = await data.json();
     setPictogramasCategories(

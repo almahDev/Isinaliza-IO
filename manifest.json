@@ -1,7 +1,7 @@
 {
   "vendor": "isinaliza",
   "name": "isinaliza-theme",
-  "version": "0.1.47",
+  "version": "0.1.48",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
