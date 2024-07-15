@@ -29,9 +29,11 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   /*Criar states de loading*/
 
   const pictogramsCategoryFetcher = async () => {
-    let data = await fetch(
-      "/api/dataentities/CT/scroll?pictypename&_fields=pictypename"
-    );
+    let data = await fetch("/api/dataentities/CT/search?_fields=pictypename", {
+      headers: {
+        'REST-Range': 'resources=0-100' // ajusta o intervalo conforme necessário
+      }
+    });
     let response = await data.json();
     setPictogramasCategories(
       response.map((element: any) => {
