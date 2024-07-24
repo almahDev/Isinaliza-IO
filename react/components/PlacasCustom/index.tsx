@@ -149,7 +149,7 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
   //EVENT HANDLERS
   const customtextHandler = (event: any) => {
     const value = event.target.value;
-    const filteredValue = value.replace(/[^a-zA-Z0-9\s]/g, ''); // Permite apenas letras, números e espaços
+    const filteredValue = value.replace(/[^a-zA-Z0-9\s-/çáéíóúÁÉÍÓÚãõÃÕüÜÇâêîôûÂÊÎÛÔàèìòùÀÈÌÒÙ,|().?;=:!^`°ºª@#$%&*_+<>{}[\]\\]/g, '');
     setCustomTextValue(filteredValue);
   };
 
