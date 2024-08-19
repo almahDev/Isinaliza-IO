@@ -82,12 +82,11 @@
 }
 
 .list-pictograma fieldset {
-  width: 75% !important;
+  width: 70% !important;
   border: none;
 }
 
 .list-pictograma fieldset label img {
-  padding: 1em;
   border: 3px solid transparent;
 }
 

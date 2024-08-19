@@ -3,7 +3,8 @@ import "./global.css";
 import { useProduct } from "vtex.product-context";
 import { Button, Modal } from "vtex.styleguide";
 import { ExtensionPoint } from "vtex.render-runtime";
-import Slider from "react-slick";
+import { Slider} from 'vtex.slider'
+import { SliderLayout } from 'vtex.slider-layout'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -333,7 +334,16 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
               maxLength={300}
             />
 
-            <Slider {...settings}>{placas}</Slider>
+           <div className="slider-placas">
+           <SliderLayout
+          showNavigationArrows={'always'}
+          itemsPerPage={{ desktop: 4, tablet: 2, phone: 1 }}
+          showPaginationDots={'never'}
+          infinite={true}
+          fullWidth={true}
+          >{placas}
+          </SliderLayout>
+           </div>
 
             <select
               id="select-pictograma"
@@ -344,7 +354,13 @@ const PlacasCustom: StorefrontFunctionComponent<ProductAvailableProps> = () => {
             </select>
             <div className="list-pictograma">
               {pictogramas.length > 4 ? (
-                <Slider {...settings}>{pictogramas}</Slider>
+                      <SliderLayout
+                      showNavigationArrows={'always'}
+                      itemsPerPage={{ desktop: 4, tablet: 2, phone: 1 }}
+                      showPaginationDots={'never'}
+                      infinite={true}
+                      fullWidth={true}
+                      >{pictogramas}</SliderLayout>
               ) : (
                 <div className="fewer-options">{pictogramas}</div>
               )}
