@@ -1,8 +1,77 @@
 .label{
-color: black;
+  color: var(--Cores-de-Texto-Branca, #FFF);
+
+  /* Tipografia/XS-14px-Titulo */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+  text-transform: uppercase;
 }
 
 :global(.vtex-login-2-x-accountOptionsSectionTitle){
     font-size: 20px;
   color: #515151;
   }
+  :global(.vtex-flex-layout-0-x-flexRow--lp-black-friday) :global(.time-ofertas){
+    border-radius: var(--Border-8px, 8px);
+background: var(--Call-To-Action-CTA-Pura, #FE5000);
+}
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-friday) :global(.time-ofertas) h1{
+  color: var(--Cores-de-Texto-Branca, #FFF);
+  text-align: center;
+  
+  /* Tipografia/XL-24px-Titulo */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  text-transform: uppercase;
+}
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-friday) :global(.time-ofertas)  p span{
+  color: var(--Cores-de-Texto-Branca, #FFF);
+  text-align: center;
+  
+  /* Tipografia/XL-24px-Titulo */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  text-transform: uppercase;
+}
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-friday) :global(.time-ofertas)  p{
+  color: var(--Cores-Neutas-Clara-Pura, #FFF);
+  text-align: center;
+  
+  /* Tipografia/XXXS-10px */
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 12px */
+}
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-friday) :global(.time-ofertas) :global(#horas)::after{
+  color: var(--Cores-Neutas-Clara-Pura, #FFF);
+  text-align: center;
+  
+  /* Tipografia/XXXS-10px */
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 12px */
+}
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-friday) :global(.time-ofertas) :global(#minutos)::after{
+  color: var(--Cores-Neutas-Clara-Pura, #FFF);
+  text-align: center;
+  
+  /* Tipografia/XXXS-10px */
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 12px */
+}

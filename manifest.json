@@ -1,7 +1,7 @@
 {
   "vendor": "isinaliza",
   "name": "isinaliza-theme",
-  "version": "0.1.53",
+  "version": "0.1.54",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -63,7 +63,8 @@
     "vtex.sandbox": "0.x",
     "vtex.checkout-resources": "0.x",
     "vtex.order-manager": "0.x",
-    "vtex.condition-layout": "2.x"
+    "vtex.condition-layout": "2.x",
+    "vtex.toggle-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x"

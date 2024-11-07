@@ -11,7 +11,7 @@
   height: 46px;
   background-color: #F2F2F2;
   position: sticky;
-    top: 112px;
+    top: 96px;
     z-index: 9;
 }
 
@@ -94,3 +94,6 @@
 
 }
 
+.headerRowBackground--main-header{
+  background: #292929;
+}

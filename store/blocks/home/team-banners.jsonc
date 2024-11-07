@@ -1,0 +1,127 @@
+{
+  "flex-layout.row#destaques-black-infocard-wrapper": {
+    "children": [
+      "slider-layout#team-infocard"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "destaques-black"
+    }
+  },
+
+  "info-card#team-infocard-1": {
+    "title": "Team infocard 1",
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "/arquivos/dest01.png",
+      "mobileImageUrl": "/arquivos/dest01.png",
+      "callToActionUrl": "/about",
+      "imageActionUrl": "/about",
+      "callToActionText": "CAVALETE DE SINALIZAÇÃO",
+      "subhead": "até 10% off",
+      "blockClass": ["home__infocard-team", "home__infocard-team-1"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#team-infocard-2": {
+    "title": "Team infocard 2",
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "/arquivos/dest02.png",
+      "mobileImageUrl": "/arquivos/dest02.png",
+      "callToActionUrl": "/about",
+      "imageActionUrl": "/about",
+      "callToActionText": "COMBATE À INCÊNDIO",
+      "subhead": "até 15% off",
+      "blockClass": ["home__infocard-team", "home__infocard-team-2"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#team-infocard-3": {
+    "title": "Team infocard 3",
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "/arquivos/dest03.png",
+      "mobileImageUrl": "/arquivos/dest03.png",
+      "callToActionUrl": "/about",
+      "imageActionUrl": "/about",
+      "callToActionText": "TRÂNSITO",
+      "subhead": "até 20% off",
+      "blockClass": ["home__infocard-team", "home__infocard-team-3"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#team-infocard-4": {
+    "title": "Team infocard 4",
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "/arquivos/dest04.png",
+      "mobileImageUrl": "/arquivos/dest04.png",
+      "callToActionUrl": "/about",
+      "imageActionUrl": "/about",
+      "callToActionText": "ADESIVOS DE SEGURANÇA",
+      "subhead": "até 25% off",
+      "blockClass": ["home__infocard-team", "home__infocard-team-4"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#team-infocard-5": {
+    "title": "Team infocard 5",
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "/arquivos/dest05.png",
+      "mobileImageUrl": "/arquivos/dest05.png",
+      "callToActionUrl": "/about",
+      "imageActionUrl": "/about",
+      "callToActionText": "CONDOMÍNIO",
+      "subhead": "até 35% off",
+      "blockClass": ["home__infocard-team", "home__infocard-team-5"],
+      "textAlignment": "left"
+    }
+  },
+  "info-card#team-infocard-6": {
+    "title": "Team infocard 6",
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "/arquivos/dest06.png",
+      "mobileImageUrl": "/arquivos/dest06.png",
+      "callToActionUrl": "/about",
+      "imageActionUrl": "/about",
+      "callToActionText": "BRAILLE TÁTIL",
+      "subhead": "até 40% off",
+      "blockClass": ["home__infocard-team", "home__infocard-team-6"],
+      "textAlignment": "left"
+    }
+  },
+
+  "slider-layout#team-infocard": {
+    "props": {
+        "width": "62%",
+        "marginTop": "15px",
+      "itemsPerPage": {
+        "desktop":6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "disabled",
+        "tablet": "disabled"
+      },
+      "centerModeSlidesGap": 5,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always"
+    },
+    "children": [
+      "info-card#team-infocard-1",
+      "info-card#team-infocard-2",
+      "info-card#team-infocard-3",
+      "info-card#team-infocard-4",
+      "info-card#team-infocard-5",
+      "info-card#team-infocard-6"
+    ]
+  }
+}

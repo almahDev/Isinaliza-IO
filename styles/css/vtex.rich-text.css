@@ -5,7 +5,13 @@
     display: flex;
 }
 .headingLevel1--sectionRichTitleSEO{
-    color: #1E7BC4;
+    color: #656565;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    display: flex;
+}
+.heading--sectionRichTitleSEOBlack{
+    color: #656565;
     letter-spacing: 0.1em;
     font-weight: bold;
     display: flex;
@@ -19,6 +25,29 @@
 }
 
 .paragraph--sectionRichTitle::after {
+    content:url('/arquivos/line-title.png');
+    position:relative;
+    right: -50px;
+    top: -7px;
+}
+.paragraph--sectionRichTitleSEOBlack::before{
+    content:url('/arquivos/line-title.png');
+    position:relative; 
+    left:-50px;
+    top: -7px;
+}
+.paragraph--sectionRichTitleSEOBlack{
+    color: #656565;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    text-transform: uppercase;
+}
+
+.paragraph--sectionRichTitleSEOBlack::after {
     content:url('/arquivos/line-title.png');
     position:relative;
     right: -50px;
@@ -161,4 +190,125 @@
         width: 65px;
         overflow: hidden;
     }
+}
+.wrapper--button-black .paragraph--sectionRichTitle::after{
+    display: none;
+}
+.wrapper--button-black .paragraph--sectionRichTitle::before{
+    display: none;
+}
+.link--sectionRichTitle{
+    border-radius: var(--Inputs-Botes, 300px);
+    border: 2px solid var(--Cores-Neutas-Clara-Mdio, #E0E0E0);
+    background: var(--Cores-Neutas-Clara-Pura, #FFF);
+    display: flex;
+    min-width: 60px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: var(--Cores-Primarias-Secundaria-Secondary-Pure---500, #0054A8);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: -3em;
+
+}
+.paragraph--product__detalhes-title{
+    color: var(--Cores-de-Texto-Branca, #FFF);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+}
+.paragraph--product__detalhes-text{
+    color: var(--Cores-de-Texto-Branca, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+:global(.vtex-rich-text-0-x-wrapper--product__detalhes-title)::after{
+    content: url("/arquivos/Icon-duvida-black02.png");
+}
+:global(.vtex-rich-text-0-x-wrapper--product__detalhes-title){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+:global(.vtex-disclosure-layout-1-x-trigger--product__detalhes--visible) :global(.vtex-rich-text-0-x-wrapper--product__detalhes-title)::after{
+    transform: rotate(180deg)
+}
+.paragraph--sectionRichTitleSEOBlack-seo{
+    color: var(--Cores-de-Texto-Branca, #FFF);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 28.8px */
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.paragraph--sectionRichTitleSEOBlack-seo::before {
+    content:" ";
+    background: #D8D8D8;
+    height: 1px;
+    width: 14em;
+    left: 0;
+    top: 0;
+}
+.paragraph--sectionRichTitleSEOBlack-seo::after {
+    content:" ";
+    background: #D8D8D8;
+    height: 1px;
+    width: 14em;
+    right: 0;
+    top: 0;
+}
+.wrapper--sectionRichTitleSEOBlack-seo{
+    width: 100%;
+}
+.wrapper--texto-form :global(.vtex-rich-text-0-x-paragraph){
+    color: var(--Cores-de-Texto-Branca, #FFF);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
+.wrapper--texto-form :global(.vtex-rich-text-0-x-strong){
+    color: var(--Cores-de-Texto-Branca, #FFF);
+
+    /* Tipografia/XXL-32px-Titulo */
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    text-transform: uppercase;
+}
+.wrapper--texto-02-form :global(.vtex-rich-text-0-x-paragraph){
+    color: var(--Cores-de-Texto-Branca, #FFF);
+
+    /* Tipografia/MD-18px - Texto */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
 }

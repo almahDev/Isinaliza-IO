@@ -1,0 +1,250 @@
+{
+    "store.custom#black-friday": {
+        "children": [
+            "flex-layout.row#lp-black-friday"
+        ]
+    },
+    "flex-layout.row#lp-black-friday": {
+        "children": [
+            "flex-layout.row#col-formulario",
+            "flex-layout.row#sellingConditions-black-friday",
+            "rich-text#Black-Friday",
+            "flex-layout.row#destaques-black-infocard-wrapper",
+            "ContadorBlackFriday",
+            "list-context.product-list#black-friday",
+            "rich-text#button-black",
+             "rich-text#Black-Friday-bannerdesconto",
+            "list-context.image-list#bannerdesconto",
+            "rich-text#Black-Friday-ofertas",
+            "list-context.product-list#black-friday-ofertas",
+            "rich-text#button-black-ofertas",
+            "rich-text#Black-Friday-reviews",
+            "flex-layout.row#reviews-home",
+            "rich-text#Black-Friday-title-duvida",
+            "flex-layout.row#duvida-black",
+            "rich-text#Black-Friday-seo",
+            "TextoSeoBlack"
+        ],
+        "props": {
+            "blockClass": "lp-black-friday"
+        }
+    },
+    "flex-layout.row#col-formulario": {
+        "children": [
+           "flex-layout.col#text-form"
+        ],
+        "props": {
+            "blockClass": "col-formulario"
+        }
+    },
+    "flex-layout.col#text-form": {
+        "children": [
+            "rich-text#texto-01-form",
+            "rich-text#texto-02-form"
+        ]
+    },
+    "rich-text#texto-01-form": {
+        "title": "title form",
+        "props": {
+            "text": "**Garanta Descontos Exclusivos** <br> de Black Friday para Sua Empresa",
+            "blockClass":"texto-form"
+        }
+    },
+    "rich-text#texto-02-form": {
+        "title": "title form",
+        "props": {
+            "text": "Aproveite ofertas especiais para CNPJs! Preencha o formulário e <br> garanta descontos únicos para sua empresa nesta Black Friday.",
+            "blockClass":"texto-02-form"
+        }
+    },
+
+
+
+    "flex-layout.row#sellingConditions-black-friday": {
+        "children": [
+            "slider-layout#sellingConditions-black-friday"
+        ],
+        "props": {
+            "marginTop": 6,
+            "blockClass": "lp-black-friday-sellingConditions"
+        }
+    },
+    "slider-layout#sellingConditions-black-friday": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 2,
+                "phone": 2
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "blockClass": "carousel-sellingConditions"
+        },
+        "children": [
+            "info-card#sellerCondition1-black-friday",
+            "info-card#sellerCondition2-black-friday",
+            "info-card#sellerCondition3-black-friday",
+            "info-card#sellerCondition4-black-friday"
+        ]
+    },
+    "info-card#sellerCondition1-black-friday": {
+        "props": {
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/cond03.png",
+            "headline": "Frete grátis acima de R$ 250,00 para o Sul e o Sudeste",
+            "textPosition": "right",
+            "callToActionMode": "none",
+            "textMode": "rich-text",
+            "blockClass": "sellerConditionCard",
+            "textAlignment": "left"
+        }
+    },
+    "info-card#sellerCondition2-black-friday": {
+        "props": {
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/cond04.png",
+            "headline": "5 anos de garantia.",
+            "textPosition": "right",
+            "callToActionMode": "none",
+            "textMode": "rich-text",
+            "blockClass": "sellerConditionCard",
+            "textAlignment": "left"
+        }
+    },
+    "info-card#sellerCondition3-black-friday": {
+        "props": {
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/cond02.png",
+            "headline": "Boleto faturado para compras acima de R$300,00",
+            "textPosition": "right",
+            "callToActionMode": "none",
+            "textMode": "rich-text",
+            "blockClass": "sellerConditionCard",
+            "textAlignment": "left"
+        }
+    },
+    "info-card#sellerCondition4-black-friday": {
+        "props": {
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/cond01.png",
+            "headline": "Ganhe até 30% OFF para atacado com mais de 10 unidades iguais",
+            "textPosition": "right",
+            "callToActionMode": "none",
+            "textMode": "rich-text",
+            "blockClass": "sellerConditionCard",
+            "textAlignment": "left"
+        }
+    },
+    "rich-text#Black-Friday-bannerdesconto": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "preços reduzidos",
+            "font": "t-heading-4",
+            "blockClass": "sectionRichTitleSEOBlack"
+        }
+    },
+    "list-context.image-list#bannerdesconto": {
+        "title": "banner principal",
+        "children": [
+            "slider-layout#banners-desconto"
+        ],
+        "props": {
+            "blockClass": "bannerdesconto",
+
+            "images": [
+                {
+                    "image": "/arquivos/big-sale.png",
+                    "mobileImage": "/arquivos/big-sale.png"
+                },
+                {
+                    "image": "/arquivos/big-sale.png",
+                    "mobileImage": "/arquivos/big-sale.png"
+                },
+                {
+                    "image": "/arquivos/big-sale.png",
+                    "mobileImage": "/arquivos/big-sale.png"
+                },
+                {
+                    "image": "/arquivos/big-sale.png",
+                    "mobileImage": "/arquivos/big-sale.png"
+                },
+                {
+                    "image": "/arquivos/big-sale.png",
+                    "mobileImage": "/arquivos/big-sale.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#banners-desconto": {
+        "title": "Slider principal",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "blockClass": "bannerdesconto"
+        }
+    },
+    "rich-text#Black-Friday-ofertas": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Ofertas de Black Friday: Até 20% OFF!",
+            "font": "t-heading-4",
+            "blockClass": "sectionRichTitleSEOBlack"
+        }
+    },
+    "list-context.product-list#black-friday-ofertas": {
+        "title": "PROMOÇÃO",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByReleaseDateDESC",
+            "collection": "145",
+            "maxItems": 12
+        }
+    },
+    "rich-text#button-black-ofertas": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "[Ver todos produtos](/)",
+            "blockClass": "button-black"
+        }
+    },
+    "rich-text#Black-Friday-reviews": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "O Que Nossos Clientes Dizem",
+            "font": "t-heading-4",
+            "blockClass": "sectionRichTitleSEOBlack"
+        }
+    },
+    "rich-text#Black-Friday-seo": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Texto Seo",
+            "font": "t-heading-4",
+            "blockClass": "sectionRichTitleSEOBlack"
+        }
+    },
+    "rich-text#Black-Friday-title-duvida": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Dúvidas frequentes sobre nossas ofertas Black Friday",
+            "font": "t-heading-4",
+            "blockClass": "sectionRichTitleSEOBlack-seo"
+        }
+    }
+}

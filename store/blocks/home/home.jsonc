@@ -133,10 +133,27 @@
   "flex-layout.col#firstContent": {
     "children": [
       "rich-text#textoSEO",
+      "rich-text#Black-Friday",
+      "flex-layout.row#destaques-black-infocard-wrapper",
+
+     
+      "ContadorBlackFriday",
+      
+      "list-context.product-list#black-friday",
+       "rich-text#button-black",
       "rich-text#novidades",
       "list-context.product-list#novidades",
       "slider-layout#categories-circle-slider"
     ]
+  },
+
+  "rich-text#button-black": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Ver todos produtos](/)",
+      "blockClass": "button-black"
+    }
   },
 
   "rich-text#textoSEO": {
@@ -156,6 +173,15 @@
       "blockClass": "sectionRichTitle"
     }
   },
+  "rich-text#Black-Friday": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Destaques da Black Friday",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitleSEOBlack"
+    }
+  },
   "list-context.product-list#novidades": {
     "title": "Novidades",
     "blocks": ["product-summary.shelf"],
@@ -163,6 +189,16 @@
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
       "collection": "151",
+      "maxItems": 12
+    }
+  },
+  "list-context.product-list#black-friday": {
+    "title": "PROMOÇÃO",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "145",
       "maxItems": 12
     }
   },
@@ -220,7 +256,8 @@
   "flex-layout.row#reviews-home": {
     "props":{
       "marginTop": 4,
-      "marginBottom": 6
+      "marginBottom": 6,
+      "blockClass": "reviews-home"
     },
     "children": ["flex-layout.col#reviews-home"]
   },

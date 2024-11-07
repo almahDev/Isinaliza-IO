@@ -6,7 +6,7 @@
 
 .flexRow--topbar-wpp {
     background-color: #0054A8;
-    margin-bottom:11px;
+    margin-bottom: 0px;
 }
 
 .flexColChild--orcamento-e-social {
@@ -22,7 +22,7 @@
     display: flex;
 }
 
-.flexRowContent--menu-content-area{
+.flexRowContent--menu-content-area {
     background-color: #0054A8;
     padding-right: 1em;
     padding-bottom: 1em;
@@ -32,48 +32,48 @@
     background-color: #F5F5F5;
 }
 
-.flexRowContent--powered__row{
+.flexRowContent--powered__row {
     align-items: center;
 }
 
-.flexRowContent--buy-area :global(.vtex-button){
+.flexRowContent--buy-area :global(.vtex-button) {
     border-radius: 100px;
     padding: 12px 8px;
-    background-color: #fe5000!important;
+    background-color: #fe5000 !important;
     box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 30%);
 
 }
 
-.flexRowContent--buy-area :global(.vtex-button):hover{
-    background-color: #ff7636!important;
+.flexRowContent--buy-area :global(.vtex-button):hover {
+    background-color: #ff7636 !important;
 
 }
 
-.flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+.flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label) {
     padding-left: 5em;
     padding-right: 5em;
 }
 
 
-.flexColChild--Institutionaltitleblock1{
+.flexColChild--Institutionaltitleblock1 {
     width: 90%;
     margin-left: -10%;
 }
 
-.flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+.flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     padding-right: 0.3rem;
     padding-left: 0.3rem;
 }
 
 
-.flexRow--mega-menu-container{
+.flexRow--mega-menu-container {
     position: sticky;
     top: 160px;
     z-index: 9999;
 }
 
 
-.flexRow--progressive-discount{
+.flexRow--progressive-discount {
     margin-top: 10px;
 }
 
@@ -85,10 +85,11 @@
 
 @media (max-width: 760px) {
 
-    .flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label){
+    .flexRowContent--buy-area :global(.vtex-button) :global(.vtex-button__label) {
         padding-left: 3.5em;
         padding-right: 3.5em;
     }
+
     .flexRow--footer__copyright {
         background-color: #F5F5F5;
     }
@@ -96,68 +97,295 @@
     .flexRowContent--powered__row {
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
     }
 
-    .flexRowContent--buy-area :global(.vtex-button){
+    .flexRowContent--buy-area :global(.vtex-button) {
         font-size: 12px;
         padding: 3px 0px;
     }
 
-    .flexRowContent--progressive-discount{
-        display: flex;
-    flex-wrap: wrap;
-    }
-
-    .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
-        width: 32% !important;
-        margin-bottom: 1em;
-        
-    }
-
-    .flexRowContent--orcamentos-points{
+    .flexRowContent--progressive-discount {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .flexRowContent--orcamentos-points :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    .flexRowContent--progressive-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 32% !important;
+        margin-bottom: 1em;
+
+    }
+
+    .flexRowContent--orcamentos-points {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexRowContent--orcamentos-points :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
         width: 50% !important;
     }
-    
-  
+
+
 }
 
 
 @media (min-width: 1125px) {
     :global(.vtex-flex-layout-0-x-flexCol--filterCol) {
-      width: 330px;
+        width: 330px;
     }
 
-    .flexColChild--orcamentoForm{
+    .flexColChild--orcamentoForm {
         box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 25%);
         background-color: #fff;
         border-radius: 5px;
         padding: 2vh 2vw;
         margin-top: 10%;
     }
-    
-    .flexCol--orcamentoForm{
+
+    .flexCol--orcamentoForm {
         margin-left: -100%;
     }
-    
-  }
 
-  @media (min-width: 1300px) and (max-width: 1400px) {
-    .flexRowContent--orcamento-row{
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .flexRowContent--orcamento-row {
         padding-left: 1em;
     }
+
+}
+
+
+
+.flexRowContent--destaques-black :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--home__infocard-team) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background: transparent;
+}
+
+:global(.vtex-store-components-3-x-infoCardTextContainer--home__infocard-team) {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+:global(.vtex-store-components-3-x-infoCardImageContainer--home__infocard-team) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: all .2s;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--home__infocard-team) :global(.vtex-button) {
+    background: transparent;
+    border: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #656565;
+    text-align: center;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--home__infocard-team) :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0;
+}
+
+:global(.vtex-store-components-3-x-infoCardSubhead--home__infocard-team) {
+    color: var(--Call-To-Action-CTA-Pura, #FE5000);
+    text-align: center;
+
+    /* Tipografia/XL-24px-Titulo */
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 28.8px */
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+}
+
+.flexRowContent--lp-black-friday {
+    display: block;
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRow--lp-black-friday {
+    background: #363636;
+}
+
+.flexRowContent--lp-black-friday-sellingConditions {
+    background: #212121;
+    height: 115px;
+    margin: 0;
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-store-components-3-x-infoCardCallActionContainer--home__infocard-team) :global(.vtex-button) {
+    background: transparent;
+    border: 0;
+
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-store-components-3-x-infoCardCallActionContainer--home__infocard-team) :global(.vtex-button) :global(.vtex-button__label) {
+
+    color: var(--Cores-de-Texto-Branca, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100 !important;
+    line-height: 120%;
+    /* 21.6px */
+    text-transform: uppercase;
+    text-decoration: none !important;
+
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-product-summary-2-x-element) {
+    border-radius: var(--Border-8px, 8px);
+    background: #FFF;
+    padding: 10px 10px 10px 10px;
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--sectionRichTitleSEOBlack) {
+    color: var(--Cores-de-Texto-Branca, #FFF);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 28.8px */
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--sectionRichTitleSEOBlack)::before {
+    content:" ";
+    background: #D8D8D8;
+    height: 1px;
+    width: 19em;
+    left: 0;
+    top: 0;
+}
+:global(.vtex-rich-text-0-x-wrapper--sectionRichTitleSEOBlack){
+    width: 100%;
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--sectionRichTitleSEOBlack)::after {
+    content:" ";
+    background: #D8D8D8;
+    height: 1px;
+    width: 19em;
+    right: 0;
+    top: 0;
+}
+
+.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--button-black) {
+    border-radius: var(--Inputs-Botes, 300px);
+    border: 2px solid var(--Cores-Neutas-Clara-Mdio, #E0E0E0);
+    background: var(--Cores-Neutas-Clara-Pura, #FFF);
+    display: flex;
+    min-width: 60px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: -2em;
+    height: 46px;
+}
+.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--button-black) :global(.vtex-rich-text-0-x-link--button-black){
+    color: var(--Cores-Primarias-Secundaria-Secondary-Pure---500, #0054A8);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.flexRowContent--lp-black-friday .flexRowContent--reviews-home{
+    border-radius: var(--Border-8px, 8px);
+    background: #FFF;
+    width: 98%;
+    padding: 16px;
+}
+.flexRowContent--lp-black-friday .flexRow--reviews-home{
+    display: flex;
+    justify-content: center;
+}
+.flexRowContent--duvida-black{
+    display: block;
+    width: 98%;
+}
+.flexRowContent--duvida-black :global(.vtex-disclosure-layout-1-x-trigger--product__detalhes){
+    border-radius: var(--Border-8px, 8px);
+    margin-bottom: 1em;
+    padding: 0px 12px;
+
+    background: var(--Cores-Neutas-Normal-Mdio, #454545);
+}
+.flexRowContent--duvida-black :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: 100% !important;
+    margin-bottom: 16px;
+    display: block;
+}
+:global(.vtex-disclosure-layout-1-x-content--product__detalhes-text2){
+    border-radius: var(--Border-8px, 8px);
+    background: var(--Cores-Neutas-Normal-Mdio, #454545);
+    margin-top: -2em;
+    padding: 0px 15px;
+}
+.flexRow--duvida-black{
+    display: flex;
+    justify-content: center;
+}
+:global(.vtex-slider-layout-0-x-sliderTrack--bannerdesconto){
+    gap: 2em;
+    margin-bottom: 2em;
+}
+.flexRowContent--lp-black-friday-sellingConditions :global(.vtex-store-components-3-x-paragraph--sellerConditionCard){
+color: #FFF;
+}
+.flexRowContent--lp-black-friday-sellingConditions :global(.vtex-store-components-3-x-infoCardContainer--sellerConditionCard){
+    background: transparent;
+}
+.flexRow--col-formulario{
+    display: flex;
+    justify-content: center;
+        background-image: url(/arquivos/fundo-lp-black.png);
+        height: 551px;
     
-  }
-
-
-
-
-
-
-
- 
+}
+.flexRowContent--col-formulario{
+    border-radius: var(--Border-8px, 8px);
+    background: rgba(44, 44, 44, 0.80);
+    display: flex;
+    width: 1280px;
+    max-width: 1280px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 470px;
+    margin-top: 3em;
+}
+@media (max-width: 760px) {
+    .flexRowContent--col-formulario{
+        width: 100%;
+    }
+}

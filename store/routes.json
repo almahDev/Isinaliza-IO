@@ -1,5 +1,8 @@
 {
     "store.custom#orcamento": {
         "path": "/orcamento"
+      },
+      "store.custom#black-friday": {
+        "path": "/black-friday"
       }
 }

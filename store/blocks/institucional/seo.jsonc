@@ -1,0 +1,252 @@
+{
+
+
+ "flex-layout.row#duvida-black": {
+        "children": [
+            "toggle-layout#duvida-black01",
+            "toggle-layout#duvida-black02",
+            "toggle-layout#duvida-black03",
+            "toggle-layout#duvida-black04",
+             "toggle-layout#duvida-black05"
+        ],
+        "props": {
+            "blockClass": "duvida-black"
+        }
+    },
+ "toggle-layout#duvida-black01":{
+    "title": "Duvida 1",
+    "children": ["disclosure-layout#duvida-black01"]
+  },
+  "disclosure-layout#duvida-black01": {
+    "title": "Duvida 1",
+    "props": {
+      "blockClass": "product__detalhes",
+      "animated": false,
+      "initialVisibility":"hidden"
+    },
+    "children": [
+      "disclosure-trigger#duvida-black01",
+      "disclosure-content#duvida-black01"
+    ]
+  },
+  "disclosure-trigger#duvida-black01": {
+    "props": {
+      "blockClass": "product__detalhes",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#duvida-black01"
+    ]
+  },
+  "disclosure-content#duvida-black01": {
+    "props": {
+      "blockClass": "product__detalhes-text2"
+    },
+    "children": [ "rich-text#duvida-black01-text"]
+  },
+  "rich-text#duvida-black01": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__detalhes-title",
+      "text": "Duvida 1"
+    }
+  },
+  "rich-text#duvida-black01-text": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__detalhes-text",
+      "text": "Lorem ipsum dolor sit met, deadipiscing eli Lorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eli"
+    }
+  },
+
+
+  "toggle-layout#duvida-black02":{
+    "title": "Duvida 2",
+    "children": ["disclosure-layout#duvida-black02"]
+  },
+  "disclosure-layout#duvida-black02": {
+    "title": "Duvida 2",
+    "props": {
+      "blockClass": "product__detalhes",
+      "animated": false,
+      "initialVisibility":"hidden"
+    },
+    "children": [
+      "disclosure-trigger#duvida-black02",
+      "disclosure-content#duvida-black02"
+    ]
+  },
+  "disclosure-trigger#duvida-black02": {
+    "props": {
+      "blockClass": "product__detalhes",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#duvida-black02"
+    ]
+  },
+  "disclosure-content#duvida-black02": {
+    "props": {
+      "blockClass": "product__detalhes-text2"
+    },
+    "children": [ "rich-text#duvida-black02-text"]
+  },
+  
+  "rich-text#duvida-black02": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__detalhes-title",
+      "text": "Duvida 2"
+    }
+  },
+  "rich-text#duvida-black02-text": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__detalhes-text",
+      "text": "Lorem ipsum dolor sit met, deadipiscing eli Lorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eli"
+    }
+  },
+
+  "toggle-layout#duvida-black03":{
+    "title": "Duvida 3",
+    "children": ["disclosure-layout#duvida-black03"]
+  },
+  "disclosure-layout#duvida-black03": {
+    "title": "Duvida 3",
+    "props": {
+      "blockClass": "product__detalhes",
+      "animated": false,
+      "initialVisibility":"hidden"
+    },
+    "children": [
+      "disclosure-trigger#duvida-black03",
+      "disclosure-content#duvida-black03"
+    ]
+  },
+  "disclosure-trigger#duvida-black03": {
+    "props": {
+      "blockClass": "product__detalhes",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#duvida-black03"
+    ]
+  },
+  "disclosure-content#duvida-black03": {
+    "props": {
+      "blockClass": "product__detalhes-text2"
+    },
+    "children": [ "rich-text#duvida-black03-text"]
+  },
+  
+  "rich-text#duvida-black03": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__detalhes-title",
+      "text": "Duvida 3"
+    }
+  },
+  "rich-text#duvida-black03-text": {
+    "title": "Título",
+    "props": {
+      "blockClass": "product__detalhes-text",
+      "text": "Lorem ipsum dolor sit met, deadipiscing eli Lorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eli"
+    }
+  },
+
+
+  "toggle-layout#duvida-black04":{
+    "title": "Duvida 4",
+    "children": ["disclosure-layout#duvida-black04"]
+  },
+  "disclosure-layout#duvida-black04": {
+    "title": "Duvida 4",
+    "props": {
+      "blockClass": "product__detalhes",
+      "animated": false,
+      "initialVisibility":"hidden"
+    },
+    "children": [
+      "disclosure-trigger#duvida-black04",
+      "disclosure-content#duvida-black04"
+    ]
+  },
+  "disclosure-trigger#duvida-black04": {
+    "props": {
+      "blockClass": "product__detalhes",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#duvida-black04"
+    ]
+  },
+  "disclosure-content#duvida-black04": {
+    "props": {
+      "blockClass": "product__detalhes-text2"
+    },
+    "children": ["rich-text#duvida-black04-text"]
+  },
+  
+  "rich-text#duvida-black04": {
+    "title": "Duvida 4",
+    "props": {
+      "blockClass": "product__detalhes-title",
+      "text": "Duvida 4"
+    }
+  },
+  "rich-text#duvida-black04-text": {
+    "title": "Duvida 4",
+    "props": {
+      "blockClass": "product__detalhes-text",
+    "text": "Lorem ipsum dolor sit met, deadipiscing eli Lorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eli"
+    }
+  },
+
+  
+  "toggle-layout#duvida-black05":{
+    "title": "Duvida 5",
+    "children": ["disclosure-layout#duvida-black05"]
+  },
+  "disclosure-layout#duvida-black05": {
+    "title": "Duvida 5",
+    "props": {
+      "blockClass": "product__detalhes",
+      "animated": false,
+      "initialVisibility":"hidden"
+    },
+    "children": [
+      "disclosure-trigger#duvida-black05",
+      "disclosure-content#duvida-black05"
+    ]
+  },
+  "disclosure-trigger#duvida-black05": {
+    "props": {
+      "blockClass": "product__detalhes",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#duvida-black05"
+    ]
+  },
+  "disclosure-content#duvida-black05": {
+    "props": {
+      "blockClass": "product__detalhes-text2"
+    },
+    "children": ["rich-text#duvida-black05-text"]
+  },
+  
+  "rich-text#duvida-black05": {
+    "title": "Duvida 5",
+    "props": {
+      "blockClass": "product__detalhes-title",
+      "text": "Duvida 5"
+    }
+  },
+  "rich-text#duvida-black05-text": {
+    "title": "Duvida 5",
+    "props": {
+      "blockClass": "product__detalhes-text",
+    "text": "Lorem ipsum dolor sit met, deadipiscing eli Lorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eliLorem ipsum dolor sit met, deadipiscing eli"
+    }
+  }
+}
