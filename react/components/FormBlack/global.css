@@ -1,0 +1,129 @@
+/* Estilos básicos para o formulário */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: var(--Cores-de-Texto-Preta, #353535);
+  text-align: center;
+
+  /* Tipografia/MD-18px-Titulo */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 21.6px */
+  text-transform: uppercase;
+}
+
+/* Estilos para cada grupo de input */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  overflow: hidden;
+  color: var(--Cores-de-Texto-Preta, #353535);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  /* Tipografia/SM-16px - Texto */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 223px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  border-radius: var(--Inputs-Botes, 300px);
+}
+
+/* Placeholder para os inputs */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+textarea#mensagem {
+  border-radius: 16px;
+  background: var(--Cores-Neutas-Clara-Pura, #FFF);
+  width: 100%;
+}
+
+/* Estilos específicos para o campo textarea */
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Botão de enviar */
+.submit-btn {
+  width: 190.667px;
+  height: 40px;
+  padding: 10px;
+  background-color: #ff6600;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e65c00;
+}
+
+.col01,
+.col02 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Estilos para tornar o layout responsivo */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .col01,
+  .col02 {
+    display: block;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    border-radius: var(--Inputs-Botes, 300px);
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+}

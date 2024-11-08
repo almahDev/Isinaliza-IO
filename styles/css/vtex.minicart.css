@@ -3,7 +3,7 @@
 }
 
 :global(.vtex-minicart-2-x-minicartIconContainer)::after {
-    content: url("assets/icons/black-cart.svg");
+    content: url("/arquivos/blue-cart-black-new.png");
 }
 
 .minicartQuantityBadgeDefault{

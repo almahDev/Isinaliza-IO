@@ -388,4 +388,13 @@ color: #FFF;
     .flexRowContent--col-formulario{
         width: 100%;
     }
+    .flexRowContent--lp-black-friday-sellingConditions {
+        margin-top: 25em;
+    }
+    .flexRowContent--col-formulario{
+        display: block;
+    }
+}
+:global(.vtex-rich-text-0-x-container--texto-form), :global(.vtex-rich-text-0-x-container--texto-02-form){
+    padding-left: 3em;
 }

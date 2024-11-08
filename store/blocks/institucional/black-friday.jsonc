@@ -31,7 +31,8 @@
     },
     "flex-layout.row#col-formulario": {
         "children": [
-           "flex-layout.col#text-form"
+           "flex-layout.col#text-form",
+           "FormBlack"
         ],
         "props": {
             "blockClass": "col-formulario"

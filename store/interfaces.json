@@ -35,5 +35,8 @@
   },
   "TextoSeoBlack":{
     "component": "TextoSeoBlack"
+  },
+  "FormBlack":{
+    "component": "FormBlack"
   }
 }
