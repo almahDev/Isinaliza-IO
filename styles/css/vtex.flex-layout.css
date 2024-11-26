@@ -368,8 +368,10 @@ color: #FFF;
 .flexRow--col-formulario{
     display: flex;
     justify-content: center;
-        background-image: url(/arquivos/fundo-lp-black.png);
+        background-image: url("assets/banners/desk-fundo-placas.png");
         height: 551px;
+        width: 100% !important;
+        background-size: contain;
     
 }
 .flexRowContent--col-formulario{
@@ -385,6 +387,10 @@ color: #FFF;
     margin-top: 3em;
 }
 @media (max-width: 760px) {
+    .flexRow--col-formulario{
+    background-image: url("assets/banners/mob-fundo-placas.png");
+        
+    }
     .flexRowContent--col-formulario{
         width: 100%;
     }
