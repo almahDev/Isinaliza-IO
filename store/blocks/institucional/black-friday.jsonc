@@ -20,7 +20,7 @@
             "rich-text#button-black-ofertas",
             "rich-text#Black-Friday-reviews",
             "flex-layout.row#reviews-home",
-            "rich-text#Black-Friday-title-duvida",
+            "toggle-layout#Black-Friday-title-duvida",
             "flex-layout.row#duvida-black",
             "rich-text#Black-Friday-seo",
             "TextoSeoBlack"
@@ -239,6 +239,10 @@
             "blockClass": "sectionRichTitleSEOBlack"
         }
     },
+    "toggle-layout#Black-Friday-title-duvida":{
+        "title": "Black-Friday-title-duvida",
+        "children": [ "rich-text#Black-Friday-title-duvida"]
+      },
     "rich-text#Black-Friday-title-duvida": {
         "props": {
             "textAlignment": "CENTER",
