@@ -296,7 +296,7 @@
     top: 0;
 }
 
-.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--button-black) {
+ :global(.vtex-rich-text-0-x-paragraph--button-black) {
     border-radius: var(--Inputs-Botes, 300px);
     border: 2px solid var(--Cores-Neutas-Clara-Mdio, #E0E0E0);
     background: var(--Cores-Neutas-Clara-Pura, #FFF);
@@ -309,7 +309,7 @@
     margin-top: -2em;
     height: 46px;
 }
-.flexRowContent--lp-black-friday :global(.vtex-rich-text-0-x-paragraph--button-black) :global(.vtex-rich-text-0-x-link--button-black){
+ :global(.vtex-rich-text-0-x-paragraph--button-black) :global(.vtex-rich-text-0-x-link--button-black){
     color: var(--Cores-Primarias-Secundaria-Secondary-Pure---500, #0054A8);
     font-family: Roboto;
     font-size: 16px;
