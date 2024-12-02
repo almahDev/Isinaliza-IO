@@ -180,8 +180,6 @@
      
       "product-price#product-details",
       /* "product-installments#default",*/
-
-      
       "flex-layout.row#buy-area",
       "flex-layout.row#shipping-and-benefits"
       
