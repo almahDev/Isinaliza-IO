@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from "react";
 import "./global.css";
 import { useProduct } from "vtex.product-context";
 import { Button, Modal } from "vtex.styleguide";
 import { ExtensionPoint } from "vtex.render-runtime";
-import { Slider} from 'vtex.slider'
+// import { Slider} from 'vtex.slider'
 import { SliderLayout } from 'vtex.slider-layout'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
