@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black.eot.css');
+  src: local('Bw Modelica SS01 Black'), local('BwModelicaSS01-Black'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black.eot.css')
+      format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black.ttf.css') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic.eot');
+  src: local('Bw Modelica SS01 Black Italic'), local('BwModelicaSS01-BlackItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic.ttf.css') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold.eot.css');
+  src: local('Bw Modelica SS01 Bold'), local('BwModelicaSS01-Bold'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic.eot.css');
+  src: local('Bw Modelica SS01 ExtraBold Italic'), local('BwModelicaSS01-ExtraBoldItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold.eot.css');
+  src: local('Bw Modelica SS01 ExtraBold'), local('BwModelicaSS01-ExtraBold'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic.eot.css');
+  src: local('Bw Modelica SS01 Bold Italic'), local('BwModelicaSS01-BoldItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic.eot.css');
+  src: local('Bw Modelica SS01 Light Italic'), local('BwModelicaSS01-LightItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic.ttf.css') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular.eot.css');
+  src: local('Bw Modelica SS01 Regular'), local('BwModelicaSS01-Regular'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular.ttf.css') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_1.eot.css');
+  src: local('Bw Modelica SS01 Regular'), local('BwModelicaSS01-Regular'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_1.ttf.css') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic_1.eot.css');
+  src: local('Bw Modelica SS01 Bold Italic'), local('BwModelicaSS01-BoldItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BoldItalic_1.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold_1.eot.css');
+  src: local('Bw Modelica SS01 Bold'), local('BwModelicaSS01-Bold'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Bold_1.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black_1.eot.css');
+  src: local('Bw Modelica SS01 Black'), local('BwModelicaSS01-Black'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Black_1.ttf.css') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic_1.eot.css');
+  src: local('Bw Modelica SS01 Black Italic'), local('BwModelicaSS01-BlackItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-BlackItalic_1.ttf.css') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_2.eot.css');
+  src: local('Bw Modelica SS01 Regular'), local('BwModelicaSS01-Regular'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_2.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_2.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_2.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Regular_2.ttf.css') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bw Modelica SS01 Hairline';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-HairlineItalic.eot.css');
+  src: local('Bw Modelica SS01 Hairline Italic'), local('BwModelicaSS01-HairlineItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-HairlineItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-HairlineItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-HairlineItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-HairlineItalic.ttf.css') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bw Modelica SS01 Hairline';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Hairline.eot.css');
+  src: local('Bw Modelica SS01 Hairline'), local('BwModelicaSS01-Hairline'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Hairline.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Hairline.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Hairline.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Hairline.ttf.css') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Light.eot.css');
+  src: local('Bw Modelica SS01 Light'), local('BwModelicaSS01-Light'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Light.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Light.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Light.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Light.ttf.css') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic_1.eot.css');
+  src: local('Bw Modelica SS01 ExtraBold Italic'), local('BwModelicaSS01-ExtraBoldItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic_1.eot.css')
+      format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBoldItalic_1.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic_1.eot.css');
+  src: local('Bw Modelica SS01 Light Italic'), local('BwModelicaSS01-LightItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-LightItalic_1.ttf.css') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-MediumItalic.eot.css');
+  src: local('Bw Modelica SS01 Medium Italic'), local('BwModelicaSS01-MediumItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-MediumItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-MediumItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-MediumItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-MediumItalic.ttf.css') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Medium.eot.css');
+  src: local('Bw Modelica SS01 Medium'), local('BwModelicaSS01-Medium'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Medium.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Medium.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Medium.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Medium.ttf.css') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold_1.eot.css');
+  src: local('Bw Modelica SS01 ExtraBold'), local('BwModelicaSS01-ExtraBold'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold_1.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold_1.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold_1.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ExtraBold_1.ttf.css') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Thin.eot.css');
+  src: local('Bw Modelica SS01 Thin'), local('BwModelicaSS01-Thin'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Thin.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Thin.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Thin.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-Thin.ttf.css') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '.';
+  src: url('https://libressebr.vteximg.com.br/arquivos/72d8b53c1f3d48460b16cf7c0b567446.eot.css');
+  src: local('.'), local('.'),
+    url('https://libressebr.vteximg.com.br/arquivos/72d8b53c1f3d48460b16cf7c0b567446.eot.css')
+      format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/72d8b53c1f3d48460b16cf7c0b567446.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/72d8b53c1f3d48460b16cf7c0b567446.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/72d8b53c1f3d48460b16cf7c0b567446.ttf.css') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ThinItalic.eot.css');
+  src: local('Bw Modelica SS01 Thin Italic'), local('BwModelicaSS01-ThinItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ThinItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ThinItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ThinItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-ThinItalic.ttf.css') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modelica';
+  src: url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-RegularItalic.eot.css');
+  src: local('Bw Modelica SS01 Regular Italic'), local('BwModelicaSS01-RegularItalic'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-RegularItalic.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-RegularItalic.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-RegularItalic.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/BwModelicaSS01-RegularItalic.ttf.css') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Expressive V App';
+  src: url('https://libressebr.vteximg.com.br/arquivos/ExpressiveVApp-Regular.eot.css');
+  src: local('Expressive V App'), local('ExpressiveVApp-Regular'),
+    url('https://libressebr.vteximg.com.br/arquivos/ExpressiveVApp-Regular.eot.css') format('embedded-opentype'),
+    url('https://libressebr.vteximg.com.br/arquivos/ExpressiveVApp-Regular.woff2.css') format('woff2'),
+    url('https://libressebr.vteximg.com.br/arquivos/ExpressiveVApp-Regular.woff.css') format('woff'),
+    url('https://libressebr.vteximg.com.br/arquivos/ExpressiveVApp-Regular.ttf.css') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
