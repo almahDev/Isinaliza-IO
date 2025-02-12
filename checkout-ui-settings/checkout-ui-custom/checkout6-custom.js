@@ -208,6 +208,9 @@ function waitForElement(selector, callback, interval = 500, timeout = 10000) {
           </div>
           <button class="almah-footer__slider-next">&#10095;</button>
         </div>
+       <div class="almah-footer__button-ver-mais-container">
+        <button class="almah-footer__button-ver-mais"><a>VER TODOS PRODUTOS</a></button>
+       </div>
       `;
   
       insertAfterElement.insertAdjacentElement('afterend', newSection);

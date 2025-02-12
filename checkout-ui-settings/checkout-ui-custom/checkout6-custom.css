@@ -411,6 +411,30 @@ p#cartLinkText {
     font-weight: 700;
     line-height: 120%; /* 24px */
 }
+
+.almah-footer__button-ver-mais-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+.almah-footer__button-ver-mais {
+    border-radius: var(--Inputs-Botes, 300px) !important;
+    border: 2px solid var(--Cores-Neutas-Clara-Mdio, #E0E0E0) !important;
+    background: var(--Cores-Neutas-Clara-Pura, #FFF) !important;
+}
+.almah-footer__button-ver-mais a{
+    color: var(--Cores-Primarias-Secundaria-Secondary-Pure---500, #0054A8) !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0px 15px;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+}
+
+
+
 .cart-more-options .srp-container .onda-v1 .blue {
     outline: none;
     background: var(--Call-To-Action-CTA-Pura, #FE5000);
@@ -418,7 +442,8 @@ p#cartLinkText {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
+    border: 0;
+    padding: 10px !important;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -594,11 +619,20 @@ h2.almah-footer__block--title {
     text-transform: uppercase;
     margin-bottom: 1em;
 }
+.almah-footer__shelf{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    background: #f5f5f5;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
 h2.almah-footer__block--title::before {
     content: url('/arquivos/line-title.png');
     position: relative;
     right: -24px;
-    top: 20px;
+    top: -8px;
     width:200px;
     overflow: hidden;
 }
@@ -687,7 +721,7 @@ a#orderform-minicart-to-cart {
 .summary-template-holder .coupon-form .coupon-fields input#cart-coupon {
     display: inline-block;
     vertical-align: top;
-    width: 140px;
+    width: 220px;
     height: 40px !important;
     border: 1px solid #d9d9d9;
     font-size: 14px;
@@ -1046,4 +1080,15 @@ body.body-cart, body.body-checkout-confirmation, body.body-order-form {
         box-shadow: none;
         border-radius: 0;
     }
+}
+.cart-template-holder .cart {
+    border: none;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+.cart-more-options.span7 {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.summary-template-holder {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
 }
